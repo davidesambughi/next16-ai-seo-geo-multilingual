@@ -326,6 +326,9 @@ export default async function SchoolDetailPage(props: PageProps) {
                         <SchoolMap
                             schoolName={school.name}
                             location={school.location}
+                            lat={school.coordinates.lat}
+                            lng={school.coordinates.lng}
+                            openInMapsLabel={t("openInMaps")}
                         />
                     </div>
                 </div>

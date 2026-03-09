@@ -3,15 +3,28 @@
 import { usePathname } from "@/i18n/navigation";
 import { Link } from "@/i18n/navigation";
 import { ChevronRight } from "lucide-react";
-import { useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import { getBreadcrumbPath } from "@/lib/breadcrumbs";
 
 export function Breadcrumbs() {
     const pathname = usePathname();
-    const locale = useLocale();
+    const tNav = useTranslations("Navigation");
+    const tCrumb = useTranslations("Breadcrumbs");
 
     // Don't show breadcrumbs on home page
     if (pathname === "/") return null;
+
+    const logicalLabelMap: Record<string, string> = {
+        "/best-private-and-public-international-schools-portugal-2026": tCrumb("schoolsGuide"),
+        "/top-neighborhoods": tCrumb("neighborhoodsGuide"),
+        "/relocation-guide": tCrumb("relocationGuide"),
+        "/school-finder": tNav("schoolFinder"),
+        "/about": tNav("about"),
+        "/blog": tCrumb("blog"),
+        "/privacy": tCrumb("privacy"),
+        "/terms": tCrumb("terms"),
+        "/contact": tCrumb("contact"),
+    };
 
     const pathSegments = pathname.split("/").filter((segment) => segment);
 
@@ -21,7 +34,7 @@ export function Breadcrumbs() {
             <ol className="flex items-center space-x-2">
                 <li>
                     <Link href="/" className="hover:text-foreground transition-colors">
-                        Home
+                        {tNav("home")}
                     </Link>
                 </li>
 
@@ -36,23 +49,27 @@ export function Breadcrumbs() {
                         href = mappedPath;
                     }
 
-                    // Format segment for display
+                    // Prefer translated label for known logical routes.
+                    const translatedLabel = logicalLabelMap[href];
+
+                    // Fallback: format segment for display
                     const formatSegment = (str: string) => {
                         return str
                             .replace(/-/g, " ")
                             .replace(/\b\w/g, (char) => char.toUpperCase());
                     };
+                    const displayLabel = translatedLabel ?? formatSegment(segment);
 
                     return (
                         <li key={segment} className="flex items-center">
                             <ChevronRight className="h-4 w-4 mx-2" />
                             {isLast ? (
                                 <span className="font-medium text-foreground" aria-current="page">
-                                    {formatSegment(segment)}
+                                    {displayLabel}
                                 </span>
                             ) : (
                                 <Link href={href as any} className="hover:text-foreground transition-colors">
-                                    {formatSegment(segment)}
+                                    {displayLabel}
                                 </Link>
                             )}
                         </li>

@@ -88,6 +88,14 @@ export default async function SchoolFinderPage({ params }: PageProps) {
                         "United Lisbon International School has the most accessible admissions (acceptance rate ~45%), followed by CAISL (~35%). St. Julian's School is the most competitive at ~8% acceptance rate.",
                 },
             },
+            {
+                "@type": "Question",
+                "name": t("faq3q"),
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": t("faq3a"),
+                },
+            },
         ],
     };
 

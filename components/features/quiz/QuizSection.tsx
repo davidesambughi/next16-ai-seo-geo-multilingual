@@ -40,6 +40,7 @@ export async function QuizSection({ locale }: { locale: string }) {
         timelineExploring: t("timelineExploring"),
         // Results
         resultsTitle: t("resultsTitle"),
+        resultsOverline: t("resultsOverline"),
         resultsSchoolsHeading: t("resultsSchoolsHeading"),
         resultsNeighborhoodsHeading: t("resultsNeighborhoodsHeading"),
         viewSchoolBtn: t("viewSchoolBtn"),

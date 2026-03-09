@@ -1,23 +1,23 @@
 /**
- * SchoolsList — Server Component
+ * SchoolsList â€” Server Component
  *
  * Renders the #schools section of the pillar page in two distinct parts:
  *
- *   1. TOP PICKS  — 4 hand-curated schools with full editorial rich cards
+ *   1. TOP PICKS  â€” 4 hand-curated schools with full editorial rich cards
  *                   (verdict, parentWhisper, trust badges, acceptance rate)
  *
- *   2. SCHOOL DIRECTORY — all 77 schools in a compact 3-col grid with
+ *   2. SCHOOL DIRECTORY â€” all 77 schools in a compact 3-col grid with
  *                         client-side filters (region / curriculum / price /
  *                         language) and pagination (12 per page).
  *
  * Data flow:
  *   - schoolsData is read once on the server at request time (ISR)
  *   - Only a minimal SchoolDirectoryItem shape is serialised and sent to the
- *     browser — not the full School objects (avoids shipping translations, JSON-LD
+ *     browser â€” not the full School objects (avoids shipping translations, JSON-LD
  *     fields, and other unused data to the client bundle)
  *
  * GEO note: verdict + parentWhisper content on the rich cards is deliberately
- * written as citable, factual statements — optimised for AI Overviews.
+ * written as citable, factual statements â€” optimised for AI Overviews.
  */
 
 import { Link } from "@/i18n/navigation";
@@ -44,7 +44,7 @@ import { MethodologyBadge } from "./MethodologyBadge";
 import { getLocale, getTranslations } from "next-intl/server";
 import { SchoolDirectory, type SchoolDirectoryItem } from "./SchoolDirectory";
 
-// ── Helpers (server-only, run at build / revalidation time) ──────────────────
+// â”€â”€ Helpers (server-only, run at build / revalidation time) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 /**
  * Map raw JSON location.region values to canonical filter buckets.
@@ -60,7 +60,7 @@ function normalizeRawRegion(rawRegion: string): string | null {
     case "Setúbal Region":           return "Lisbon";
     case "Central Portugal":         return "Central Portugal";
     case "Madeira":                  return "Madeira";
-    default:                         return null; // unknown/generic → fall through
+    default:                         return null; // unknown/generic â†’ fall through
   }
 }
 
@@ -90,7 +90,8 @@ function extractRegion(location: string, rawRegion?: string): string {
     loc.includes("lisbon") ||
     loc.includes("lisboa") ||
     loc.includes("almada") ||
-    loc.includes("set") // setúbal / setubal
+    loc.includes("setúbal") ||
+    loc.includes("setubal")
   )
     return "Lisbon";
   // Fall back to raw JSON region when city matching fails
@@ -117,7 +118,7 @@ function normalizeCurriculum(curriculum: string): string {
   return "Other";
 }
 
-/** Parse the formatted fee string (e.g. "€7,200 – €13,995") to a numeric min. */
+/** Parse the formatted fee string (e.g. "?7,200 â€“ ?13,995") to a numeric min. */
 function parseFeesMin(fees: string): number | null {
   const match = fees.match(/€([\d,]+)/);
   if (!match) return null;
@@ -141,20 +142,20 @@ function computeIsFullProfile(school: School): boolean {
   );
 }
 
-// ── Component ─────────────────────────────────────────────────────────────────
+// â”€â”€ Component â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 export async function SchoolsList() {
   const locale = await getLocale();
   const t = await getTranslations({ locale, namespace: "SchoolDetail" });
 
-  // ── Split curated vs. all ──────────────────────────────────────────────────
+  // â”€â”€ Split curated vs. all â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   // Curated schools are identified by the presence of an editorial verdict.
   const curatedSchools = schoolsData.filter(
     (s) => Boolean(s.translations.en.verdict),
   );
 
-  // ── Build minimal serialisable data for the Directory client component ─────
-  // Only fields needed for display + filtering — keeps the client payload small.
+  // â”€â”€ Build minimal serialisable data for the Directory client component â”€â”€â”€â”€â”€
+  // Only fields needed for display + filtering â€” keeps the client payload small.
   const directoryData: SchoolDirectoryItem[] = schoolsData.map((school) => ({
     slug: school.slug,
     name: school.name,
@@ -179,16 +180,16 @@ export async function SchoolsList() {
   return (
     <div className="space-y-16">
 
-      {/* ══════════════════════════════════════════════
-          PART 1 — EDITORIAL TOP PICKS (4 curated)
-      ══════════════════════════════════════════════ */}
+      {/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+          PART 1 â€” EDITORIAL TOP PICKS (4 curated)
+      â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
       <div>
         <div className="flex flex-wrap items-center gap-3 mb-6">
           <h3 className="font-serif font-semibold text-xl text-ink-primary">
-            Editorial Top Picks
+            {t("editorialTopPicks")}
           </h3>
           <span className="text-xs font-medium px-2.5 py-1 rounded-full bg-warm-light text-warm border border-warm/20">
-            TrustFamily Verified
+            {t("trustFamilyVerified")}
           </span>
         </div>
 
@@ -214,7 +215,7 @@ export async function SchoolsList() {
                       <div className="flex items-center gap-1 text-xs text-ink-muted whitespace-nowrap shrink-0">
                         <Users className="h-3 w-3" />
                         <span>
-                          Acceptance:{" "}
+                          {t("acceptanceLabel")}:{" "}
                           <strong className="text-ink-secondary">
                             {school.acceptanceRate}
                           </strong>
@@ -261,9 +262,9 @@ export async function SchoolsList() {
                     {school.inspectionDate && (
                       <div className="flex items-center gap-2 text-xs text-ink-muted">
                         <CalendarCheck className="h-3 w-3 shrink-0" />
-                        <span>TrustFamily inspected: {school.inspectionDate}</span>
+                        <span>{t("trustFamilyInspectedLabel")}: {school.inspectionDate}</span>
                         {school.visitCount && (
-                          <span>· {school.visitCount} visits</span>
+                          <span>| {school.visitCount} {t("visitsLabel")}</span>
                         )}
                       </div>
                     )}
@@ -308,7 +309,7 @@ export async function SchoolsList() {
                         params: { slug: school.slug },
                       }}
                     >
-                      View Full School Profile →
+                      {t("viewFullSchoolProfile")}
                     </Link>
                   </Button>
                 </CardFooter>
@@ -318,17 +319,16 @@ export async function SchoolsList() {
         </div>
       </div>
 
-      {/* ══════════════════════════════════════════════
-          PART 2 — FULL SCHOOL DIRECTORY (all 77)
-      ══════════════════════════════════════════════ */}
-      <div>
+      {/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+          PART 2 â€” FULL SCHOOL DIRECTORY (all 77)
+      â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+      <div id="full-school-directory">
         <div className="mb-6">
           <h3 className="font-serif font-semibold text-xl text-ink-primary mb-1">
-            Full School Directory
+            {t("fullSchoolDirectory")}
           </h3>
           <p className="text-sm text-ink-muted">
-            {schoolsData.length} schools across Portugal — filter by region,
-            curriculum or budget
+            {t("schoolsAcrossPortugal", { count: schoolsData.length })}
           </p>
         </div>
 
@@ -339,3 +339,4 @@ export async function SchoolsList() {
     </div>
   );
 }
+

@@ -610,6 +610,14 @@ export default async function NeighborhoodDetailPage(props: PageProps) {
                         <NeighborhoodMap
                             neighborhoodName={neighborhood.name}
                             city={mapCity}
+                            lat={neighborhood.coordinates.lat}
+                            lng={neighborhood.coordinates.lng}
+                            exploreOnMapsLabel={t("exploreOnMaps")}
+                            amenityLabels={{
+                                schools: t("amenitySchools"),
+                                cafes: t("amenityCafes"),
+                                parks: t("amenityParks"),
+                            }}
                         />
                     </div>
                 </div>

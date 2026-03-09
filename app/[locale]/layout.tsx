@@ -4,6 +4,7 @@ import "../globals.css";
 import { Header } from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ScrollToTop } from "@/components/ui/ScrollToTop";
+import { RouteScrollTop } from "@/components/ui/RouteScrollTop";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -101,6 +102,7 @@ export default async function LocaleLayout({
             Skip to main content
           </a>
           <Header />
+          <RouteScrollTop />
           <div id="main-content">
             {children}
           </div>
