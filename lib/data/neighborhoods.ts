@@ -3,13 +3,76 @@ import rawNeighborhoods from "./raw/neighborhoods-database.json";
 
 export type { Neighborhood };
 
+const DESCRIPTION_FALLBACK_BY_LOCALE: Record<string, (name: string, location?: string) => string> = {
+  en: (name, location) => `${name} is located in ${location ?? "Portugal"}.`,
+  es: (name, location) => `${name} se encuentra en ${location ?? "Portugal"}.`,
+  pt: (name, location) => `${name} fica em ${location ?? "Portugal"}.`,
+  de: (name, location) => `${name} befindet sich in ${location ?? "Portugal"}.`,
+  fr: (name, location) => `${name} se situe a ${location ?? "Portugal"}.`,
+  nl: (name, location) => `${name} ligt in ${location ?? "Portugal"}.`,
+};
+
+function localizeCommuteFromEn(locale: string, text: string): string {
+  if (!text || locale === "en") return text;
+
+  const replaceAll = (input: string, rules: Array<[RegExp, string]>) =>
+    rules.reduce((acc, [pattern, replacement]) => acc.replace(pattern, replacement), input);
+
+  const rulesByLocale: Record<string, Array<[RegExp, string]>> = {
+    es: [
+      [/\bwalking distance\b/gi, "a distancia a pie"],
+      [/\bby car\b/gi, "en coche"],
+      [/\bby train\b/gi, "en tren"],
+      [/\bto\b/gi, "a"],
+    ],
+    pt: [
+      [/\bwalking distance\b/gi, "a distancia a pe"],
+      [/\bby car\b/gi, "de carro"],
+      [/\bby train\b/gi, "de comboio"],
+      [/\bto\b/gi, "a"],
+    ],
+    de: [
+      [/\bwalking distance\b/gi, "zu Fuss erreichbar"],
+      [/\bby car\b/gi, "mit dem Auto"],
+      [/\bby train\b/gi, "mit dem Zug"],
+      [/\bto\b/gi, "nach"],
+    ],
+    fr: [
+      [/\bwalking distance\b/gi, "a distance a pied"],
+      [/\bby car\b/gi, "en voiture"],
+      [/\bby train\b/gi, "en train"],
+      [/\bto\b/gi, "vers"],
+    ],
+    nl: [
+      [/\bwalking distance\b/gi, "op loopafstand"],
+      [/\bby car\b/gi, "met de auto"],
+      [/\bby train\b/gi, "met de trein"],
+      [/\bto\b/gi, "naar"],
+    ],
+  };
+
+  const rules = rulesByLocale[locale];
+  return rules ? replaceAll(text, rules) : text;
+}
+
 /**
  * Returns the best available translation for a neighborhood.
  * Falls back to `en` if the requested locale is not yet translated.
  */
 export function getNeighborhoodT(neighborhood: Neighborhood, locale: string): NeighborhoodTranslation {
-  return (neighborhood.translations as Record<string, NeighborhoodTranslation>)[locale]
-    ?? neighborhood.translations.en;
+  const translations = neighborhood.translations as Record<string, NeighborhoodTranslation>;
+  const direct = translations[locale];
+  if (direct) return direct;
+
+  const en = neighborhood.translations.en;
+  const buildDescriptionFallback = DESCRIPTION_FALLBACK_BY_LOCALE[locale] ?? DESCRIPTION_FALLBACK_BY_LOCALE.en;
+
+  return {
+    ...en,
+    // Keep full original content when locale is missing, but localize commute wording.
+    description: en.description ?? buildDescriptionFallback(neighborhood.name, neighborhood.location),
+    commuteContext: localizeCommuteFromEn(locale, en.commuteContext ?? ""),
+  };
 }
 
 const curatedNeighborhoods: Neighborhood[] = [

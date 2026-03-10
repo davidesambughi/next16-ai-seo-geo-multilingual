@@ -89,6 +89,7 @@
     "timelinePlanning": "Dans 6 à 12 mois",
     "timelineExploring": "Juste en exploration",
     "resultsTitle": "Vos correspondances parfaites",
+    "resultsOverline": "Vos meilleures options",
     "resultsSchoolsHeading": "Écoles recommandées",
     "resultsNeighborhoodsHeading": "Quartiers recommandés",
     "viewSchoolBtn": "Voir le profil de l'école",
@@ -130,12 +131,465 @@
     "metaDescription": "Guide indépendant des meilleures écoles internationales privées et publiques au Portugal 2026. Comparez les programmes IB, britanniques et américains, les frais et les taux d'admission."
   },
   "NeighborhoodsGuidePage": {
-    "metaTitle": "Meilleurs quartiers familiaux Portugal 2026 — Lisbonne, Cascais, Sintra | TrustFamily",
-    "metaDescription": "Trouvez les meilleurs quartiers familiaux au Portugal pour les expatriés. Comparez Cascais, Sintra, Parque das Nações et plus — sécurité, écoles, ambiance et trajets."
+    "metaTitle": "Best family-friendly neighborhoods Portugal 2026 | TrustFamily",
+    "metaDescription": "Compare top neighborhoods for families in Portugal by commute, lifestyle, and school proximity.",
+    "sticky": {
+      "title": "Dans ce guide",
+      "sections": "Sections du guide",
+      "scrolling": "Defilement..."
+    },
+    "header": {
+      "updated": "Mise a jour fevrier 2026",
+      "reviewed": "{count} quartiers analyses",
+      "editorial": "TrustFamily Editorial",
+      "title": "Meilleurs quartiers familiaux au Portugal 2026",
+      "subtitle": "Ou les familles choisissent de vivre et pourquoi."
+    },
+    "sections": [
+      {
+        "id": "overview",
+        "label": "Vue d ensemble"
+      },
+      {
+        "id": "school-first",
+        "label": "Regle: ecole d abord"
+      },
+      {
+        "id": "coastal",
+        "label": "Zone cotiere"
+      },
+      {
+        "id": "sintra",
+        "label": "Sintra et collines"
+      },
+      {
+        "id": "lisbon",
+        "label": "Dans Lisbonne"
+      },
+      {
+        "id": "how-to-choose",
+        "label": "Comment choisir"
+      },
+      {
+        "id": "neighborhoods",
+        "label": "Profils de quartiers"
+      },
+      {
+        "id": "faq",
+        "label": "FAQ"
+      }
+    ],
+    "keyTakeawaysTitle": "Points cles",
+    "keyTakeaways": [
+      "Choisissez d abord l ecole, puis le quartier.",
+      "Cascais et Estoril conviennent le mieux a un style de vie cotier.",
+      "Sintra offre plus d espace et de valeur, avec des compromis sur le trajet.",
+      "Dans Lisbonne, c est ideal pour les familles a priorite urbaine."
+    ],
+    "imageAlt": "Family-friendly neighborhood in Portugal",
+    "tocTitle": "Dans ce guide",
+    "overview": {
+      "title": "1. Vue d ensemble",
+      "p1": "Greater Lisbon is made of distinct family zones with different commute realities.",
+      "p2": "School location should drive neighborhood choice.",
+      "p3": "Start by school, then map housing around it:",
+      "schoolsGuideLink": "guide des ecoles"
+    },
+    "schoolFirst": {
+      "title": "2. Regle: ecole d abord",
+      "p1": "Use this quick table to compare practical fit before deep dives.",
+      "headers": {
+        "neighborhood": "Quartier",
+        "closestSchool": "Ecole la plus proche",
+        "commute": "Trajet",
+        "vibe": "Ambiance"
+      },
+      "rows": [
+        {
+          "n": "Cascais",
+          "s": "St. Julian's (Carcavelos)",
+          "c": "15 min en voiture",
+          "v": "Cotier, hub expat"
+        },
+        {
+          "n": "Estoril",
+          "s": "St. Julian's (Carcavelos)",
+          "c": "20 min en voiture",
+          "v": "Calme, elegant"
+        },
+        {
+          "n": "Sintra",
+          "s": "TASIS + CAISL",
+          "c": "10-15 min en voiture",
+          "v": "Nature, historique"
+        },
+        {
+          "n": "Parque das Nacoes",
+          "s": "United Lisbon",
+          "c": "A distance a pied",
+          "v": "Moderne, en bord de fleuve"
+        },
+        {
+          "n": "Campo de Ourique",
+          "s": "Ecoles de la ville en metro",
+          "c": "20-30 min",
+          "v": "Village dans la ville"
+        }
+      ],
+      "noteLabel": "Note pratique:",
+      "note": "Morning traffic can add meaningful time. Test routes at school-run hour."
+    },
+    "coastal": {
+      "title": "3. Zone cotiere: Cascais et Estoril",
+      "p1": "The Cascais line is the strongest coastal option for international families.",
+      "strengths": "Forces",
+      "tradeoffs": "Compromis",
+      "cards": [
+        {
+          "name": "Cascais",
+          "pros": [
+            "Plus grand reseau expat",
+            "Superbes plages",
+            "Services familiaux solides"
+          ],
+          "cons": [
+            "Prix plus eleves",
+            "Trafic saisonnier"
+          ]
+        },
+        {
+          "name": "Estoril",
+          "pros": [
+            "Rythme plus calme",
+            "Environnement elegant",
+            "Bon acces en train"
+          ],
+          "cons": [
+            "Reseau expat plus reduit",
+            "Moins de variete"
+          ]
+        }
+      ],
+      "verdictLabel": "Verdict TrustFamily:",
+      "verdict": "Pick Cascais for network; pick Estoril for quiet."
+    },
+    "sintra": {
+      "title": "4. Sintra",
+      "p1": "Sintra combines nature and school access.",
+      "p2": "Main trade-off is distance to central Lisbon.",
+      "bestForLabel": "Ideal pour:",
+      "bestFor": "Families prioritizing space and nature.",
+      "p3": "Typically lower housing prices than Cascais."
+    },
+    "lisbon": {
+      "title": "5. Dans Lisbonne",
+      "p1": "Best for families prioritizing urban convenience.",
+      "cards": [
+        {
+          "name": "Parque das Nacoes",
+          "tag": "Ideal pour une vie moderne en bord de fleuve",
+          "content": "Quartier moderne et fonctionnel avec une excellente mobilite."
+        },
+        {
+          "name": "Campo de Ourique",
+          "tag": "Ideal pour une vie familiale a pied en ville",
+          "content": "Esprit village dans Lisbonne avec un grand confort au quotidien."
+        }
+      ]
+    },
+    "howToChoose": {
+      "title": "6. Comment choisir",
+      "p1": "Use this practical checklist before signing a lease.",
+      "items": [
+        {
+          "n": "01",
+          "title": "Tester le trajet vers l ecole",
+          "desc": "Faites le trajet reel aux heures scolaires."
+        },
+        {
+          "n": "02",
+          "title": "Parcourir le quartier a pied",
+          "desc": "Validez la securite et le confort quotidien."
+        },
+        {
+          "n": "03",
+          "title": "Parler avec des parents",
+          "desc": "Les communautes de parents revelent la realite pratique."
+        },
+        {
+          "n": "04",
+          "title": "Verifier les services",
+          "desc": "Sante, activites, courses et transports."
+        },
+        {
+          "n": "05",
+          "title": "Chiffrer le transport",
+          "desc": "Inclure bus ou voiture dans le budget mensuel."
+        }
+      ]
+    },
+    "neighborhoodProfilesTitle": "7. Profils de quartiers",
+    "faq": {
+      "title": "Questions frequentes",
+      "items": [
+        {
+          "q": "Ou vivent les familles expat pres de Lisbonne ?",
+          "a": "Cascais, Estoril et Sintra sont les options les plus courantes."
+        },
+        {
+          "q": "Quelle zone est la plus proche de St. Julian's ?",
+          "a": "Cascais et Estoril."
+        },
+        {
+          "q": "Sintra est-il adapte aux familles ?",
+          "a": "Oui, surtout pour l espace et la nature."
+        },
+        {
+          "q": "Meilleure option sans voiture ?",
+          "a": "Parque das Nacoes et Campo de Ourique."
+        }
+      ]
+    },
+    "related": {
+      "title": "Trouvez la bonne ecole",
+      "subtitle": "Le choix du quartier suit celui de l ecole.",
+      "items": [
+        {
+          "title": "International Schools Guide",
+          "desc": "Compare curriculum, fees and fit.",
+          "href": "/best-private-and-public-international-schools-portugal-2026"
+        },
+        {
+          "title": "Quiz de recherche d ecole",
+          "desc": "Get school and neighborhood matches in 60 seconds.",
+          "href": "/school-finder"
+        }
+      ]
+    }
   },
   "RelocationGuidePage": {
-    "metaTitle": "Guide de Relocalisation Familiale Portugal 2026 — Visas, Écoles, Logement | TrustFamily",
-    "metaDescription": "Guide complet pour relocaliser votre famille au Portugal en 2026. Couvre les visas (D7, Nomade Digital, UE), les coûts du logement, les écoles internationales et un calendrier de 12 mois."
+    "metaTitle": "Family Relocation Guide Portugal 2026 | TrustFamily",
+    "metaDescription": "Visa, schools, housing and timeline for family relocation to Portugal.",
+    "sticky": {
+      "title": "Dans ce guide",
+      "sections": "Sections du guide",
+      "scrolling": "Defilement..."
+    },
+    "header": {
+      "updated": "Mise a jour fevrier 2026",
+      "readTime": "Lecture 25 min",
+      "editorial": "TrustFamily Editorial",
+      "title": "Guide de relocalisation familiale Portugal 2026",
+      "subtitle": "Feuille de route pratique pour visa, ecole, logement et calendrier."
+    },
+    "sections": [
+      {
+        "id": "why-portugal",
+        "label": "Pourquoi le Portugal"
+      },
+      {
+        "id": "visas",
+        "label": "Visas"
+      },
+      {
+        "id": "schools",
+        "label": "Ecoles"
+      },
+      {
+        "id": "neighborhoods",
+        "label": "Ou vivre"
+      },
+      {
+        "id": "housing",
+        "label": "Logement"
+      },
+      {
+        "id": "cost-of-living",
+        "label": "Cout de la vie"
+      },
+      {
+        "id": "healthcare",
+        "label": "Sante"
+      },
+      {
+        "id": "children-integration",
+        "label": "Enfants et integration"
+      },
+      {
+        "id": "timeline",
+        "label": "Calendrier 12 mois"
+      }
+    ],
+    "keyTakeawaysTitle": "Points cles",
+    "keyTakeaways": [
+      "Choose visa route early.",
+      "Apply to schools early.",
+      "Pick neighborhood around school commute.",
+      "Budget with transport and healthcare included."
+    ],
+    "imageAlt": "Family relocation guide in Portugal",
+    "tocTitle": "Dans ce guide",
+    "whyPortugal": {
+      "title": "1. Pourquoi les familles choisissent le Portugal",
+      "p1": "Portugal combines safety, weather and quality of life.",
+      "p2": "Lisbon area offers strong international school density.",
+      "cards": [
+        {
+          "title": "Climat",
+          "desc": "Plus de 300 jours de soleil par an a Lisbonne."
+        },
+        {
+          "title": "Securite",
+          "desc": "Le Portugal est parmi les pays les plus surs."
+        },
+        {
+          "title": "Education",
+          "desc": "Forte concentration d ecoles internationales."
+        }
+      ],
+      "sourceLabel": "Source :"
+    },
+    "visas": {
+      "title": "2. Visas",
+      "p1": "Visa landscape changed in recent years. Validate route with legal counsel.",
+      "cards": [
+        {
+          "tag": "Most common",
+          "title": "D7",
+          "content": "For passive/stable income households."
+        },
+        {
+          "tag": "Remote workers",
+          "title": "D8",
+          "content": "For remote employees/freelancers."
+        },
+        {
+          "tag": "EU/EEA",
+          "title": "No visa",
+          "content": "Residence registration applies."
+        }
+      ]
+    },
+    "schools": {
+      "title": "3. Ecoles",
+      "p1": "School admissions should start early for competitive intake.",
+      "cta": "Comparer les ecoles"
+    },
+    "neighborhoods": {
+      "title": "4. Ou vivre",
+      "p1": "Choose neighborhood based on school route and lifestyle."
+    },
+    "housing": {
+      "title": "5. Logement",
+      "p1": "Prioritize contract clarity, commute realism and family services nearby."
+    },
+    "costOfLiving": {
+      "title": "6. Cout de la vie",
+      "headers": {
+        "item": "Poste",
+        "value": "Fourchette",
+        "note": "Note"
+      },
+      "rows": [
+        {
+          "item": "Rent",
+          "value": "EUR 1,800-4,000",
+          "note": "Depends on zone and size"
+        },
+        {
+          "item": "School fees",
+          "value": "EUR 12,000-32,000",
+          "note": "Per child, per year"
+        },
+        {
+          "item": "Healthcare",
+          "value": "EUR 200-500",
+          "note": "Private insurance for family"
+        }
+      ]
+    },
+    "healthcare": {
+      "title": "7. Sante",
+      "p1": "Public + private mix is common for expat families."
+    },
+    "children": {
+      "title": "8. Enfants et integration",
+      "p1": "Build routines quickly through school and local activities."
+    },
+    "timeline": {
+      "title": "9. Calendrier sur 12 mois",
+      "steps": [
+        {
+          "months": "Months 12-10",
+          "title": "School research",
+          "tasks": [
+            "Shortlist schools",
+            "Start admissions"
+          ]
+        },
+        {
+          "months": "Months 9-7",
+          "title": "Visa prep",
+          "tasks": [
+            "Select route",
+            "Prepare documents"
+          ]
+        },
+        {
+          "months": "Months 6-4",
+          "title": "Housing decision",
+          "tasks": [
+            "Scouting trip",
+            "Select neighborhood"
+          ]
+        },
+        {
+          "months": "Months 3-1",
+          "title": "Pre-arrival setup",
+          "tasks": [
+            "Insurance",
+            "Banking",
+            "Travel logistics"
+          ]
+        },
+        {
+          "months": "Month 0+",
+          "title": "Landing phase",
+          "tasks": [
+            "Registration",
+            "School onboarding",
+            "Local routines"
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions frequentes",
+      "items": [
+        {
+          "q": "Which visa is most common?",
+          "a": "D7 and D8 are the most common non-EU routes."
+        },
+        {
+          "q": "When should school applications start?",
+          "a": "As early as possible, ideally months in advance."
+        },
+        {
+          "q": "How much does family relocation cost?",
+          "a": "It depends on school and housing choices."
+        },
+        {
+          "q": "Is private healthcare needed?",
+          "a": "Many expat families combine public and private coverage."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Pret a trouver la bonne ecole ?",
+      "body": "Faites notre quiz gratuit pour des options adaptees en 60 secondes.",
+      "quiz": "Faire le Quiz School Finder",
+      "compare": "Comparer toutes les ecoles"
+    }
   },
   "AboutPage": {
     "metaTitle": "À propos de TrustFamily — Intelligence indépendante sur les écoles et la relocalisation au Portugal",
@@ -231,7 +685,16 @@
     "neighborhoodMatchTitle": "Quartier correspondant",
     "neighborhoodMatchText": "Vous cherchez un logement près de {schoolName} ? Consultez notre guide sur {neighborhood}.",
     "neighborhoodExploreBtn": "Explorer {neighborhood}",
-    "locationHeading": "Emplacement de l'école"
+    "locationHeading": "Emplacement de l'école",
+    "openInMaps": "Ouvrir dans Maps",
+    "editorialTopPicks": "Selection editoriale",
+    "trustFamilyVerified": "Verifie par TrustFamily",
+    "acceptanceLabel": "Taux d admission",
+    "trustFamilyInspectedLabel": "Inspecte par TrustFamily",
+    "visitsLabel": "visites",
+    "viewFullSchoolProfile": "Voir le profil complet de l ecole",
+    "fullSchoolDirectory": "Annuaire complet des ecoles",
+    "schoolsAcrossPortugal": "{count} ecoles au Portugal - filtrer par region, programme ou budget"
   },
   "NeighborhoodDetail": {
     "contactBtn": "Contacter un expert en relocalisation",
@@ -244,9 +707,84 @@
     "vibeCheckTitle": "Vérification de l'ambiance",
     "vibeCheckBody": "Parfait pour les familles à la recherche d'un style de vie spécifique.",
     "exploreAreaHeading": "Explorer le quartier",
-    "viewSchoolBtn": "Voir l'école"
+    "viewSchoolBtn": "Voir l'école",
+    "exploreOnMaps": "Explorer sur Maps",
+    "amenitySchools": "Ecoles",
+    "amenityCafes": "Cafes",
+    "amenityParks": "Parcs"
   },
   "Common": {
     "scrollToTop": "Retour en haut"
+  },
+  "SchoolDirectory": {
+    "filterLabel": "Filtrer :",
+    "filterByRegionAria": "Filtrer par region",
+    "filterByCurriculumAria": "Filtrer par programme",
+    "filterByAnnualFeesAria": "Filtrer par frais annuels",
+    "filterByLanguageAria": "Filtrer par langue d enseignement",
+    "allRegions": "Toutes les regions",
+    "allCurricula": "Tous les programmes",
+    "anyPrice": "Tous les prix",
+    "priceUnder10k": "Moins de EUR10 000 / an",
+    "price10k20k": "EUR10 000 - EUR20 000 / an",
+    "priceOver20k": "Plus de EUR20 000 / an",
+    "priceContact": "Contacter l ecole",
+    "anyLanguage": "Toute langue",
+    "englishMedium": "Enseignement en anglais",
+    "clearFilters": "Effacer les filtres",
+    "resultsCount": "{count} ecoles",
+    "filteredFromTotal": "(filtre sur {total} au total)",
+    "noSchoolsMatch": "Aucune ecole ne correspond a vos filtres.",
+    "clearAllFilters": "Effacer tous les filtres",
+    "previous": "Precedent",
+    "next": "Suivant",
+    "pageOf": "Page {page} sur {total}",
+    "regionAlgarve": "Algarve",
+    "regionPortoNorth": "Porto et Nord",
+    "regionCascaisSintra": "Cascais et Sintra",
+    "regionLisbon": "Lisbonne",
+    "regionCentralPortugal": "Portugal central",
+    "regionMadeira": "Madere",
+    "regionOtherPortugal": "Autre Portugal",
+    "curriculumBritish": "Britannique",
+    "curriculumAmerican": "Americain",
+    "curriculumIB": "IB",
+    "curriculumFrench": "Francais",
+    "curriculumPortuguese": "Portugais",
+    "curriculumGerman": "Allemand",
+    "curriculumSpanish": "Espagnol",
+    "curriculumOther": "Autre",
+    "englishBadge": "Anglais",
+    "featuredBadge": "A la une",
+    "fullProfileTitle": "Tous les champs de profil cles sont renseignes",
+    "partialProfileTitle": "Certains champs du profil ne sont pas disponibles publiquement",
+    "fullProfileBadge": "Profil complet",
+    "partialProfileBadge": "Profil partiel",
+    "agesLabel": "Ages {ageRange}",
+    "perClass": "~{count} par classe",
+    "nationalities": "{count} nationalites",
+    "extraMore": "+{count} de plus",
+    "viewProfile": "Voir le profil",
+    "officialWebsite": "Site officiel"
+  },
+  "Breadcrumbs": {
+    "schoolsGuide": "?coles internationales",
+    "neighborhoodsGuide": "Guide des quartiers",
+    "relocationGuide": "Guide de relocalisation",
+    "blog": "Blog",
+    "privacy": "Confidentialit?",
+    "terms": "Conditions",
+    "contact": "Contact"
+  },
+  "NeighborhoodsList": {
+    "commute": "Trajet",
+    "nearby": "A proximite",
+    "explore": "Explorer",
+    "locations": {
+      "lisbonCoast": "Cote de Lisbonne",
+      "centralLisbon": "Lisbonne centre",
+      "eastLisbon": "Lisbonne est",
+      "greaterLisbon": "Grand Lisbonne"
+    }
   }
 }

@@ -13,6 +13,7 @@ interface QuizResultProps {
     neighborhoodSlugs: string[];
     translations: {
         resultsTitle: string;
+        resultsOverline: string;
         resultsSchoolsHeading: string;
         resultsNeighborhoodsHeading: string;
         viewSchoolBtn: string;
@@ -35,7 +36,7 @@ export function QuizResult({ schoolSlugs, neighborhoodSlugs, translations: t, on
     return (
         <div className="w-full max-w-2xl mx-auto animate-in fade-in duration-500">
             <div className="text-center mb-8">
-                <p className="section-overline mb-2">Your Results</p>
+                <p className="section-overline mb-2">{t.resultsOverline}</p>
                 <h3 className="font-serif font-semibold text-3xl text-ink-primary mb-2">{t.resultsTitle}</h3>
             </div>
 

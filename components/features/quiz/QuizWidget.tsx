@@ -20,6 +20,7 @@ interface QuizWidgetProps {
         curriculumQuestion: string; curriculumBritish: string; curriculumAmerican: string; curriculumFlexible: string;
         timelineQuestion: string; timelineUrgent: string; timelinePlanning: string; timelineExploring: string;
         resultsTitle: string;
+        resultsOverline: string;
         resultsSchoolsHeading: string;
         resultsNeighborhoodsHeading: string;
         viewSchoolBtn: string;

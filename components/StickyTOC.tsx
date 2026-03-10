@@ -1,7 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
-import { Link } from "@/i18n/navigation";
+import { useState, useEffect } from "react";
 import { List, ChevronUp, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -12,12 +11,23 @@ interface Section {
 
 interface StickyTOCProps {
     sections: Section[];
+    title?: string;
+    mobileSectionsTitle?: string;
+    mobileButtonLabel?: string;
+    scrollingLabel?: string;
 }
 
-export function StickyTOC({ sections }: StickyTOCProps) {
+export function StickyTOC({
+    sections,
+    title = "In this guide",
+    mobileSectionsTitle = "Guide Sections",
+    mobileButtonLabel = "In this guide",
+    scrollingLabel = "Scrolling...",
+}: StickyTOCProps) {
     const [activeId, setActiveId] = useState<string>("");
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isVisible, setIsVisible] = useState(false);
+    const [desktopMaxHeight, setDesktopMaxHeight] = useState("70vh");
 
     // Track active section on scroll
     useEffect(() => {
@@ -46,6 +56,30 @@ export function StickyTOC({ sections }: StickyTOCProps) {
         // Show sticky TOC only after scrolling past the first 400px
         const handleScroll = () => {
             setIsVisible(window.scrollY > 400);
+
+            const footer = document.querySelector("footer");
+            if (!footer) {
+                setDesktopMaxHeight("70vh");
+                return;
+            }
+
+            const footerTop = footer.getBoundingClientRect().top;
+            const topOffset = 128; // top-32
+            const safeGap = 16;
+            const available = Math.floor(footerTop - topOffset - safeGap);
+
+            // Keep default size while far from footer; shrink near footer to avoid overlap.
+            if (available > 500) {
+                setDesktopMaxHeight("70vh");
+                return;
+            }
+
+            if (available <= 120) {
+                setDesktopMaxHeight("120px");
+                return;
+            }
+
+            setDesktopMaxHeight(`${available}px`);
         };
 
         window.addEventListener("scroll", handleScroll);
@@ -79,8 +113,11 @@ export function StickyTOC({ sections }: StickyTOCProps) {
     return (
         <>
             {/* ── DESKTOP SIDEBAR ── */}
-            <aside className="hidden lg:block fixed left-[calc(50%+480px)] top-32 w-64 h-fit max-h-[70vh] overflow-y-auto pr-4 border-l border-border pl-6 animate-in fade-in slide-in-from-right-4 duration-500">
-                <h2 className="section-overline mb-6">In this guide</h2>
+            <aside
+                className="hidden lg:block fixed left-[calc(50%+480px)] top-32 w-64 h-fit overflow-y-auto pr-4 border-l border-border pl-6 animate-in fade-in slide-in-from-right-4 duration-500"
+                style={{ maxHeight: desktopMaxHeight }}
+            >
+                <h2 className="section-overline mb-6">{title}</h2>
                 <nav>
                     <ul className="space-y-4">
                         {sections.map((section, i) => (
@@ -119,7 +156,7 @@ export function StickyTOC({ sections }: StickyTOCProps) {
                     isMobileMenuOpen ? "translate-y-0" : "translate-y-full h-0 py-0 overflow-hidden border-none"
                 )}>
                     <div className="flex justify-between items-center mb-6">
-                        <h2 className="section-overline">Guide Sections</h2>
+                        <h2 className="section-overline">{mobileSectionsTitle}</h2>
                         <button onClick={() => setIsMobileMenuOpen(false)} className="text-ink-muted p-1">
                             <ChevronDown size={20} />
                         </button>
@@ -149,12 +186,12 @@ export function StickyTOC({ sections }: StickyTOCProps) {
                         className="flex items-center gap-2 text-sm font-semibold text-ink-primary"
                     >
                         <List size={18} className="text-brand" />
-                        <span>In this guide</span>
+                        <span>{mobileButtonLabel}</span>
                     </button>
 
                     <div className="flex-1 truncate mx-4 text-center">
                         <span className="text-xs text-brand font-medium truncate inline-block max-w-full">
-                            {sections.find(s => s.id === activeId)?.label || "Scrolling..."}
+                            {sections.find(s => s.id === activeId)?.label || scrollingLabel}
                         </span>
                     </div>
 
