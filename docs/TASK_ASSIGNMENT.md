@@ -27,6 +27,18 @@
 
 ---
 
+## ✅ Completed Before Sprint 1 (2026-03-10)
+
+| Task | Status |
+|---|---|
+| Create `/contact` page with lead form | ✅ Done |
+| Create `/privacy` page (GDPR stub) | ✅ Done |
+| Create `/terms` page (terms stub) | ✅ Done |
+| Wire "Contact" button on school + neighborhood detail pages → `/contact` | ✅ Done |
+| Build: 497 pages, zero TypeScript errors | ✅ Verified |
+
+---
+
 ## SPRINT 1 — Immediate (unblocked, do now)
 
 These tasks can be started today with no external dependencies.
@@ -83,21 +95,11 @@ These tasks can be started today with no external dependencies.
 
 ---
 
-### ContactBtn Fix (school + neighborhood detail pages) → **Dev B**
+### ContactBtn Fix (school + neighborhood detail pages) ✅ DONE
 
-**Task:** The "Contact" button in school detail pages is a dead `<Button>` with no action. Wire it to open the contact form or scroll to it.
-
-**Details:**
-- The contact form is in `components/form.tsx`
-- Options: (a) scroll to form section if form is on same page, or (b) link to `/#quiz` with a contact query param, or (c) open a dialog with the form inside
-- Apply the same fix to neighborhood detail pages
-- **Only do this after `WEB3FORMS_ACCESS_KEY` is configured** (otherwise form submits silently fail)
-
-**Files to edit:**
-- `app/[locale]/schools/[slug]/page.tsx:149`
-- `app/[locale]/neighborhoods/[slug]/page.tsx` (similar button)
-
-**Effort:** ~1h | **Blocker:** WEB3FORMS_ACCESS_KEY must be set first | **Status:** ❌ **🅱**
+Button now links to `/contact` page using `<Button asChild><Link href="/contact">`.
+- `app/[locale]/schools/[slug]/page.tsx`
+- `app/[locale]/neighborhoods/[slug]/page.tsx`
 
 ---
 
@@ -213,6 +215,6 @@ These tasks can be started today with no external dependencies.
 | B9 | No scroll-to-top on pagination change | `SchoolDirectory.tsx` | 🅱 | ❌ Sprint 1 |
 | B10 | `<dl>` without `<dt>`/`<dd>` in mini-card | `SchoolDirectory.tsx:193` | 🅱 | ❌ Sprint 1 |
 | B11 | Curriculum "Other" too broad for useful filtering | `SchoolsList.tsx` normalizeCurriculum | 🅰 | ⏳ After new JSON |
-| B-form | "Contact" button dead in school/neighborhood detail pages | `schools/[slug]/page.tsx:149` | 🅱 | ❌ Sprint 1 (after CRM key) |
+| B-form | "Contact" button dead in school/neighborhood detail pages | `schools/[slug]/page.tsx` | 🅱 | ✅ Fixed — links to /contact |
 | B-faq-sf | FAQPage schema has 2 items, HTML renders 3 FAQs | `school-finder/page.tsx:69-92` | 🅱 | ❌ Sprint 1 |
 | B-quiz-ui | "Your Results" hardcoded EN in QuizResult | `QuizResult.tsx:39` | 🅱 | ❌ Sprint 1 |

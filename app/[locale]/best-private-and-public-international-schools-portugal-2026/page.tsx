@@ -96,7 +96,9 @@ export default async function Page({ params }: PageProps) {
                 "description": school.translations.en.description,
                 "url": `${process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com'}/en/school/${school.slug}`,
                 "address": { "@type": "PostalAddress", "addressLocality": school.location, "addressCountry": "PT" },
-                "geo": { "@type": "GeoCoordinates", "latitude": school.coordinates.lat, "longitude": school.coordinates.lng },
+                ...(school.coordinates && {
+                    "geo": { "@type": "GeoCoordinates", "latitude": school.coordinates.lat, "longitude": school.coordinates.lng },
+                }),
             },
         })),
     };

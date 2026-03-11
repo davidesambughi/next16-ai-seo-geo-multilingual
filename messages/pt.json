@@ -120,7 +120,7 @@
       "neighborhood": "Zona de Interesse (Opcional)",
       "neighborhoodPlaceholder": "Selecionar zona",
       "message": "Perguntas ou Comentários",
-      "messagePlaceholder": "Diga-nos o que procura..."
+      "messagePlaceholder": "Fale-nos da sua família: idades dos filhos, área preferida, orçamento e prazo para a mudança para Portugal."
     },
     "submitBtn": "Obtenha o Seu Guia Personalizado",
     "submittingBtn": "A enviar...",
@@ -777,6 +777,10 @@
     "contact": "Contato"
   },
   "NeighborhoodsList": {
+    "editorialOverline": "Seleção Editorial",
+    "editorialHeading": "As Nossas Melhores Recomendações de Bairros",
+    "directoryOverline": "Diretório Completo",
+    "directoryHeading": "Todos os Bairros em Portugal",
     "commute": "Deslocacao",
     "nearby": "Perto",
     "explore": "Explorar",
@@ -786,5 +790,9 @@
       "eastLisbon": "Lisboa Oriental",
       "greaterLisbon": "Grande Lisboa"
     }
+  },
+  "ContactPage": {
+    "h1": "Fale Connosco",
+    "subtitle": "Os nossos especialistas em relocalização estão aqui para ajudá-lo a encontrar a escola e o bairro certos em Portugal. Preencha o formulário abaixo e responderemos em até um dia útil."
   }
 }

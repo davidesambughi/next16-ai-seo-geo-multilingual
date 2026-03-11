@@ -25,7 +25,7 @@ const curatedSchools: School[] = [
     inspectionDate: "2024-11-15",
     acceptanceRate: "8%",
     visitCount: 7,
-    coordinates: { lat: 38.6731, lng: -9.3396 },
+    coordinates: { lat: 38.68503590639778, lng: -9.336226846132435 },
     translations: {
       en: {
         description:
@@ -100,7 +100,7 @@ const curatedSchools: School[] = [
     inspectionDate: "2025-01-20",
     acceptanceRate: "18%",
     visitCount: 4,
-    coordinates: { lat: 38.7976, lng: -9.3917 },
+    coordinates: { lat: 38.759967, lng: -9.386631 },
     translations: {
       en: {
         description:
@@ -175,7 +175,7 @@ const curatedSchools: School[] = [
     inspectionDate: "2024-10-05",
     acceptanceRate: "35%",
     visitCount: 5,
-    coordinates: { lat: 38.8089, lng: -9.4167 },
+    coordinates: { lat: 38.76880050809409, lng: -9.379711401417946 },
     translations: {
       en: {
         description:
@@ -250,7 +250,7 @@ const curatedSchools: School[] = [
     inspectionDate: "2025-02-01",
     acceptanceRate: "45%",
     visitCount: 3,
-    coordinates: { lat: 38.7656, lng: -9.0979 },
+    coordinates: { lat: 38.75673823585819, lng: -9.107781244803101 },
     translations: {
       en: {
         description:
@@ -414,7 +414,7 @@ const importedSchools: School[] = (rawSchools as any[])
             : "")
         : "Contact school",
       acceptanceRate: s.enrollment?.acceptance_rate || undefined,
-      coordinates: s.location?.coordinates || { lat: 38.7223, lng: -9.1393 },
+      coordinates: s.location?.coordinates ?? null,
       // New enriched fields from improved scraper
       ageRange: s.enrollment?.age_range_years || undefined,
       schoolType: s.type || undefined,

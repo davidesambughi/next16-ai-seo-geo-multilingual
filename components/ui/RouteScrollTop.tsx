@@ -13,6 +13,9 @@ export function RouteScrollTop() {
             return;
         }
 
+        // Skip scroll-to-top when navigating to a hash anchor — let the browser handle it.
+        if (window.location.hash) return;
+
         window.scrollTo({ top: 0, behavior: "smooth" });
     }, [pathname]);
 

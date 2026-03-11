@@ -120,7 +120,7 @@
       "neighborhood": "Interested Area (Optional)",
       "neighborhoodPlaceholder": "Select an area",
       "message": "Questions or Comments",
-      "messagePlaceholder": "Tell us what you are looking for..."
+      "messagePlaceholder": "Tell us about your family: children's ages, preferred area, budget, and timeline for moving to Portugal."
     },
     "submitBtn": "Get Your Personalized Guide",
     "submittingBtn": "Sending...",
@@ -777,6 +777,10 @@
     "contact": "Contact"
   },
   "NeighborhoodsList": {
+    "editorialOverline": "Editorial Picks",
+    "editorialHeading": "Our Top Neighborhood Recommendations",
+    "directoryOverline": "Full Directory",
+    "directoryHeading": "All Neighborhoods in Portugal",
     "commute": "Commute",
     "nearby": "Nearby",
     "explore": "Explore",
@@ -786,5 +790,9 @@
       "eastLisbon": "East Lisbon",
       "greaterLisbon": "Greater Lisbon"
     }
+  },
+  "ContactPage": {
+    "h1": "Contact Us",
+    "subtitle": "Our relocation experts are here to help you find the right school and neighborhood in Portugal. Fill in the form below and we'll get back to you within one business day."
   }
 }

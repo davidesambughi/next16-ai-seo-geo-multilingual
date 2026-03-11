@@ -98,11 +98,13 @@ export default async function SchoolDetailPage(props: PageProps) {
             "addressLocality": school.location,
             "addressCountry": "PT",
         },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": school.coordinates.lat,
-            "longitude": school.coordinates.lng,
-        },
+        ...(school.coordinates && {
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": school.coordinates.lat,
+                "longitude": school.coordinates.lng,
+            },
+        }),
         ...(school.acceptanceRate && {
             "additionalProperty": {
                 "@type": "PropertyValue",
@@ -127,7 +129,7 @@ export default async function SchoolDetailPage(props: PageProps) {
         <div className="container mx-auto py-12 px-6">
             <JsonLd data={schoolSchema} />
             <JsonLd data={breadcrumbSchema} />
-            <Breadcrumbs />
+            <Breadcrumbs leafLabel={school.name} />
 
             <div className="relative w-full aspect-video overflow-hidden rounded-xl mb-8">
                 <Image
@@ -149,7 +151,9 @@ export default async function SchoolDetailPage(props: PageProps) {
                     </div>
                 </div>
                 <div className="flex gap-4">
-                    <Button size="lg">{t("contactBtn")}</Button>
+                    <Button size="lg" asChild>
+                        <Link href="/contact">{t("contactBtn")}</Link>
+                    </Button>
                 </div>
             </div>
 
@@ -320,17 +324,19 @@ export default async function SchoolDetailPage(props: PageProps) {
                         </Card>
                     )}
 
-                    {/* Location Map stub */}
-                    <div>
-                        <h3 className="text-lg font-semibold mb-3">{t("locationHeading")}</h3>
-                        <SchoolMap
-                            schoolName={school.name}
-                            location={school.location}
-                            lat={school.coordinates.lat}
-                            lng={school.coordinates.lng}
-                            openInMapsLabel={t("openInMaps")}
-                        />
-                    </div>
+                    {/* Location Map — only shown when coordinates are available */}
+                    {school.coordinates && (
+                        <div>
+                            <h3 className="text-lg font-semibold mb-3">{t("locationHeading")}</h3>
+                            <SchoolMap
+                                schoolName={school.name}
+                                location={school.location}
+                                lat={school.coordinates.lat}
+                                lng={school.coordinates.lng}
+                                openInMapsLabel={t("openInMaps")}
+                            />
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

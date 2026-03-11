@@ -72,20 +72,18 @@ export default async function SchoolFinderPage({ params }: PageProps) {
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "How do I choose an international school in Portugal?",
+                "name": t("faq1q"),
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text":
-                        "Start by aligning curriculum with your long-term plan (British, American, or IB), then filter by budget and location. TrustFamily's free School Finder quiz matches your family to the right school in under 60 seconds, based on 4 key questions.",
+                    "text": t("faq1a"),
                 },
             },
             {
                 "@type": "Question",
-                "name": "Which international school in Portugal is easiest to get into?",
+                "name": t("faq2q"),
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text":
-                        "United Lisbon International School has the most accessible admissions (acceptance rate ~45%), followed by CAISL (~35%). St. Julian's School is the most competitive at ~8% acceptance rate.",
+                    "text": t("faq2a"),
                 },
             },
             {

@@ -73,10 +73,8 @@ i18n/
 
 docs/
   ONBOARDING.md                 ← This file
-  TASK_ASSIGNMENT.md            ← Team task board
-  PROJECT_STATUS.md             ← Full technical status (Italian, detailed)
-  ROADMAP.md                    ← Prioritized roadmap (Italian, detailed)
-  SEO_GEO_AUDIT_PROGRESS.md     ← SEO/GEO implementation log
+  TASK_ASSIGNMENT.md            ← Team task board (sprint items, bug tracker, backlog)
+  SUPERVISOR_PRESENTATION.md    ← Project overview for supervisors (English)
 ```
 
 ---
@@ -205,6 +203,6 @@ Open `http://localhost:3000`. The app uses Next.js App Router with middleware (`
 
 ## Questions?
 
-Read `docs/PROJECT_STATUS.md` for full technical details (in Italian).
-Read `docs/ROADMAP.md` for the full task roadmap (in Italian).
+Read `docs/TASK_ASSIGNMENT.md` for sprint tasks, bug assignments, and the backlog.
+Read `docs/SUPERVISOR_PRESENTATION.md` for a non-technical project overview.
 Ask your teammate for context on any architectural decision.

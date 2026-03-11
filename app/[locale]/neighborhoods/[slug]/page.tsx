@@ -158,7 +158,7 @@ export default async function NeighborhoodDetailPage(props: PageProps) {
         <div className="container mx-auto py-12 px-6">
             <JsonLd data={placeSchema} />
             <JsonLd data={breadcrumbSchema} />
-            <Breadcrumbs />
+            <Breadcrumbs leafLabel={neighborhood.name} />
 
             <div className="relative w-full aspect-video overflow-hidden rounded-xl mb-8">
                 <Image
@@ -180,7 +180,9 @@ export default async function NeighborhoodDetailPage(props: PageProps) {
                     </div>
                 </div>
                 <div className="flex gap-4">
-                    <Button size="lg">{t("contactBtn")}</Button>
+                    <Button size="lg" asChild>
+                        <Link href="/contact">{t("contactBtn")}</Link>
+                    </Button>
                 </div>
             </div>
 

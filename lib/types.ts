@@ -140,7 +140,7 @@ export interface School {
   rawRegion?: string;          // raw location.region value from JSON (e.g. "Lisbon Region")
 
   // ── Phase 4: SEO/GEO structured data ───────────────────────────
-  coordinates: GeoCoordinates;
+  coordinates: GeoCoordinates | null;
 
   // ── i18n translations ───────────────────────────────────────────
   translations: { en: SchoolTranslation } & Partial<

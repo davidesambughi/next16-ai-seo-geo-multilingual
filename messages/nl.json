@@ -120,7 +120,7 @@
       "neighborhood": "Gewenste wijk (Optioneel)",
       "neighborhoodPlaceholder": "Selecteer een wijk",
       "message": "Vragen of opmerkingen",
-      "messagePlaceholder": "Vertel ons wat u zoekt..."
+      "messagePlaceholder": "Vertel ons over uw gezin: leeftijden van de kinderen, voorkeurswijk, budget en tijdlijn voor uw verhuizing naar Portugal."
     },
     "submitBtn": "Ontvang uw gepersonaliseerde gids",
     "submittingBtn": "Bezig met verzenden...",
@@ -777,6 +777,10 @@
     "contact": "Contact"
   },
   "NeighborhoodsList": {
+    "editorialOverline": "Redactionele Keuze",
+    "editorialHeading": "Onze Beste Buurtaanbevelingen",
+    "directoryOverline": "Volledig Overzicht",
+    "directoryHeading": "Alle Buurten in Portugal",
     "commute": "Reistijd",
     "nearby": "In de buurt",
     "explore": "Verkennen",
@@ -786,5 +790,9 @@
       "eastLisbon": "Oost-Lissabon",
       "greaterLisbon": "Groot-Lissabon"
     }
+  },
+  "ContactPage": {
+    "h1": "Contact",
+    "subtitle": "Onze relocatie-experts helpen u de juiste school en wijk in Portugal te vinden. Vul het formulier in en we nemen binnen één werkdag contact met u op."
   }
 }

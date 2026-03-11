@@ -120,7 +120,7 @@
       "neighborhood": "Gewünschte Gegend (Optional)",
       "neighborhoodPlaceholder": "Gegend auswählen",
       "message": "Fragen oder Kommentare",
-      "messagePlaceholder": "Erzählen Sie uns, was Sie suchen..."
+      "messagePlaceholder": "Erzählen Sie uns von Ihrer Familie: Alter der Kinder, bevorzugte Gegend, Budget und Zeitplan für den Umzug nach Portugal."
     },
     "submitBtn": "Persönlichen Leitfaden erhalten",
     "submittingBtn": "Wird gesendet...",
@@ -777,6 +777,10 @@
     "contact": "Kontakt"
   },
   "NeighborhoodsList": {
+    "editorialOverline": "Redaktionelle Auswahl",
+    "editorialHeading": "Unsere Top-Stadtteil-Empfehlungen",
+    "directoryOverline": "Vollständiges Verzeichnis",
+    "directoryHeading": "Alle Stadtteile in Portugal",
     "commute": "Pendeln",
     "nearby": "In der Nahe",
     "explore": "Entdecken",
@@ -786,5 +790,9 @@
       "eastLisbon": "Ost-Lissabon",
       "greaterLisbon": "Grossraum Lissabon"
     }
+  },
+  "ContactPage": {
+    "h1": "Kontakt",
+    "subtitle": "Unsere Relocation-Experten helfen Ihnen, die richtige Schule und Nachbarschaft in Portugal zu finden. Füllen Sie das Formular aus und wir melden uns innerhalb eines Werktages."
   }
 }

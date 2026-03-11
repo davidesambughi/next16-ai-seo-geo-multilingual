@@ -90,6 +90,7 @@ export async function submitLead(prevState: State, formData: FormData): Promise<
           access_key: accessKey,
           subject: 'Nuovo lead — TrustFamily Relocation',
           from_name: 'TrustFamily Funnel',
+          replyto: data.email,
           // Campi del lead
           'Full Name': data.fullName,
           Email: data.email,

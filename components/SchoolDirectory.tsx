@@ -108,7 +108,7 @@ export function SchoolDirectory({ schools }: { schools: SchoolDirectoryItem[] })
         if (filters.price === "contact" && min !== null) return false;
       }
 
-      if (filters.language === "english" && !s.englishAsPrimary) return false;
+      if (filters.language === "english" && s.englishAsPrimary !== true) return false;
       return true;
     });
   }, [schools, filters]);

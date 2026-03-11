@@ -6,7 +6,7 @@ import { ChevronRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { getBreadcrumbPath } from "@/lib/breadcrumbs";
 
-export function Breadcrumbs() {
+export function Breadcrumbs({ leafLabel }: { leafLabel?: string }) {
     const pathname = usePathname();
     const tNav = useTranslations("Navigation");
     const tCrumb = useTranslations("Breadcrumbs");
@@ -58,7 +58,8 @@ export function Breadcrumbs() {
                             .replace(/-/g, " ")
                             .replace(/\b\w/g, (char) => char.toUpperCase());
                     };
-                    const displayLabel = translatedLabel ?? formatSegment(segment);
+                    // For the leaf node, prefer the explicit entity name passed by the page.
+                    const displayLabel = (isLast && leafLabel) ? leafLabel : (translatedLabel ?? formatSegment(segment));
 
                     return (
                         <li key={segment} className="flex items-center">

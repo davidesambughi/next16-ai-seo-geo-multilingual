@@ -4,7 +4,8 @@ export const leadSchema = z.object({
   fullName: z
     .string()
     .min(2, { message: "Name must be at least 2 characters." })
-    .max(100, { message: "Name must be 100 characters or fewer." }),
+    .max(100, { message: "Name must be 100 characters or fewer." })
+    .regex(/^[^0-9]+$/, { message: "Name cannot contain numbers." }),
 
   email: z
     .string()
@@ -32,6 +33,9 @@ export const leadSchema = z.object({
   message: z
     .string()
     .max(2000, { message: "Message must be 2000 characters or fewer." })
+    .refine((val) => val.length === 0 || val.length >= 10, {
+      message: "Message must be at least 10 characters.",
+    })
     .optional(),
 });
 

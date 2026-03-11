@@ -335,8 +335,8 @@
       "student_nationalities": 26
     },
     "fees": {
-      "annual_min_eur": 7200.0,
-      "annual_max_eur": 8100.0,
+      "annual_min_eur": 7200,
+      "annual_max_eur": 8100,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -447,8 +447,8 @@
       "student_nationalities": null
     },
     "fees": {
-      "annual_min_eur": 6595.0,
-      "annual_max_eur": 13995.0,
+      "annual_min_eur": 6595,
+      "annual_max_eur": 13995,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -552,8 +552,8 @@
       "student_nationalities": 27
     },
     "fees": {
-      "annual_min_eur": 7050.0,
-      "annual_max_eur": 7050.0,
+      "annual_min_eur": 7050,
+      "annual_max_eur": 7050,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -667,8 +667,8 @@
       "student_nationalities": null
     },
     "fees": {
-      "annual_min_eur": 7140.0,
-      "annual_max_eur": 7140.0,
+      "annual_min_eur": 7140,
+      "annual_max_eur": 7140,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -777,8 +777,8 @@
       "student_nationalities": 30
     },
     "fees": {
-      "annual_min_eur": 8750.0,
-      "annual_max_eur": 16360.0,
+      "annual_min_eur": 8750,
+      "annual_max_eur": 16360,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -997,8 +997,8 @@
       "student_nationalities": 14
     },
     "fees": {
-      "annual_min_eur": 5235.0,
-      "annual_max_eur": 7998.0,
+      "annual_min_eur": 5235,
+      "annual_max_eur": 7998,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -1218,8 +1218,8 @@
       "student_nationalities": 16
     },
     "fees": {
-      "annual_min_eur": 6340.0,
-      "annual_max_eur": 9090.0,
+      "annual_min_eur": 6340,
+      "annual_max_eur": 9090,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -1327,8 +1327,8 @@
       "student_nationalities": 18
     },
     "fees": {
-      "annual_min_eur": 6405.0,
-      "annual_max_eur": 8432.0,
+      "annual_min_eur": 6405,
+      "annual_max_eur": 8432,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -1438,8 +1438,8 @@
       "student_nationalities": 8
     },
     "fees": {
-      "annual_min_eur": 11250.0,
-      "annual_max_eur": 13785.0,
+      "annual_min_eur": 11250,
+      "annual_max_eur": 13785,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -1542,8 +1542,8 @@
       "student_nationalities": null
     },
     "fees": {
-      "annual_min_eur": 5500.0,
-      "annual_max_eur": 6500.0,
+      "annual_min_eur": 5500,
+      "annual_max_eur": 6500,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -1767,8 +1767,8 @@
       "student_nationalities": 27
     },
     "fees": {
-      "annual_min_eur": 7143.0,
-      "annual_max_eur": 12408.0,
+      "annual_min_eur": 7143,
+      "annual_max_eur": 12408,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -1888,8 +1888,8 @@
       "student_nationalities": 45
     },
     "fees": {
-      "annual_min_eur": 7135.0,
-      "annual_max_eur": 14135.0,
+      "annual_min_eur": 7135,
+      "annual_max_eur": 14135,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -2005,8 +2005,8 @@
       "student_nationalities": null
     },
     "fees": {
-      "annual_min_eur": 7140.0,
-      "annual_max_eur": 7140.0,
+      "annual_min_eur": 7140,
+      "annual_max_eur": 7140,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -2120,8 +2120,8 @@
       "student_nationalities": null
     },
     "fees": {
-      "annual_min_eur": 7140.0,
-      "annual_max_eur": 7140.0,
+      "annual_min_eur": 7140,
+      "annual_max_eur": 7140,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -2458,8 +2458,8 @@
       "student_nationalities": null
     },
     "fees": {
-      "annual_min_eur": 7140.0,
-      "annual_max_eur": 7140.0,
+      "annual_min_eur": 7140,
+      "annual_max_eur": 7140,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -2573,8 +2573,8 @@
       "student_nationalities": null
     },
     "fees": {
-      "annual_min_eur": 7140.0,
-      "annual_max_eur": 7140.0,
+      "annual_min_eur": 7140,
+      "annual_max_eur": 7140,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -2688,8 +2688,8 @@
       "student_nationalities": null
     },
     "fees": {
-      "annual_min_eur": 7140.0,
-      "annual_max_eur": 7140.0,
+      "annual_min_eur": 7140,
+      "annual_max_eur": 7140,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -2803,8 +2803,8 @@
       "student_nationalities": null
     },
     "fees": {
-      "annual_min_eur": 7140.0,
-      "annual_max_eur": 7140.0,
+      "annual_min_eur": 7140,
+      "annual_max_eur": 7140,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -3023,8 +3023,8 @@
       "student_nationalities": 29
     },
     "fees": {
-      "annual_min_eur": 7205.0,
-      "annual_max_eur": 8756.0,
+      "annual_min_eur": 7205,
+      "annual_max_eur": 8756,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -3132,8 +3132,8 @@
       "student_nationalities": 38
     },
     "fees": {
-      "annual_min_eur": 11568.0,
-      "annual_max_eur": 18312.0,
+      "annual_min_eur": 11568,
+      "annual_max_eur": 18312,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -3353,8 +3353,8 @@
       "student_nationalities": null
     },
     "fees": {
-      "annual_min_eur": 9860.0,
-      "annual_max_eur": 12850.0,
+      "annual_min_eur": 9860,
+      "annual_max_eur": 12850,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -3470,8 +3470,8 @@
       "student_nationalities": 12
     },
     "fees": {
-      "annual_min_eur": 7140.0,
-      "annual_max_eur": 7140.0,
+      "annual_min_eur": 7140,
+      "annual_max_eur": 7140,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -3576,8 +3576,8 @@
       "student_nationalities": null
     },
     "fees": {
-      "annual_min_eur": 7650.0,
-      "annual_max_eur": 8750.0,
+      "annual_min_eur": 7650,
+      "annual_max_eur": 8750,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -3642,8 +3642,9 @@
       "city": "Lisbon",
       "region": "Portugal",
       "coordinates": {
-        "lat": 38.768962,
-        "lng": -9.380774
+        
+        "lat": 38.76880050809409,
+        "lng": -9.379711401417946
       },
       "commute_from_lisbon_center": null,
       "nearby_neighborhoods": null
@@ -3680,8 +3681,8 @@
       "student_nationalities": 62
     },
     "fees": {
-      "annual_min_eur": 12128.0,
-      "annual_max_eur": 23532.0,
+      "annual_min_eur": 12128,
+      "annual_max_eur": 23532,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -3895,8 +3896,8 @@
       "student_nationalities": 20
     },
     "fees": {
-      "annual_min_eur": 8141.0,
-      "annual_max_eur": 8364.0,
+      "annual_min_eur": 8141,
+      "annual_max_eur": 8364,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -3998,8 +3999,8 @@
       "student_nationalities": 6
     },
     "fees": {
-      "annual_min_eur": 13215.0,
-      "annual_max_eur": 15000.0,
+      "annual_min_eur": 13215,
+      "annual_max_eur": 15000,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -4118,8 +4119,8 @@
       "student_nationalities": 15
     },
     "fees": {
-      "annual_min_eur": 15100.0,
-      "annual_max_eur": 19800.0,
+      "annual_min_eur": 15100,
+      "annual_max_eur": 19800,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -4227,8 +4228,8 @@
       "student_nationalities": 17
     },
     "fees": {
-      "annual_min_eur": 9700.0,
-      "annual_max_eur": 10950.0,
+      "annual_min_eur": 9700,
+      "annual_max_eur": 10950,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -4335,8 +4336,8 @@
       "student_nationalities": 34
     },
     "fees": {
-      "annual_min_eur": 11548.0,
-      "annual_max_eur": 17755.0,
+      "annual_min_eur": 11548,
+      "annual_max_eur": 17755,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -4575,8 +4576,8 @@
       "student_nationalities": 50
     },
     "fees": {
-      "annual_min_eur": 11400.0,
-      "annual_max_eur": 26760.0,
+      "annual_min_eur": 11400,
+      "annual_max_eur": 26760,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -4702,8 +4703,8 @@
       "student_nationalities": null
     },
     "fees": {
-      "annual_min_eur": 11754.0,
-      "annual_max_eur": 21750.0,
+      "annual_min_eur": 11754,
+      "annual_max_eur": 21750,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -4810,8 +4811,8 @@
       "student_nationalities": null
     },
     "fees": {
-      "annual_min_eur": 7000.0,
-      "annual_max_eur": 9500.0,
+      "annual_min_eur": 7000,
+      "annual_max_eur": 9500,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -4916,8 +4917,8 @@
       "student_nationalities": 27
     },
     "fees": {
-      "annual_min_eur": 9190.0,
-      "annual_max_eur": 9890.0,
+      "annual_min_eur": 9190,
+      "annual_max_eur": 9890,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -5025,8 +5026,8 @@
       "student_nationalities": 15
     },
     "fees": {
-      "annual_min_eur": 5452.0,
-      "annual_max_eur": 6891.0,
+      "annual_min_eur": 5452,
+      "annual_max_eur": 6891,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -5132,8 +5133,8 @@
       "student_nationalities": 37
     },
     "fees": {
-      "annual_min_eur": 8410.0,
-      "annual_max_eur": 8880.0,
+      "annual_min_eur": 8410,
+      "annual_max_eur": 8880,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -5241,8 +5242,8 @@
       "student_nationalities": 50
     },
     "fees": {
-      "annual_min_eur": 13547.0,
-      "annual_max_eur": 21713.0,
+      "annual_min_eur": 13547,
+      "annual_max_eur": 21713,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -5362,8 +5363,8 @@
       "student_nationalities": 57
     },
     "fees": {
-      "annual_min_eur": 9380.0,
-      "annual_max_eur": 20850.0,
+      "annual_min_eur": 9380,
+      "annual_max_eur": 20850,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -5483,8 +5484,8 @@
       "student_nationalities": 51
     },
     "fees": {
-      "annual_min_eur": 11885.0,
-      "annual_max_eur": 22760.0,
+      "annual_min_eur": 11885,
+      "annual_max_eur": 22760,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -5599,8 +5600,8 @@
       "student_nationalities": 47
     },
     "fees": {
-      "annual_min_eur": 8600.0,
-      "annual_max_eur": 17900.0,
+      "annual_min_eur": 8600,
+      "annual_max_eur": 17900,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -5711,8 +5712,8 @@
       "student_nationalities": 31
     },
     "fees": {
-      "annual_min_eur": 12660.0,
-      "annual_max_eur": 15510.0,
+      "annual_min_eur": 12660,
+      "annual_max_eur": 15510,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -5931,8 +5932,8 @@
       "student_nationalities": 43
     },
     "fees": {
-      "annual_min_eur": 11500.0,
-      "annual_max_eur": 22000.0,
+      "annual_min_eur": 11500,
+      "annual_max_eur": 22000,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -6045,8 +6046,8 @@
       "student_nationalities": null
     },
     "fees": {
-      "annual_min_eur": 7900.0,
-      "annual_max_eur": 9250.0,
+      "annual_min_eur": 7900,
+      "annual_max_eur": 9250,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -6150,8 +6151,8 @@
       "student_nationalities": 10
     },
     "fees": {
-      "annual_min_eur": 8300.0,
-      "annual_max_eur": 8300.0,
+      "annual_min_eur": 8300,
+      "annual_max_eur": 8300,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -6223,8 +6224,8 @@
       "city": "Lisbon",
       "region": "Portugal",
       "coordinates": {
-        "lat": 38.685007,
-        "lng": -9.336222
+        "lat": 38.68503590639778,
+        "lng": -9.336226846132435
       },
       "commute_from_lisbon_center": null,
       "nearby_neighborhoods": null
@@ -6267,8 +6268,8 @@
       "student_nationalities": 61
     },
     "fees": {
-      "annual_min_eur": 12384.0,
-      "annual_max_eur": 29097.0,
+      "annual_min_eur": 12384,
+      "annual_max_eur": 29097,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -6378,8 +6379,8 @@
       "student_nationalities": 10
     },
     "fees": {
-      "annual_min_eur": 7380.0,
-      "annual_max_eur": 7380.0,
+      "annual_min_eur": 7380,
+      "annual_max_eur": 7380,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -6486,8 +6487,8 @@
       "student_nationalities": 60
     },
     "fees": {
-      "annual_min_eur": 12390.0,
-      "annual_max_eur": 23160.0,
+      "annual_min_eur": 12390,
+      "annual_max_eur": 23160,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -6588,8 +6589,8 @@
       "student_nationalities": 30
     },
     "fees": {
-      "annual_min_eur": 13110.0,
-      "annual_max_eur": 21375.0,
+      "annual_min_eur": 13110,
+      "annual_max_eur": 21375,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -6706,8 +6707,8 @@
       "student_nationalities": 28
     },
     "fees": {
-      "annual_min_eur": 11950.0,
-      "annual_max_eur": 21950.0,
+      "annual_min_eur": 11950,
+      "annual_max_eur": 21950,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -6815,8 +6816,8 @@
       "student_nationalities": 9
     },
     "fees": {
-      "annual_min_eur": 18000.0,
-      "annual_max_eur": 18000.0,
+      "annual_min_eur": 18000,
+      "annual_max_eur": 18000,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -6887,8 +6888,8 @@
       "city": "Lisbon",
       "region": "Lisbon",
       "coordinates": {
-        "lat": 38.756996,
-        "lng": -9.106957
+        "lat": 38.75673823585819,
+        "lng": -9.107781244803101
       },
       "commute_from_lisbon_center": null,
       "nearby_neighborhoods": null
@@ -6924,8 +6925,8 @@
       "student_nationalities": 54
     },
     "fees": {
-      "annual_min_eur": 11800.0,
-      "annual_max_eur": 24000.0,
+      "annual_min_eur": 11800,
+      "annual_max_eur": 24000,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -7049,8 +7050,8 @@
       "student_nationalities": null
     },
     "fees": {
-      "annual_min_eur": 7140.0,
-      "annual_max_eur": 7140.0,
+      "annual_min_eur": 7140,
+      "annual_max_eur": 7140,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -7160,8 +7161,8 @@
       "student_nationalities": 30
     },
     "fees": {
-      "annual_min_eur": 6120.0,
-      "annual_max_eur": 13140.0,
+      "annual_min_eur": 6120,
+      "annual_max_eur": 13140,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -7267,8 +7268,8 @@
       "student_nationalities": null
     },
     "fees": {
-      "annual_min_eur": 5300.0,
-      "annual_max_eur": 5900.0,
+      "annual_min_eur": 5300,
+      "annual_max_eur": 5900,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -7383,8 +7384,8 @@
       "student_nationalities": null
     },
     "fees": {
-      "annual_min_eur": 7140.0,
-      "annual_max_eur": 7140.0,
+      "annual_min_eur": 7140,
+      "annual_max_eur": 7140,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -7489,8 +7490,8 @@
       "student_nationalities": 40
     },
     "fees": {
-      "annual_min_eur": 9300.0,
-      "annual_max_eur": 11000.0,
+      "annual_min_eur": 9300,
+      "annual_max_eur": 11000,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -7596,8 +7597,8 @@
       "student_nationalities": 52
     },
     "fees": {
-      "annual_min_eur": 9140.0,
-      "annual_max_eur": 15190.0,
+      "annual_min_eur": 9140,
+      "annual_max_eur": 15190,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -7702,8 +7703,8 @@
       "student_nationalities": null
     },
     "fees": {
-      "annual_min_eur": 4860.0,
-      "annual_max_eur": 5910.0,
+      "annual_min_eur": 4860,
+      "annual_max_eur": 5910,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -7809,8 +7810,8 @@
       "student_nationalities": null
     },
     "fees": {
-      "annual_min_eur": 5112.0,
-      "annual_max_eur": 6214.0,
+      "annual_min_eur": 5112,
+      "annual_max_eur": 6214,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -7917,8 +7918,8 @@
       "student_nationalities": null
     },
     "fees": {
-      "annual_min_eur": 5238.0,
-      "annual_max_eur": 5471.0,
+      "annual_min_eur": 5238,
+      "annual_max_eur": 5471,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -8031,8 +8032,8 @@
       "student_nationalities": 30
     },
     "fees": {
-      "annual_min_eur": 9690.0,
-      "annual_max_eur": 17280.0,
+      "annual_min_eur": 9690,
+      "annual_max_eur": 17280,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -8136,8 +8137,8 @@
       "student_nationalities": null
     },
     "fees": {
-      "annual_min_eur": 5115.0,
-      "annual_max_eur": 5170.0,
+      "annual_min_eur": 5115,
+      "annual_max_eur": 5170,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,
@@ -8668,8 +8669,8 @@
       "student_nationalities": 44
     },
     "fees": {
-      "annual_min_eur": 9800.0,
-      "annual_max_eur": 17280.0,
+      "annual_min_eur": 9800,
+      "annual_max_eur": 17280,
       "currency": "EUR",
       "academic_year": null,
       "enrollment_fee": null,

@@ -120,7 +120,7 @@
       "neighborhood": "Quartier souhaité (Optionnel)",
       "neighborhoodPlaceholder": "Sélectionner un quartier",
       "message": "Questions ou commentaires",
-      "messagePlaceholder": "Dites-nous ce que vous recherchez..."
+      "messagePlaceholder": "Parlez-nous de votre famille : âges des enfants, zone souhaitée, budget et calendrier pour votre déménagement au Portugal."
     },
     "submitBtn": "Obtenir mon guide personnalisé",
     "submittingBtn": "Envoi en cours...",
@@ -777,6 +777,10 @@
     "contact": "Contact"
   },
   "NeighborhoodsList": {
+    "editorialOverline": "Sélection éditoriale",
+    "editorialHeading": "Nos Meilleures Recommandations de Quartiers",
+    "directoryOverline": "Répertoire complet",
+    "directoryHeading": "Tous les quartiers au Portugal",
     "commute": "Trajet",
     "nearby": "A proximite",
     "explore": "Explorer",
@@ -786,5 +790,9 @@
       "eastLisbon": "Lisbonne est",
       "greaterLisbon": "Grand Lisbonne"
     }
+  },
+  "ContactPage": {
+    "h1": "Contactez-nous",
+    "subtitle": "Nos experts en relocalisation sont là pour vous aider à trouver la bonne école et le bon quartier au Portugal. Remplissez le formulaire ci-dessous et nous vous répondrons dans un jour ouvré."
   }
 }
