@@ -1,4 +1,4 @@
-# TrustFamily — robots.txt
+# Raising Kids in Portugal — robots.txt
 # Last updated: February 2026
 
 # ── Standard crawlers ───────────────────────────────────────────────────────────
@@ -38,4 +38,4 @@ User-agent: anthropic-ai
 Disallow: /
 
 # ── Sitemap ──────────────────────────────────────────────────────────────────
-Sitemap: https://trustfamily.com/sitemap.xml
+Sitemap: https://raisingkidsinportugal.com/sitemap.xml

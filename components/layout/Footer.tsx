@@ -7,7 +7,7 @@ export default function Footer() {
                 {/* Brand */}
                 <div>
                     <Link href="/" className="font-serif text-2xl font-semibold text-[var(--footer-heading)] mb-3 block tracking-tight">
-                        TrustFamily
+                        Raising Kids in Portugal
                     </Link>
                     <p className="text-[var(--footer-text-muted)] text-sm leading-relaxed">
                         Independent intelligence for families relocating to Portugal.
@@ -45,7 +45,7 @@ export default function Footer() {
                     <h3 className="text-[var(--footer-heading)] font-semibold mb-3 text-sm uppercase tracking-wide">Company</h3>
                     <div className="flex flex-col gap-2 text-sm">
                         <Link href="/about" className="hover:text-[var(--footer-heading)] transition-colors">
-                            About TrustFamily
+                            About Raising Kids in Portugal
                         </Link>
                         <Link href="/contact" className="hover:text-[var(--footer-heading)] transition-colors">
                             Contact Us
@@ -65,7 +65,7 @@ export default function Footer() {
                         </Link>
                     </div>
                     <p className="text-[var(--footer-text-muted)] text-xs mt-6">
-                        © {new Date().getFullYear()} TrustFamily.<br />
+                        © {new Date().getFullYear()} Raising Kids in Portugal.<br />
                         All rights reserved.
                     </p>
                 </div>

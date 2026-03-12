@@ -18,7 +18,7 @@ interface PageProps {
 export async function generateMetadata({ params }: PageProps) {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: "SchoolsGuidePage" });
-    const base = process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com';
+    const base = process.env.NEXT_PUBLIC_BASE_URL || 'https://raisingkidsinportugal.com';
     const title = t("metaTitle");
     const description = t("metaDescription");
     return {
@@ -27,12 +27,12 @@ export async function generateMetadata({ params }: PageProps) {
         alternates: {
             canonical: `${base}/en/best-private-and-public-international-schools-portugal-2026`,
             languages: {
-                'en': `${process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com'}/en/best-private-and-public-international-schools-portugal-2026`,
-                'pt': `${process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com'}/pt/melhores-escolas-internacionais-privadas-e-publicas-portugal-2026`,
-                'de': `${process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com'}/de/beste-private-und-offentliche-internationale-schulen-portugal-2026`,
-                'fr': `${process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com'}/fr/meilleures-ecoles-internationales-privees-et-publiques-portugal-2026`,
-                'nl': `${process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com'}/nl/beste-prive-en-openbare-internationale-scholen-portugal-2026`,
-                'es': `${process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com'}/es/mejores-escuelas-internacionales-privadas-y-publicas-portugal-2026`,
+                'en': `${process.env.NEXT_PUBLIC_BASE_URL || 'https://raisingkidsinportugal.com'}/en/best-private-and-public-international-schools-portugal-2026`,
+                'pt': `${process.env.NEXT_PUBLIC_BASE_URL || 'https://raisingkidsinportugal.com'}/pt/melhores-escolas-internacionais-privadas-e-publicas-portugal-2026`,
+                'de': `${process.env.NEXT_PUBLIC_BASE_URL || 'https://raisingkidsinportugal.com'}/de/beste-private-und-offentliche-internationale-schulen-portugal-2026`,
+                'fr': `${process.env.NEXT_PUBLIC_BASE_URL || 'https://raisingkidsinportugal.com'}/fr/meilleures-ecoles-internationales-privees-et-publiques-portugal-2026`,
+                'nl': `${process.env.NEXT_PUBLIC_BASE_URL || 'https://raisingkidsinportugal.com'}/nl/beste-prive-en-openbare-internationale-scholen-portugal-2026`,
+                'es': `${process.env.NEXT_PUBLIC_BASE_URL || 'https://raisingkidsinportugal.com'}/es/mejores-escuelas-internacionales-privadas-y-publicas-portugal-2026`,
                 'x-default': `${base}/en/best-private-and-public-international-schools-portugal-2026`,
             },
         },
@@ -40,9 +40,9 @@ export async function generateMetadata({ params }: PageProps) {
             title,
             description,
             url: `${base}/en/best-private-and-public-international-schools-portugal-2026`,
-            siteName: "TrustFamily",
+            siteName: "Raising Kids in Portugal",
             type: "article",
-            images: [{ url: `${base}/opengraph-image`, width: 1200, height: 630, alt: 'TrustFamily — International Schools & Neighborhoods in Portugal' }],
+            images: [{ url: `${base}/opengraph-image`, width: 1200, height: 630, alt: 'Raising Kids in Portugal — International Schools & Neighborhoods in Portugal' }],
         },
         twitter: {
             card: "summary_large_image",
@@ -77,7 +77,7 @@ export default async function Page({ params }: PageProps) {
             "@type": "SpeakableSpecification",
             "cssSelector": ["#key-takeaways", "#faq"],
         },
-        "url": `${process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com'}/en/best-private-and-public-international-schools-portugal-2026`,
+        "url": `${process.env.NEXT_PUBLIC_BASE_URL || 'https://raisingkidsinportugal.com'}/en/best-private-and-public-international-schools-portugal-2026`,
     };
 
     const itemListSchema = {
@@ -85,7 +85,7 @@ export default async function Page({ params }: PageProps) {
         "@type": "ItemList",
         "name": "Best International Schools in Portugal 2026",
         "description": "Independent ranking of the top private and public international schools in Portugal, comparing IB, British and American curricula.",
-        "url": `${process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com'}/en/best-private-and-public-international-schools-portugal-2026`,
+        "url": `${process.env.NEXT_PUBLIC_BASE_URL || 'https://raisingkidsinportugal.com'}/en/best-private-and-public-international-schools-portugal-2026`,
         "numberOfItems": schoolsData.length,
         "itemListElement": schoolsData.map((school, i) => ({
             "@type": "ListItem",
@@ -94,7 +94,7 @@ export default async function Page({ params }: PageProps) {
                 "@type": "EducationalOrganization",
                 "name": school.name,
                 "description": school.translations.en.description,
-                "url": `${process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com'}/en/school/${school.slug}`,
+                "url": `${process.env.NEXT_PUBLIC_BASE_URL || 'https://raisingkidsinportugal.com'}/en/school/${school.slug}`,
                 "address": { "@type": "PostalAddress", "addressLocality": school.location, "addressCountry": "PT" },
                 ...(school.coordinates && {
                     "geo": { "@type": "GeoCoordinates", "latitude": school.coordinates.lat, "longitude": school.coordinates.lng },
@@ -156,7 +156,7 @@ export default async function Page({ params }: PageProps) {
             <div className="relative w-full aspect-4/3 sm:aspect-video overflow-hidden rounded-xl mb-10">
                 <Image
                     src="/schools-img.jpg"
-                    alt="International school campus in Portugal — TrustFamily schools guide"
+                    alt="International school campus in Portugal — Raising Kids in Portugal schools guide"
                     fill
                     priority
                     sizes="(max-width: 768px) 100vw, 896px"
@@ -304,7 +304,7 @@ export default async function Page({ params }: PageProps) {
                 <div className="relative w-full aspect-21/9 overflow-hidden rounded-2xl">
                     <Image
                         src="/school-respiro-img.png"
-                        alt="International school campus in Portugal — TrustFamily editorial visit"
+                        alt="International school campus in Portugal — Raising Kids in Portugal editorial visit"
                         fill
                         loading="lazy"
                         sizes="(max-width: 768px) 100vw, 896px"

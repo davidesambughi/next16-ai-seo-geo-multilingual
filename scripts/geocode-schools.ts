@@ -44,7 +44,7 @@ async function geocode(
   const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(query)}&format=json&limit=1`;
 
   const res = await fetch(url, {
-    headers: { "User-Agent": "TrustFamily-geocoder/1.0" },
+    headers: { "User-Agent": "Raising Kids in Portugal-geocoder/1.0" },
   });
 
   if (!res.ok) {

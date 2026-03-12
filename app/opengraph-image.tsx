@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';
-export const alt = 'TrustFamily Relocation — Best International Schools & Neighborhoods in Portugal';
+export const alt = 'Raising Kids in Portugal Relocation — Best International Schools & Neighborhoods in Portugal';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -50,7 +50,7 @@ export default function OgImage() {
                         🏡
                     </div>
                     <span style={{ color: '#38bdf8', fontSize: '28px', fontWeight: 700, letterSpacing: '-0.5px' }}>
-                        TrustFamily
+                        Raising Kids in Portugal
                     </span>
                 </div>
 

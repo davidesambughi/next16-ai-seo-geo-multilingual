@@ -14,18 +14,18 @@ interface PageProps {
   params: Promise<{ locale: string; slug: string }>;
 }
 
-const BASE = process.env.NEXT_PUBLIC_BASE_URL || "https://trustfamily.com";
+const BASE = process.env.NEXT_PUBLIC_BASE_URL || "https://raisingkidsinportugal.com";
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug, locale } = await params;
   const article = getBlogArticle(slug);
 
-  if (!article) return { title: "Article not found | TrustFamily" };
+  if (!article) return { title: "Article not found | Raising Kids in Portugal" };
 
   const canonicalUrl = `${BASE}/en/blog/${article.slug}`;
 
   return {
-    title: `${article.title} | TrustFamily`,
+    title: `${article.title} | Raising Kids in Portugal`,
     description: article.intro.slice(0, 160),
     alternates: {
       canonical: canonicalUrl,
@@ -40,19 +40,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       },
     },
     openGraph: {
-      title: `${article.title} | TrustFamily`,
+      title: `${article.title} | Raising Kids in Portugal`,
       description: article.intro.slice(0, 160),
       url: canonicalUrl,
-      siteName: "TrustFamily",
+      siteName: "Raising Kids in Portugal",
       type: "article",
       publishedTime: article.datePublished,
       modifiedTime: article.dateModified,
-      authors: ["TrustFamily Editorial Team"],
-      images: [{ url: `${BASE}/opengraph-image`, width: 1200, height: 630, alt: 'TrustFamily — International Schools & Neighborhoods in Portugal' }],
+      authors: ["Raising Kids in Portugal Editorial Team"],
+      images: [{ url: `${BASE}/opengraph-image`, width: 1200, height: 630, alt: 'Raising Kids in Portugal — International Schools & Neighborhoods in Portugal' }],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${article.title} | TrustFamily`,
+      title: `${article.title} | Raising Kids in Portugal`,
       description: article.intro.slice(0, 160),
     },
   };
@@ -82,13 +82,13 @@ export default async function BlogPostPage({ params }: PageProps) {
     "url": canonicalUrl,
     "author": {
       "@type": "Person",
-      "name": "TrustFamily Editorial Team",
+      "name": "Raising Kids in Portugal Editorial Team",
       "url": `${BASE}/en/about`,
-      "worksFor": { "@type": "Organization", "name": "TrustFamily", "url": BASE },
+      "worksFor": { "@type": "Organization", "name": "Raising Kids in Portugal", "url": BASE },
     },
     "publisher": {
       "@type": "Organization",
-      "name": "TrustFamily",
+      "name": "Raising Kids in Portugal",
       "logo": { "@type": "ImageObject", "url": `${BASE}/logo.png` },
       "url": BASE,
     },

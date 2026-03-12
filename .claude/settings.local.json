@@ -5,7 +5,7 @@
       "Bash(git:*)",
       "Bash(node:*)",
       "mcp__ide__getDiagnostics",
-      "Bash(find \"C:\\\\Users\\\\sambu\\\\school-funnel4\\\\trustfamily-relocation-funnel\\\\components\" -type f -name \"*.tsx\" 2>/dev/null | wc -l)"
+      "Bash(find \"C:\\\\Users\\\\sambu\\\\school-funnel4\\\\raisingkidsinportugal-relocation-funnel\\\\components\" -type f -name \"*.tsx\" 2>/dev/null | wc -l)"
     ]
   }
 }

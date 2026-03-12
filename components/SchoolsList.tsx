@@ -189,7 +189,7 @@ export async function SchoolsList() {
             {t("editorialTopPicks")}
           </h3>
           <span className="text-xs font-medium px-2.5 py-1 rounded-full bg-warm-light text-warm border border-warm/20">
-            {t("trustFamilyVerified")}
+            {t("raisingKidsInPortugalVerified")}
           </span>
         </div>
 
@@ -262,7 +262,7 @@ export async function SchoolsList() {
                     {school.inspectionDate && (
                       <div className="flex items-center gap-2 text-xs text-ink-muted">
                         <CalendarCheck className="h-3 w-3 shrink-0" />
-                        <span>{t("trustFamilyInspectedLabel")}: {school.inspectionDate}</span>
+                        <span>{t("raisingKidsInPortugalInspectedLabel")}: {school.inspectionDate}</span>
                         {school.visitCount && (
                           <span>| {school.visitCount} {t("visitsLabel")}</span>
                         )}

@@ -62,12 +62,12 @@ const header = {
     "{count} escuelas evaluadas"
   ),
   byline: t(
-    "TrustFamily Editorial",
-    "TrustFamily Editorial",
-    "TrustFamily Editorial",
-    "TrustFamily Éditorial",
-    "TrustFamily Redactioneel",
-    "TrustFamily Editorial"
+    "Raising Kids in Portugal Editorial",
+    "Raising Kids in Portugal Editorial",
+    "Raising Kids in Portugal Editorial",
+    "Raising Kids in Portugal Éditorial",
+    "Raising Kids in Portugal Redactioneel",
+    "Raising Kids in Portugal Editorial"
   ),
   h1: t(
     "Best Private & Public International Schools Portugal 2026",
@@ -238,7 +238,7 @@ const curriculum = {
     "La decisión curricular es la elección más trascendente que tomará — y la que la mayoría de las familias subestima. Afecta a las admisiones universitarias, los calendarios de exámenes y la fluidez con la que sus hijos se adaptan si se trasladan de nuevo."
   ),
   offeredBy: t("Offered by:", "Oferecido por:", "Angeboten von:", "Proposé par :", "Aangeboden door:", "Ofrecido por:"),
-  notePrefix: t("TrustFamily note:", "Nota TrustFamily:", "TrustFamily-Hinweis:", "Note TrustFamily :", "TrustFamily-opmerking:", "Nota TrustFamily:"),
+  notePrefix: t("Raising Kids in Portugal note:", "Nota Raising Kids in Portugal:", "Raising Kids in Portugal-Hinweis:", "Note Raising Kids in Portugal :", "Raising Kids in Portugal-opmerking:", "Nota Raising Kids in Portugal:"),
   noteText: t(
     " If you're genuinely undecided between British and American tracks, choose a school with a strong IB Diploma programme — all four schools on this list qualify. The IB eliminates the conversion problem if your family moves again.",
     " Se estiver genuinamente indeciso entre os percursos britânico e americano, escolha uma escola com um forte programa de Diploma IB — todas as quatro escolas desta lista qualificam. O IB elimina o problema de conversão se a sua família se mudar novamente.",
@@ -373,12 +373,12 @@ const admissions = {
   acceptanceLabel: t("Acceptance:", "Aceitação:", "Aufnahme:", "Acceptation :", "Acceptatie:", "Aceptación:"),
   waitLabel:       t("Wait:",       "Espera:",    "Wartezeit:", "Attente :",    "Wachttijd:", "Espera:"),
   ruleH3: t(
-    "TrustFamily's admissions rule",
-    "A regra de admissões da TrustFamily",
-    "TrustFamilys Zulassungsregel",
-    "La règle d'admission de TrustFamily",
-    "TrustFamily's toelatingregel",
-    "La regla de admisiones de TrustFamily"
+    "Raising Kids in Portugal's admissions rule",
+    "A regra de admissões da Raising Kids in Portugal",
+    "Raising Kids in Portugals Zulassungsregel",
+    "La règle d'admission de Raising Kids in Portugal",
+    "Raising Kids in Portugal's toelatingregel",
+    "La regla de admisiones de Raising Kids in Portugal"
   ),
   ruleText: t(
     "Apply to a minimum of 2–3 schools simultaneously. Request a shadow day at each shortlisted school — where your child attends classes for a full morning — before signing any enrolment contract. Most schools offer this if asked directly at enquiry stage, even if it isn't advertised.",
@@ -450,28 +450,28 @@ const admissionsCards = [
 
 const methodology = {
   h2: t(
-    "5. How TrustFamily assessed these schools",
-    "5. Como a TrustFamily avaliou estas escolas",
-    "5. Wie TrustFamily diese Schulen bewertet hat",
-    "5. Comment TrustFamily a évalué ces écoles",
-    "5. Hoe TrustFamily deze scholen beoordeelde",
-    "5. Cómo TrustFamily evaluó estas escuelas"
+    "5. How Raising Kids in Portugal assessed these schools",
+    "5. Como a Raising Kids in Portugal avaliou estas escolas",
+    "5. Wie Raising Kids in Portugal diese Schulen bewertet hat",
+    "5. Comment Raising Kids in Portugal a évalué ces écoles",
+    "5. Hoe Raising Kids in Portugal deze scholen beoordeelde",
+    "5. Cómo Raising Kids in Portugal evaluó estas escuelas"
   ),
   p1: t(
-    "Every school on this list has been visited in person by a TrustFamily consultant at least 3 times between 2023 and 2025. Our assessment combines structured school visits, interviews with current families, and verification of published data against primary sources.",
-    "Todas as escolas desta lista foram visitadas pessoalmente por um consultor da TrustFamily pelo menos 3 vezes entre 2023 e 2025. A nossa avaliação combina visitas escolares estruturadas, entrevistas com famílias atuais e verificação de dados publicados contra fontes primárias.",
-    "Jede Schule auf dieser Liste wurde zwischen 2023 und 2025 mindestens 3 Mal persönlich von einem TrustFamily-Berater besucht. Unsere Bewertung kombiniert strukturierte Schulbesuche, Interviews mit aktuellen Familien und die Überprüfung veröffentlichter Daten anhand primärer Quellen.",
-    "Chaque école de cette liste a été visitée en personne par un consultant TrustFamily au moins 3 fois entre 2023 et 2025. Notre évaluation combine des visites scolaires structurées, des entretiens avec des familles actuelles et la vérification des données publiées par rapport aux sources primaires.",
-    "Elke school op deze lijst is tussen 2023 en 2025 minimaal 3 keer persoonlijk bezocht door een TrustFamily-consultant. Onze beoordeling combineert gestructureerde schoolbezoeken, interviews met huidige gezinnen en verificatie van gepubliceerde gegevens aan de hand van primaire bronnen.",
-    "Cada escuela de esta lista ha sido visitada en persona por un consultor de TrustFamily al menos 3 veces entre 2023 y 2025. Nuestra evaluación combina visitas escolares estructuradas, entrevistas con familias actuales y verificación de datos publicados frente a fuentes primarias."
+    "Every school on this list has been visited in person by a Raising Kids in Portugal consultant at least 3 times between 2023 and 2025. Our assessment combines structured school visits, interviews with current families, and verification of published data against primary sources.",
+    "Todas as escolas desta lista foram visitadas pessoalmente por um consultor da Raising Kids in Portugal pelo menos 3 vezes entre 2023 e 2025. A nossa avaliação combina visitas escolares estruturadas, entrevistas com famílias atuais e verificação de dados publicados contra fontes primárias.",
+    "Jede Schule auf dieser Liste wurde zwischen 2023 und 2025 mindestens 3 Mal persönlich von einem Raising Kids in Portugal-Berater besucht. Unsere Bewertung kombiniert strukturierte Schulbesuche, Interviews mit aktuellen Familien und die Überprüfung veröffentlichter Daten anhand primärer Quellen.",
+    "Chaque école de cette liste a été visitée en personne par un consultant Raising Kids in Portugal au moins 3 fois entre 2023 et 2025. Notre évaluation combine des visites scolaires structurées, des entretiens avec des familles actuelles et la vérification des données publiées par rapport aux sources primaires.",
+    "Elke school op deze lijst is tussen 2023 en 2025 minimaal 3 keer persoonlijk bezocht door een Raising Kids in Portugal-consultant. Onze beoordeling combineert gestructureerde schoolbezoeken, interviews met huidige gezinnen en verificatie van gepubliceerde gegevens aan de hand van primaire bronnen.",
+    "Cada escuela de esta lista ha sido visitada en persona por un consultor de Raising Kids in Portugal al menos 3 veces entre 2023 y 2025. Nuestra evaluación combina visitas escolares estructuradas, entrevistas con familias actuales y verificación de datos publicados frente a fuentes primarias."
   ),
   p2: t(
-    "Schools pay nothing to appear on this list and cannot pay to alter their position, verdict, or any published data. TrustFamily's editorial process is fully independent.",
-    "As escolas não pagam nada para aparecer nesta lista e não podem pagar para alterar a sua posição, veredicto ou quaisquer dados publicados. O processo editorial da TrustFamily é totalmente independente.",
-    "Schulen zahlen nichts dafür, auf dieser Liste zu erscheinen, und können nicht zahlen, um ihre Position, ihr Urteil oder veröffentlichte Daten zu ändern. TrustFamilys redaktioneller Prozess ist vollständig unabhängig.",
-    "Les écoles ne paient rien pour figurer sur cette liste et ne peuvent pas payer pour modifier leur position, leur verdict ou les données publiées. Le processus éditorial de TrustFamily est entièrement indépendant.",
-    "Scholen betalen niets om op deze lijst te verschijnen en kunnen niet betalen om hun positie, oordeel of gepubliceerde gegevens te wijzigen. Het redactionele proces van TrustFamily is volledig onafhankelijk.",
-    "Las escuelas no pagan nada por aparecer en esta lista y no pueden pagar para modificar su posición, veredicto o cualquier dato publicado. El proceso editorial de TrustFamily es completamente independiente."
+    "Schools pay nothing to appear on this list and cannot pay to alter their position, verdict, or any published data. Raising Kids in Portugal's editorial process is fully independent.",
+    "As escolas não pagam nada para aparecer nesta lista e não podem pagar para alterar a sua posição, veredicto ou quaisquer dados publicados. O processo editorial da Raising Kids in Portugal é totalmente independente.",
+    "Schulen zahlen nichts dafür, auf dieser Liste zu erscheinen, und können nicht zahlen, um ihre Position, ihr Urteil oder veröffentlichte Daten zu ändern. Raising Kids in Portugals redaktioneller Prozess ist vollständig unabhängig.",
+    "Les écoles ne paient rien pour figurer sur cette liste et ne peuvent pas payer pour modifier leur position, leur verdict ou les données publiées. Le processus éditorial de Raising Kids in Portugal est entièrement indépendant.",
+    "Scholen betalen niets om op deze lijst te verschijnen en kunnen niet betalen om hun positie, oordeel of gepubliceerde gegevens te wijzigen. Het redactionele proces van Raising Kids in Portugal is volledig onafhankelijk.",
+    "Las escuelas no pagan nada por aparecer en esta lista y no pueden pagar para modificar su posición, veredicto o cualquier dato publicado. El proceso editorial de Raising Kids in Portugal es completamente independiente."
   ),
 } as const;
 

@@ -27,8 +27,8 @@ export async function generateMetadata({ params }: PageProps) {
     if (!neighborhood) return { title: t("title") };
 
     const nbhT = getNeighborhoodT(neighborhood, locale);
-    const base = process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com';
-    const title = `${neighborhood.name} — Family Friendly Neighborhood Portugal | TrustFamily`;
+    const base = process.env.NEXT_PUBLIC_BASE_URL || 'https://raisingkidsinportugal.com';
+    const title = `${neighborhood.name} — Family Friendly Neighborhood Portugal | Raising Kids in Portugal`;
     const description = `${nbhT.description} Vibe: ${nbhT.vibe}. ${nbhT.highlights.join(", ")}.`;
     const neighborhoodPaths = routing.pathnames['/neighborhoods/[slug]'] as Record<string, string>;
     const canonical = `${base}/en${neighborhoodPaths.en.replace('[slug]', neighborhood.slug)}`;
@@ -47,9 +47,9 @@ export async function generateMetadata({ params }: PageProps) {
             title,
             description,
             url: canonical,
-            siteName: "TrustFamily",
+            siteName: "Raising Kids in Portugal",
             type: "website",
-            images: [{ url: `${base}/opengraph-image`, width: 1200, height: 630, alt: 'TrustFamily — International Schools & Neighborhoods in Portugal' }],
+            images: [{ url: `${base}/opengraph-image`, width: 1200, height: 630, alt: 'Raising Kids in Portugal — International Schools & Neighborhoods in Portugal' }],
         },
         twitter: {
             card: "summary_large_image",
@@ -107,7 +107,7 @@ export default async function NeighborhoodDetailPage(props: PageProps) {
     const nbhT = getNeighborhoodT(neighborhood, locale);
 
     const enT = neighborhood.translations.en;
-    const base = process.env.NEXT_PUBLIC_BASE_URL || "https://trustfamily.com";
+    const base = process.env.NEXT_PUBLIC_BASE_URL || "https://raisingkidsinportugal.com";
 
     // Destructure optional structured data for convenience
     const { realEstate, familyLiving, demographics, costOfLiving, expatCommunity, transport } = neighborhood;

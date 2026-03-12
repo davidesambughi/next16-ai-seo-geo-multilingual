@@ -1,7 +1,7 @@
 {
   "HomePage": {
     "title": "Home",
-    "metaTitle": "TrustFamily Relocation - Beste internationale scholen & buurten in Portugal",
+    "metaTitle": "Raising Kids in Portugal Relocation - Beste internationale scholen & buurten in Portugal",
     "metaDescription": "Onafhankelijke gids voor verhuizen naar Portugal. Vergelijk de beste internationale scholen, vind gezinsvriendelijke buurten en krijg deskundig advies.",
     "testimonialsOverline": "Wat gezinnen zeggen",
     "testimonialsH2": "Echte verhalen van gezinnen die de stap zetten"
@@ -23,13 +23,13 @@
     "about": "Over ons"
   },
   "Metadata": {
-    "title": "TrustFamily Relocation - Beste scholen & buurten in Portugal",
+    "title": "Raising Kids in Portugal Relocation - Beste scholen & buurten in Portugal",
     "description": "Expertgids voor gezinsverhuizingen naar Portugal. Vind de beste internationale scholen en gezinsvriendelijke buurten."
   },
   "Hero": {
     "overline": "De onafhankelijke gids · Portugal 2026",
     "title": "Zeker de Toekomst van Uw Kinderen in Portugal",
-    "subtitle": "TrustFamily is de onafhankelijke gids voor internationale gezinnen die naar Portugal verhuizen. We vergelijken alle toonaangevende internationale scholen in de buurt van Lissabon — IB-, Brits en Amerikaans curriculum bij St. Julian's, TASIS Portugal, CAISL en United Lisbon — brengen gezinsvriendelijke wijken in Cascais, Sintra en Parque das Nações in kaart, en begeleiden u stap voor stap door de D7-, D8- en Golden Visa-opties. Twee jaar schoolbezoeken ter plaatse, 200+ gezinnen, geen commerciële relaties: het eerlijke, gestructureerde onderzoek dat u nodig heeft voordat u beslist."
+    "subtitle": "Raising Kids in Portugal is de onafhankelijke gids voor internationale gezinnen die naar Portugal verhuizen. We vergelijken alle toonaangevende internationale scholen in de buurt van Lissabon — IB-, Brits en Amerikaans curriculum bij St. Julian's, TASIS Portugal, CAISL en United Lisbon — brengen gezinsvriendelijke wijken in Cascais, Sintra en Parque das Nações in kaart, en begeleiden u stap voor stap door de D7-, D8- en Golden Visa-opties. Twee jaar schoolbezoeken ter plaatse, 200+ gezinnen, geen commerciële relaties: het eerlijke, gestructureerde onderzoek dat u nodig heeft voordat u beslist."
   },
   "TrustBar": {
     "independent": "100% onafhankelijke data",
@@ -127,11 +127,11 @@
     "privacyNote": "Wij respecteren uw privacy. Geen spam, nooit."
   },
   "SchoolsGuidePage": {
-    "metaTitle": "Beste internationale scholen Portugal 2026 — Privaat & Openbaar | TrustFamily",
+    "metaTitle": "Beste internationale scholen Portugal 2026 — Privaat & Openbaar | Raising Kids in Portugal",
     "metaDescription": "Onafhankelijke gids voor de beste private en openbare internationale scholen in Portugal 2026. Vergelijk IB-, Britse en Amerikaanse curricula, schoolgeld en acceptatiepercentages."
   },
   "NeighborhoodsGuidePage": {
-    "metaTitle": "Best family-friendly neighborhoods Portugal 2026 | TrustFamily",
+    "metaTitle": "Best family-friendly neighborhoods Portugal 2026 | Raising Kids in Portugal",
     "metaDescription": "Compare top neighborhoods for families in Portugal by commute, lifestyle, and school proximity.",
     "sticky": {
       "title": "In deze gids",
@@ -141,7 +141,7 @@
     "header": {
       "updated": "Bijgewerkt februari 2026",
       "reviewed": "{count} buurten beoordeeld",
-      "editorial": "TrustFamily Editorial",
+      "editorial": "Raising Kids in Portugal Editorial",
       "title": "Beste gezinsvriendelijke buurten in Portugal 2026",
       "subtitle": "Waar gezinnen echt kiezen om te wonen en waarom."
     },
@@ -270,7 +270,7 @@
           ]
         }
       ],
-      "verdictLabel": "TrustFamily oordeel:",
+      "verdictLabel": "Raising Kids in Portugal oordeel:",
       "verdict": "Pick Cascais for network; pick Estoril for quiet."
     },
     "sintra": {
@@ -368,7 +368,7 @@
     }
   },
   "RelocationGuidePage": {
-    "metaTitle": "Family Relocation Guide Portugal 2026 | TrustFamily",
+    "metaTitle": "Family Relocation Guide Portugal 2026 | Raising Kids in Portugal",
     "metaDescription": "Visa, schools, housing and timeline for family relocation to Portugal.",
     "sticky": {
       "title": "In deze gids",
@@ -378,7 +378,7 @@
     "header": {
       "updated": "Bijgewerkt februari 2026",
       "readTime": "25 min leestijd",
-      "editorial": "TrustFamily Editorial",
+      "editorial": "Raising Kids in Portugal Editorial",
       "title": "Gezinsverhuisgids Portugal 2026",
       "subtitle": "Praktische roadmap voor visum, school, wonen en planning."
     },
@@ -592,10 +592,10 @@
     }
   },
   "AboutPage": {
-    "metaTitle": "Over TrustFamily — Onafhankelijke school- en verhuisinformatie voor Portugal",
-    "metaDescription": "TrustFamily is een onafhankelijk platform dat internationale gezinnen helpt met vertrouwen naar Portugal te verhuizen. Wij verifiëren scholen, buurten en verhuisgegevens — zonder betaalde plaatsingen en zonder belangenconflicten.",
+    "metaTitle": "Over Raising Kids in Portugal — Onafhankelijke school- en verhuisinformatie voor Portugal",
+    "metaDescription": "Raising Kids in Portugal is een onafhankelijk platform dat internationale gezinnen helpt met vertrouwen naar Portugal te verhuizen. Wij verifiëren scholen, buurten en verhuisgegevens — zonder betaalde plaatsingen en zonder belangenconflicten.",
     "h1": "De betrouwbare gids voor gezinnen die naar Portugal verhuizen",
-    "opening": "TrustFamily is gebouwd op één uitgangspunt: verhuizende gezinnen verdienen geverifieerde, onbevooroordeelde informatie — geen gesponsorde inhoud vermomd als advies. We bieden onafhankelijke school- en buurtinformatie zodat u een van de belangrijkste beslissingen voor uw kinderen met vertrouwen kunt nemen.",
+    "opening": "Raising Kids in Portugal is gebouwd op één uitgangspunt: verhuizende gezinnen verdienen geverifieerde, onbevooroordeelde informatie — geen gesponsorde inhoud vermomd als advies. We bieden onafhankelijke school- en buurtinformatie zodat u een van de belangrijkste beslissingen voor uw kinderen met vertrouwen kunt nemen.",
     "stat1Value": "200+",
     "stat1Label": "begeleidde gezinnen",
     "stat2Value": "50+",
@@ -604,23 +604,23 @@
     "stat3Label": "topscholen onafhankelijk beoordeeld",
     "stat4Value": "5",
     "stat4Label": "buurten gedetailleerd in kaart gebracht",
-    "whatWeDoH2": "Wat TrustFamily doet",
+    "whatWeDoH2": "Wat Raising Kids in Portugal doet",
     "whatWeDo1": "We onderzoeken, bezoeken en verifiëren de beste internationale scholen en expat-vriendelijke buurten in Portugal — en publiceren die informatie gratis. Onze berichtgeving richt zich momenteel op de regio Lissabon, waar de concentratie van internationale scholen en expat-infrastructuur het hoogst is in het land.",
     "whatWeDo2": "Voor elke school publiceren we echte acceptatiepercentages, volledige kostenanalyses (niet alleen het basisbedrag), curriculumvergelijkingen en redactionele oordelen op basis van persoonlijke bezoeken. Voor elke buurt brengen we reistijden naar relevante scholen in kaart, beschrijven de expatgemeenschap en beoordelen we de gezinslevensstijl.",
     "whatWeDo3": "We bieden ook een gratis School Finder-quiz aan die gezinnen in minder dan 60 seconden koppelt aan de juiste school en buurt — op basis van budget, levensstijlvoorkeur, curriculum en verhuistijdlijn.",
     "howWeOperateH2": "Hoe wij werken",
     "principle1Title": "Onafhankelijkheid is niet onderhandelbaar",
-    "principle1Body": "TrustFamily accepteert geen betalingen, commissies of verwijzingskosten van scholen, vastgoedkantoren of verhuisbedrijven. Elke beoordeling is volledig zelffingerd. Dit is de enige manier waarop onze gegevens vertrouwd kunnen worden.",
+    "principle1Body": "Raising Kids in Portugal accepteert geen betalingen, commissies of verwijzingskosten van scholen, vastgoedkantoren of verhuisbedrijven. Elke beoordeling is volledig zelffingerd. Dit is de enige manier waarop onze gegevens vertrouwd kunnen worden.",
     "principle2Title": "Gegevens vóór meningen",
     "principle2Body": "We bezoeken scholen persoonlijk, interviewen huidige gezinnen en verifiëren gepubliceerde kosten en acceptatiepercentages voordat we iets publiceren. Als we het niet kunnen verifiëren, publiceren we het niet.",
     "principle3Title": "Autoriteit wordt verdiend, niet geclaimd",
     "principle3Body": "We noemen onszelf geen experts omdat we een website hebben. We verdienen geloofwaardigheid door specificiteit — acceptatiepercentagedata, echte reistijden, werkelijke volledige kostenanalyses en de dingen die scholen niet adverteren.",
     "principle4Title": "Uw gegevens zijn van u",
     "principle4Body": "We verzamelen gestructureerde intentiegegevens om onze aanbevelingen te verbeteren. We verkopen geen ruwe gebruikersgegevens aan derden. Als we ooit betaalde partnerschappen introduceren, worden ze expliciet en apart van onze redactionele inhoud bekendgemaakt.",
-    "whoWeServeH2": "Wie TrustFamily gebruikt",
+    "whoWeServeH2": "Wie Raising Kids in Portugal gebruikt",
     "whoWeServe1": "Ons primaire publiek zijn welgestelde internationale gezinnen — doorgaans uit het Verenigd Koninkrijk, de VS, Duitsland, Frankrijk, Nederland en de VAE — die overwegen naar Portugal te verhuizen en beslissingen over scholen en buurten willen nemen op basis van geverifieerde gegevens, niet marketing.",
     "whoWeServe2": "Dit zijn gezinnen waarvoor de schoolkwaliteit het primaire filter is voor waar ze willen wonen, en die bereid zijn aanzienlijk te investeren in de opleiding van hun kinderen. Ze zijn ervaren genoeg om sceptisch te zijn over generiek verhuisadvies — en veeleisend genoeg om specificiteit, eerlijkheid en onafhankelijkheid te verwachten.",
-    "whatWeDoNotH2": "Wat TrustFamily niet doet",
+    "whatWeDoNotH2": "Wat Raising Kids in Portugal niet doet",
     "doNot1": "We accepteren geen betaling van scholen, bureaus of derden in ruil voor redactionele berichtgeving.",
     "doNot2": "We rangschikken scholen niet op basis van advertentie-uitgaven of partnerschapsovereenkomsten.",
     "doNot3": "We verkopen geen ruwe gebruikersgegevens aan scholen, vastgoedkantoren of marketingplatforms.",
@@ -632,7 +632,7 @@
     "ctaBtn2": "Bekijk Alle Scholen"
   },
   "SchoolFinderPage": {
-    "metaTitle": "Schoolzoeker — Vind uw perfecte internationale school in Portugal | TrustFamily",
+    "metaTitle": "Schoolzoeker — Vind uw perfecte internationale school in Portugal | Raising Kids in Portugal",
     "metaDescription": "Beantwoord 4 vragen en word gekoppeld aan de juiste internationale school en buurt in Portugal. Gratis, onbevooroordeeld, op basis van uw budget en curriculumvoorkeur.",
     "overline": "Gratis · 60 seconden",
     "h1": "Vind de perfecte school in Portugal",
@@ -655,18 +655,18 @@
     "faq1a": "Onze matchinglogica is gebaseerd op 4 gewogen criteria: budget, levensstijl, curriculum en verhuistijdlijn. De resultaten laten de 2 meest compatibele scholen zien uit onze doorgelichte lijst van 4 topscholen bij Lissabon. U moet altijd persoonlijk op bezoek gaan voordat u zich verbindt.",
     "faq2q": "Wat als geen enkele school goed voelt?",
     "faq2a": "De quiz toont de beste match uit onze huidige lijst. Voor een diepgaandere, persoonlijke beoordeling — inclusief scholen buiten onze huidige database — neem direct contact met ons op. We voegen in 2026 meer scholen toe.",
-    "faq3q": "Wordt TrustFamily betaald door de scholen?",
-    "faq3a": "Nee. TrustFamily accepteert geen betalingen, commissies of verwijzingskosten van scholen. Onze beoordelingen zijn volledig onafhankelijk. Dit is voor ons niet onderhandelbaar."
+    "faq3q": "Wordt Raising Kids in Portugal betaald door de scholen?",
+    "faq3a": "Nee. Raising Kids in Portugal accepteert geen betalingen, commissies of verwijzingskosten van scholen. Onze beoordelingen zijn volledig onafhankelijk. Dit is voor ons niet onderhandelbaar."
   },
   "BlogPage": {
-    "metaTitle": "Blog — School- en verhuisgidsen Portugal | TrustFamily",
+    "metaTitle": "Blog — School- en verhuisgidsen Portugal | Raising Kids in Portugal",
     "metaDescription": "Deskundige artikelen over het kiezen van internationale scholen in Portugal, het vergelijken van Lissabonse buurten voor expatgezinnen en echte kostenanalyses.",
     "h1": "School- & Verhuisgidsen",
     "subtitle": "Eerstehandsgidsen van een team dat meer dan 200 gezinnen heeft geholpen te verhuizen naar Portugal.",
     "readMore": "Volledige gids lezen →"
   },
   "BlogDetail": {
-    "byline": "TrustFamily Redactie",
+    "byline": "Raising Kids in Portugal Redactie",
     "ctaHeading": "Klaar om dieper te duiken?",
     "ctaDescription": "Gebruik onze onafhankelijke gidsen om scholen en wijken te vergelijken — of doe de 60-seconden School Finder quiz.",
     "ctaSchoolFinder": "School Finder Quiz",
@@ -688,9 +688,9 @@
     "locationHeading": "Schoollocatie",
     "openInMaps": "Openen in Maps",
     "editorialTopPicks": "Redactionele topkeuzes",
-    "trustFamilyVerified": "Geverifieerd door TrustFamily",
+    "raisingKidsInPortugalVerified": "Geverifieerd door Raising Kids in Portugal",
     "acceptanceLabel": "Toelating",
-    "trustFamilyInspectedLabel": "Geinspecteerd door TrustFamily",
+    "raisingKidsInPortugalInspectedLabel": "Geinspecteerd door Raising Kids in Portugal",
     "visitsLabel": "bezoeken",
     "viewFullSchoolProfile": "Bekijk volledig schoolprofiel",
     "fullSchoolDirectory": "Volledige schoolgids",

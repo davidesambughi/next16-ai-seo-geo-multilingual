@@ -88,8 +88,8 @@ export async function submitLead(prevState: State, formData: FormData): Promise<
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           access_key: accessKey,
-          subject: 'Nuovo lead — TrustFamily Relocation',
-          from_name: 'TrustFamily Funnel',
+          subject: 'Nuovo lead — Raising Kids in Portugal Relocation',
+          from_name: 'Raising Kids in Portugal Funnel',
           replyto: data.email,
           // Campi del lead
           'Full Name': data.fullName,

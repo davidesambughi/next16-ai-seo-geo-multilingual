@@ -5,13 +5,13 @@ interface PageProps {
     params: Promise<{ locale: string }>;
 }
 
-const BASE = process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com';
+const BASE = process.env.NEXT_PUBLIC_BASE_URL || 'https://raisingkidsinportugal.com';
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
     await params;
     return {
-        title: "Terms of Service — TrustFamily",
-        description: "TrustFamily terms of service. Rules and conditions for using our website and services.",
+        title: "Terms of Service — Raising Kids in Portugal",
+        description: "Raising Kids in Portugal terms of service. Rules and conditions for using our website and services.",
         alternates: {
             canonical: `${BASE}/en/terms`,
             languages: {
@@ -41,12 +41,12 @@ export default async function TermsPage({ params }: PageProps) {
             <div className="prose max-w-none space-y-8 text-muted-foreground">
                 <section>
                     <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-3">1. Acceptance of Terms</h2>
-                    <p>By accessing or using the TrustFamily website at trustfamily.com, you agree to be bound by these Terms of Service. If you do not agree, please do not use the site.</p>
+                    <p>By accessing or using the Raising Kids in Portugal website at raisingkidsinportugal.com, you agree to be bound by these Terms of Service. If you do not agree, please do not use the site.</p>
                 </section>
 
                 <section>
                     <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-3">2. Nature of the Service</h2>
-                    <p>TrustFamily provides informational content to help international families research schools and neighborhoods in Portugal. The information on this site is provided in good faith and based on publicly available data. It does not constitute legal, financial, or educational advice.</p>
+                    <p>Raising Kids in Portugal provides informational content to help international families research schools and neighborhoods in Portugal. The information on this site is provided in good faith and based on publicly available data. It does not constitute legal, financial, or educational advice.</p>
                 </section>
 
                 <section>
@@ -56,12 +56,12 @@ export default async function TermsPage({ params }: PageProps) {
 
                 <section>
                     <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-3">4. Intellectual Property</h2>
-                    <p>All editorial content on this site — including school verdicts, neighborhood guides, and relocation articles — is the property of TrustFamily. You may not reproduce or distribute it without written permission.</p>
+                    <p>All editorial content on this site — including school verdicts, neighborhood guides, and relocation articles — is the property of Raising Kids in Portugal. You may not reproduce or distribute it without written permission.</p>
                 </section>
 
                 <section>
                     <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-3">5. Limitation of Liability</h2>
-                    <p>TrustFamily is not liable for any decisions made based on information found on this site. We are not responsible for the actions of third-party schools, agencies, or service providers listed or referenced on the site.</p>
+                    <p>Raising Kids in Portugal is not liable for any decisions made based on information found on this site. We are not responsible for the actions of third-party schools, agencies, or service providers listed or referenced on the site.</p>
                 </section>
 
                 <section>

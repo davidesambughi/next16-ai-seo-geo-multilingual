@@ -45,7 +45,7 @@ interface FaqItem {
   a: string;
 }
 
-const BASE = process.env.NEXT_PUBLIC_BASE_URL || "https://trustfamily.com";
+const BASE = process.env.NEXT_PUBLIC_BASE_URL || "https://raisingkidsinportugal.com";
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale } = await params;

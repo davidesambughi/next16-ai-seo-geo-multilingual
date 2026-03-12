@@ -5,13 +5,13 @@ interface PageProps {
     params: Promise<{ locale: string }>;
 }
 
-const BASE = process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com';
+const BASE = process.env.NEXT_PUBLIC_BASE_URL || 'https://raisingkidsinportugal.com';
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
     await params;
     return {
-        title: "Privacy Policy — TrustFamily",
-        description: "TrustFamily privacy policy. How we collect, use, and protect your personal data.",
+        title: "Privacy Policy — Raising Kids in Portugal",
+        description: "Raising Kids in Portugal privacy policy. How we collect, use, and protect your personal data.",
         alternates: {
             canonical: `${BASE}/en/privacy`,
             languages: {
@@ -41,7 +41,7 @@ export default async function PrivacyPage({ params }: PageProps) {
             <div className="prose max-w-none space-y-8 text-muted-foreground">
                 <section>
                     <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-3">1. Who We Are</h2>
-                    <p>TrustFamily operates the website at trustfamily.com. We provide relocation guidance and lead-generation services for international families moving to Portugal. For privacy-related questions, contact us at the address provided on our contact page.</p>
+                    <p>Raising Kids in Portugal operates the website at raisingkidsinportugal.com. We provide relocation guidance and lead-generation services for international families moving to Portugal. For privacy-related questions, contact us at the address provided on our contact page.</p>
                 </section>
 
                 <section>

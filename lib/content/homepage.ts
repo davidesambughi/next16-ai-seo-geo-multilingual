@@ -112,12 +112,12 @@ const block1 = {
   ),
 
   imageAlt: t(
-    "Family in Lisbon, Portugal — TrustFamily relocation 2026",
-    "Família em Lisboa, Portugal — TrustFamily recolocação 2026",
-    "Familie in Lissabon, Portugal — TrustFamily Umzug 2026",
-    "Famille à Lisbonne, Portugal — TrustFamily relocalisation 2026",
-    "Gezin in Lissabon, Portugal — TrustFamily verhuizing 2026",
-    "Familia en Lisboa, Portugal — TrustFamily reubicación 2026"
+    "Family in Lisbon, Portugal — Raising Kids in Portugal relocation 2026",
+    "Família em Lisboa, Portugal — Raising Kids in Portugal recolocação 2026",
+    "Familie in Lissabon, Portugal — Raising Kids in Portugal Umzug 2026",
+    "Famille à Lisbonne, Portugal — Raising Kids in Portugal relocalisation 2026",
+    "Gezin in Lissabon, Portugal — Raising Kids in Portugal verhuizing 2026",
+    "Familia en Lisboa, Portugal — Raising Kids in Portugal reubicación 2026"
   ),
 } as const;
 
@@ -179,12 +179,12 @@ const block2 = {
   ),
 
   blockquoteAuthor: t(
-    "TrustFamily research principle",
-    "Princípio de pesquisa TrustFamily",
-    "TrustFamily-Forschungsprinzip",
-    "Principe de recherche TrustFamily",
-    "TrustFamily onderzoeksprincipe",
-    "Principio de investigación TrustFamily"
+    "Raising Kids in Portugal research principle",
+    "Princípio de pesquisa Raising Kids in Portugal",
+    "Raising Kids in Portugal-Forschungsprinzip",
+    "Principe de recherche Raising Kids in Portugal",
+    "Raising Kids in Portugal onderzoeksprincipe",
+    "Principio de investigación Raising Kids in Portugal"
   ),
 } as const;
 
@@ -222,12 +222,12 @@ const quizBridge = {
 
 const respiro = {
   alt: t(
-    "Family life in Portugal — TrustFamily relocation",
-    "Vida familiar em Portugal — TrustFamily recolocação",
-    "Familienleben in Portugal — TrustFamily Umzug",
-    "Vie de famille au Portugal — TrustFamily relocalisation",
-    "Gezinsleven in Portugal — TrustFamily verhuizing",
-    "Vida familiar en Portugal — TrustFamily reubicación"
+    "Family life in Portugal — Raising Kids in Portugal relocation",
+    "Vida familiar em Portugal — Raising Kids in Portugal recolocação",
+    "Familienleben in Portugal — Raising Kids in Portugal Umzug",
+    "Vie de famille au Portugal — Raising Kids in Portugal relocalisation",
+    "Gezinsleven in Portugal — Raising Kids in Portugal verhuizing",
+    "Vida familiar en Portugal — Raising Kids in Portugal reubicación"
   ),
 } as const;
 
@@ -244,12 +244,12 @@ const block3 = {
   ),
 
   p1: t(
-    "TrustFamily was built from a specific frustration: the near-total absence of honest, structured, non-commercial information for families seriously considering a move to Portugal. The market offered two things — relocation agencies with financial relationships with specific schools and landlords, and expat forums where individual experience often ran ahead of verified fact. Neither served families making a decision worth hundreds of thousands of euros in school fees, housing deposits, and life reorganisation.",
-    "A TrustFamily nasceu de uma frustração específica: a quase total ausência de informação honesta, estruturada e não comercial para famílias que consideram seriamente uma mudança para Portugal. O mercado oferecia duas coisas — agências de recolocação com relações financeiras com escolas e senhorios específicos, e fóruns de expatriados onde a experiência individual muitas vezes avançava à frente dos factos verificados. Nenhuma delas servia famílias que tomavam uma decisão no valor de centenas de milhares de euros em propinas, depósitos de habitação e reorganização de vida.",
-    "TrustFamily entstand aus einer spezifischen Frustration: dem nahezu vollständigen Fehlen ehrlicher, strukturierter, nicht-kommerzieller Informationen für Familien, die ernsthaft einen Umzug nach Portugal in Betracht ziehen. Der Markt bot zwei Dinge — Umzugsagenturen mit finanziellen Beziehungen zu bestimmten Schulen und Vermietern, und Expat-Foren, in denen persönliche Erfahrungen oft den verifizierten Fakten vorauseilten. Keine davon half Familien, die eine Entscheidung über Hunderttausende von Euro an Schulgebühren, Wohnungsdepositen und Lebensumgestaltung trafen.",
-    "TrustFamily est né d'une frustration spécifique : l'absence quasi totale d'informations honnêtes, structurées et non commerciales pour les familles qui envisagent sérieusement un déménagement au Portugal. Le marché offrait deux choses — des agences de relocalisation ayant des liens financiers avec certaines écoles et propriétaires, et des forums d'expatriés où les expériences individuelles devançaient souvent les faits vérifiés. Aucun des deux ne servait les familles prenant une décision valant des centaines de milliers d'euros en frais de scolarité, cautions de logement et réorganisation de vie.",
-    "TrustFamily is voortgekomen uit een specifieke frustratie: de bijna totale afwezigheid van eerlijke, gestructureerde, niet-commerciële informatie voor gezinnen die serieus overwegen naar Portugal te verhuizen. De markt bood twee dingen — verhuisbureaus met financiële relaties met specifieke scholen en verhuurders, en expat-forums waar persoonlijke ervaringen vaak de geverifieerde feiten vooruitliepen. Geen van beide diende gezinnen die een beslissing namen ter waarde van honderdduizenden euro's aan schoolkosten, huurdeposito's en levensreorganisatie.",
-    "TrustFamily nació de una frustración específica: la ausencia casi total de información honesta, estructurada y no comercial para familias que consideran seriamente mudarse a Portugal. El mercado ofrecía dos cosas — agencias de reubicación con relaciones financieras con escuelas y propietarios específicos, y foros de expatriados donde la experiencia individual a menudo se adelantaba a los hechos verificados. Ninguno de los dos servía a familias que tomaban una decisión que valía cientos de miles de euros en tasas escolares, depósitos de vivienda y reorganización de vida."
+    "Raising Kids in Portugal was built from a specific frustration: the near-total absence of honest, structured, non-commercial information for families seriously considering a move to Portugal. The market offered two things — relocation agencies with financial relationships with specific schools and landlords, and expat forums where individual experience often ran ahead of verified fact. Neither served families making a decision worth hundreds of thousands of euros in school fees, housing deposits, and life reorganisation.",
+    "A Raising Kids in Portugal nasceu de uma frustração específica: a quase total ausência de informação honesta, estruturada e não comercial para famílias que consideram seriamente uma mudança para Portugal. O mercado oferecia duas coisas — agências de recolocação com relações financeiras com escolas e senhorios específicos, e fóruns de expatriados onde a experiência individual muitas vezes avançava à frente dos factos verificados. Nenhuma delas servia famílias que tomavam uma decisão no valor de centenas de milhares de euros em propinas, depósitos de habitação e reorganização de vida.",
+    "Raising Kids in Portugal entstand aus einer spezifischen Frustration: dem nahezu vollständigen Fehlen ehrlicher, strukturierter, nicht-kommerzieller Informationen für Familien, die ernsthaft einen Umzug nach Portugal in Betracht ziehen. Der Markt bot zwei Dinge — Umzugsagenturen mit finanziellen Beziehungen zu bestimmten Schulen und Vermietern, und Expat-Foren, in denen persönliche Erfahrungen oft den verifizierten Fakten vorauseilten. Keine davon half Familien, die eine Entscheidung über Hunderttausende von Euro an Schulgebühren, Wohnungsdepositen und Lebensumgestaltung trafen.",
+    "Raising Kids in Portugal est né d'une frustration spécifique : l'absence quasi totale d'informations honnêtes, structurées et non commerciales pour les familles qui envisagent sérieusement un déménagement au Portugal. Le marché offrait deux choses — des agences de relocalisation ayant des liens financiers avec certaines écoles et propriétaires, et des forums d'expatriés où les expériences individuelles devançaient souvent les faits vérifiés. Aucun des deux ne servait les familles prenant une décision valant des centaines de milliers d'euros en frais de scolarité, cautions de logement et réorganisation de vie.",
+    "Raising Kids in Portugal is voortgekomen uit een specifieke frustratie: de bijna totale afwezigheid van eerlijke, gestructureerde, niet-commerciële informatie voor gezinnen die serieus overwegen naar Portugal te verhuizen. De markt bood twee dingen — verhuisbureaus met financiële relaties met specifieke scholen en verhuurders, en expat-forums waar persoonlijke ervaringen vaak de geverifieerde feiten vooruitliepen. Geen van beide diende gezinnen die een beslissing namen ter waarde van honderdduizenden euro's aan schoolkosten, huurdeposito's en levensreorganisatie.",
+    "Raising Kids in Portugal nació de una frustración específica: la ausencia casi total de información honesta, estructurada y no comercial para familias que consideran seriamente mudarse a Portugal. El mercado ofrecía dos cosas — agencias de reubicación con relaciones financieras con escuelas y propietarios específicos, y foros de expatriados donde la experiencia individual a menudo se adelantaba a los hechos verificados. Ninguno de los dos servía a familias que tomaban una decisión que valía cientos de miles de euros en tasas escolares, depósitos de vivienda y reorganización de vida."
   ),
 
   p2: t(
@@ -288,12 +288,12 @@ const block3 = {
   ),
 
   quote: t(
-    "The information that matters most — visa changes, admission openings, school fee updates — moves faster than most guides can keep pace with. Join the families already following TrustFamily\u2019s research updates for 2026.",
-    "A informação que mais importa — alterações de visto, aberturas de admissão, atualizações de propinas — move-se mais depressa do que a maioria dos guias consegue acompanhar. Junte-se às famílias que já seguem as atualizações de pesquisa da TrustFamily para 2026.",
-    "Die wichtigsten Informationen — Visaänderungen, Zulassungseröffnungen, Schulgebührenaktualisierungen — bewegen sich schneller, als die meisten Leitfäden mithalten können. Schließen Sie sich den Familien an, die TrustFamilys Forschungsupdates für 2026 bereits verfolgen.",
-    "Les informations les plus importantes — changements de visa, ouvertures d'admissions, mises à jour des frais scolaires — évoluent plus vite que la plupart des guides ne peuvent suivre. Rejoignez les familles qui suivent déjà les mises à jour de recherche de TrustFamily pour 2026.",
-    "De informatie die er het meest toe doet — visumwijzigingen, openingen voor toelating, updates van schoolkosten — beweegt sneller dan de meeste gidsen kunnen bijhouden. Sluit u aan bij de gezinnen die de onderzoeksupdates van TrustFamily voor 2026 al volgen.",
-    "La información que más importa — cambios de visado, aperturas de admisión, actualizaciones de tasas escolares — se mueve más rápido de lo que la mayoría de las guías puede seguir. Únase a las familias que ya siguen las actualizaciones de investigación de TrustFamily para 2026."
+    "The information that matters most — visa changes, admission openings, school fee updates — moves faster than most guides can keep pace with. Join the families already following Raising Kids in Portugal\u2019s research updates for 2026.",
+    "A informação que mais importa — alterações de visto, aberturas de admissão, atualizações de propinas — move-se mais depressa do que a maioria dos guias consegue acompanhar. Junte-se às famílias que já seguem as atualizações de pesquisa da Raising Kids in Portugal para 2026.",
+    "Die wichtigsten Informationen — Visaänderungen, Zulassungseröffnungen, Schulgebührenaktualisierungen — bewegen sich schneller, als die meisten Leitfäden mithalten können. Schließen Sie sich den Familien an, die Raising Kids in Portugals Forschungsupdates für 2026 bereits verfolgen.",
+    "Les informations les plus importantes — changements de visa, ouvertures d'admissions, mises à jour des frais scolaires — évoluent plus vite que la plupart des guides ne peuvent suivre. Rejoignez les familles qui suivent déjà les mises à jour de recherche de Raising Kids in Portugal pour 2026.",
+    "De informatie die er het meest toe doet — visumwijzigingen, openingen voor toelating, updates van schoolkosten — beweegt sneller dan de meeste gidsen kunnen bijhouden. Sluit u aan bij de gezinnen die de onderzoeksupdates van Raising Kids in Portugal voor 2026 al volgen.",
+    "La información que más importa — cambios de visado, aperturas de admisión, actualizaciones de tasas escolares — se mueve más rápido de lo que la mayoría de las guías puede seguir. Únase a las familias que ya siguen las actualizaciones de investigación de Raising Kids in Portugal para 2026."
   ),
 } as const;
 

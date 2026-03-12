@@ -37,7 +37,7 @@ export default function Hero() {
         <div className="order-first md:order-last relative aspect-[4/3] w-[calc(100%+3rem)] -ml-6 md:ml-0 md:aspect-auto md:w-full md:-mr-6 lg:-mr-12 overflow-hidden bg-surface-subtle overflow-x-hidden">
           <Image
             src="/hero-img.jpg"
-            alt="Expat family in Lisbon, Portugal - TrustFamily relocation guide"
+            alt="Expat family in Lisbon, Portugal - Raising Kids in Portugal relocation guide"
             fill
             priority
             sizes="(max-width: 768px) 100vw, 45vw"

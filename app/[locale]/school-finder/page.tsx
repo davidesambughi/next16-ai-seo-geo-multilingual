@@ -10,7 +10,7 @@ interface PageProps {
     params: Promise<{ locale: string }>;
 }
 
-const BASE = process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com';
+const BASE = process.env.NEXT_PUBLIC_BASE_URL || 'https://raisingkidsinportugal.com';
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
     const { locale } = await params;
@@ -34,9 +34,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
             title: t("metaTitle"),
             description: t("metaDescription"),
             url: `${BASE}/en/school-finder`,
-            siteName: "TrustFamily",
+            siteName: "Raising Kids in Portugal",
             type: "website",
-            images: [{ url: `${BASE}/opengraph-image`, width: 1200, height: 630, alt: 'TrustFamily — International Schools & Neighborhoods in Portugal' }],
+            images: [{ url: `${BASE}/opengraph-image`, width: 1200, height: 630, alt: 'Raising Kids in Portugal — International Schools & Neighborhoods in Portugal' }],
         },
         twitter: {
             card: "summary_large_image",

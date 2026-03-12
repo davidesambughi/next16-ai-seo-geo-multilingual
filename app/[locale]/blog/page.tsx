@@ -16,7 +16,7 @@ interface PageProps {
   params: Promise<{ locale: string }>;
 }
 
-const BASE = process.env.NEXT_PUBLIC_BASE_URL || "https://trustfamily.com";
+const BASE = process.env.NEXT_PUBLIC_BASE_URL || "https://raisingkidsinportugal.com";
 
 // ISR: regenerate every 24 h when new articles are published
 export const revalidate = 86400;
@@ -44,9 +44,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: t("metaTitle"),
       description: t("metaDescription"),
       url: `${BASE}/en/blog`,
-      siteName: "TrustFamily",
+      siteName: "Raising Kids in Portugal",
       type: "website",
-      images: [{ url: `${BASE}/opengraph-image`, width: 1200, height: 630, alt: 'TrustFamily — International Schools & Neighborhoods in Portugal' }],
+      images: [{ url: `${BASE}/opengraph-image`, width: 1200, height: 630, alt: 'Raising Kids in Portugal — International Schools & Neighborhoods in Portugal' }],
     },
     twitter: {
       card: "summary_large_image",
@@ -63,13 +63,13 @@ export default async function BlogPage({ params }: PageProps) {
   const blogListSchema = {
     "@context": "https://schema.org",
     "@type": "Blog",
-    "name": "TrustFamily Relocation Blog",
+    "name": "Raising Kids in Portugal Relocation Blog",
     "description":
       "Expert guides on choosing international schools, comparing Portugal neighborhoods, and planning a family relocation.",
     "url": `${BASE}/en/blog`,
     "publisher": {
       "@type": "Organization",
-      "name": "TrustFamily",
+      "name": "Raising Kids in Portugal",
       "logo": { "@type": "ImageObject", "url": `${BASE}/logo.png` },
     },
     "blogPost": blogArticles.map((a) => ({
@@ -81,12 +81,12 @@ export default async function BlogPage({ params }: PageProps) {
       "url": `${BASE}/en/blog/${a.slug}`,
       "author": {
         "@type": "Person",
-        "name": "TrustFamily Editorial Team",
+        "name": "Raising Kids in Portugal Editorial Team",
         "url": `${BASE}/en/about`,
       },
       "publisher": {
         "@type": "Organization",
-        "name": "TrustFamily",
+        "name": "Raising Kids in Portugal",
         "logo": { "@type": "ImageObject", "url": `${BASE}/logo.png` },
       },
       "mainEntityOfPage": { "@type": "WebPage", "@id": `${BASE}/en/blog/${a.slug}` },

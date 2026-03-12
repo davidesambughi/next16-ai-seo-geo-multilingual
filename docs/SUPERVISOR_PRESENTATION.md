@@ -1,11 +1,11 @@
-# TrustFamily Relocation Funnel — Project Overview
+# Raising Kids in Portugal Relocation Funnel — Project Overview
 > Last updated: 2026-03-10 | Verified against actual codebase
 
 ---
 
 ## What We Built
 
-**TrustFamily** is a multilingual lead-generation website for international families relocating to Portugal. Families use it to research schools and neighborhoods, then submit a contact form to engage the agency.
+**Raising Kids in Portugal** is a multilingual lead-generation website for international families relocating to Portugal. Families use it to research schools and neighborhoods, then submit a contact form to engage the agency.
 
 **Three content pillars:**
 
@@ -56,13 +56,13 @@ Every school and neighborhood detail page had a dead "Contact" button with no ac
 
 ### ⏳ Remaining: Set environment variables on Vercel (5 min)
 Two environment variables are missing from the production environment:
-- `NEXT_PUBLIC_BASE_URL=https://trustfamily.com` — without this, all structured data links point to the wrong URL in production
+- `NEXT_PUBLIC_BASE_URL=https://raisingkidsinportugal.com` — without this, all structured data links point to the wrong URL in production
 - `WEB3FORMS_ACCESS_KEY=<key>` — without this, form submissions are logged but not emailed to the agency
 
 For the Web3Forms key: go to [web3forms.com](https://web3forms.com), enter the agency email address, receive the key. Then add both variables in the Vercel project dashboard under Settings → Environment Variables.
 
 ### ⏳ Remaining: Configure custom domain on Vercel (30 min)
-`trustfamily.com` needs to be connected to the Vercel project. Standard process: add domain in Vercel, update DNS at registrar, wait for SSL.
+`raisingkidsinportugal.com` needs to be connected to the Vercel project. Standard process: add domain in Vercel, update DNS at registrar, wait for SSL.
 
 **Total remaining effort before launch: ~35 minutes (both are infrastructure steps, no code changes needed)**
 

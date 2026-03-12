@@ -35,7 +35,7 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Metadata' });
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://raisingkidsinportugal.com';
 
   const languages: Record<string, string> = {};
   routing.locales.forEach((l) => {
@@ -57,7 +57,7 @@ export async function generateMetadata({
       languages,
     },
     openGraph: {
-      siteName: "TrustFamily",
+      siteName: "Raising Kids in Portugal",
       locale: ogLocaleMap[locale] ?? locale,
       type: "website",
     },

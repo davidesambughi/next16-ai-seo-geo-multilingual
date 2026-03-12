@@ -1,11 +1,11 @@
-# TrustFamily Relocation Funnel — Team Onboarding
+# Raising Kids in Portugal Relocation Funnel — Team Onboarding
 > Last updated: 2026-03-03
 
 ---
 
 ## What Is This Project?
 
-**TrustFamily** is a multilingual content and lead-generation website for international families relocating to Portugal. It is an SEO-first, editorial-quality guide that helps families choose the right school and neighborhood — and then convert them into leads for a relocation agency.
+**Raising Kids in Portugal** is a multilingual content and lead-generation website for international families relocating to Portugal. It is an SEO-first, editorial-quality guide that helps families choose the right school and neighborhood — and then convert them into leads for a relocation agency.
 
 **Three content pillars:**
 1. **International Schools** — comparison of 77 schools across Portugal, with filters, detail pages, and a matching quiz
@@ -145,7 +145,7 @@ This project is heavily SEO-optimized. Every page has:
 
 | Variable | Local (`.env.local`) | Production (Vercel) |
 |---|---|---|
-| `NEXT_PUBLIC_BASE_URL` | `http://localhost:3000` | `https://trustfamily.com` ← **not yet set on Vercel** |
+| `NEXT_PUBLIC_BASE_URL` | `http://localhost:3000` | `https://raisingkidsinportugal.com` ← **not yet set on Vercel** |
 | `WEB3FORMS_ACCESS_KEY` | *(empty, waiting)* | *(waiting for agency email)* |
 
 `.env.local` is gitignored. Create it locally:

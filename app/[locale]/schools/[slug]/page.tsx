@@ -28,8 +28,8 @@ export async function generateMetadata({ params }: PageProps) {
 
     const schoolT = getSchoolT(school, locale);
     const isCurated = Boolean(school.translations.en.verdict);
-    const base = process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com';
-    const title = `${school.name} — International School Portugal | TrustFamily`;
+    const base = process.env.NEXT_PUBLIC_BASE_URL || 'https://raisingkidsinportugal.com';
+    const title = `${school.name} — International School Portugal | Raising Kids in Portugal`;
     const description = `${schoolT.description} Curriculum: ${school.curriculum}. Annual fees: ${school.fees}. Location: ${school.location}.`;
     const schoolPaths = routing.pathnames['/schools/[slug]'] as Record<string, string>;
     const canonical = `${base}/en${schoolPaths.en.replace('[slug]', school.slug)}`;
@@ -49,9 +49,9 @@ export async function generateMetadata({ params }: PageProps) {
             title,
             description,
             url: canonical,
-            siteName: "TrustFamily",
+            siteName: "Raising Kids in Portugal",
             type: "website",
-            images: [{ url: `${base}/opengraph-image`, width: 1200, height: 630, alt: 'TrustFamily — International Schools & Neighborhoods in Portugal' }],
+            images: [{ url: `${base}/opengraph-image`, width: 1200, height: 630, alt: 'Raising Kids in Portugal — International Schools & Neighborhoods in Portugal' }],
         },
         twitter: {
             card: "summary_large_image",
@@ -89,10 +89,10 @@ export default async function SchoolDetailPage(props: PageProps) {
     const schoolSchema = {
         "@context": "https://schema.org",
         "@type": "EducationalOrganization",
-        "@id": `${process.env.NEXT_PUBLIC_BASE_URL || "https://trustfamily.com"}/en/school/${school.slug}#school`,
+        "@id": `${process.env.NEXT_PUBLIC_BASE_URL || "https://raisingkidsinportugal.com"}/en/school/${school.slug}#school`,
         "name": school.name,
         "description": enT.description,
-        "url": `${process.env.NEXT_PUBLIC_BASE_URL || "https://trustfamily.com"}/school/${school.slug}`,
+        "url": `${process.env.NEXT_PUBLIC_BASE_URL || "https://raisingkidsinportugal.com"}/school/${school.slug}`,
         "address": {
             "@type": "PostalAddress",
             "addressLocality": school.location,
@@ -119,9 +119,9 @@ export default async function SchoolDetailPage(props: PageProps) {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": `${process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com'}/en` },
-            { "@type": "ListItem", "position": 2, "name": "International Schools", "item": `${process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com'}/en/schools` },
-            { "@type": "ListItem", "position": 3, "name": school.name, "item": `${process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com'}/en/school/${school.slug}` },
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": `${process.env.NEXT_PUBLIC_BASE_URL || 'https://raisingkidsinportugal.com'}/en` },
+            { "@type": "ListItem", "position": 2, "name": "International Schools", "item": `${process.env.NEXT_PUBLIC_BASE_URL || 'https://raisingkidsinportugal.com'}/en/schools` },
+            { "@type": "ListItem", "position": 3, "name": school.name, "item": `${process.env.NEXT_PUBLIC_BASE_URL || 'https://raisingkidsinportugal.com'}/en/school/${school.slug}` },
         ],
     };
 

@@ -12,7 +12,7 @@ import type { Metadata } from "next";
 
 const BASE_URL =
   process.env.NEXT_PUBLIC_BASE_URL ||
-  "https://trustfamily.com";
+  "https://raisingkidsinportugal.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),

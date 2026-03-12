@@ -9,7 +9,7 @@ interface PageProps {
     params: Promise<{ locale: string }>;
 }
 
-const BASE = process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com';
+const BASE = process.env.NEXT_PUBLIC_BASE_URL || 'https://raisingkidsinportugal.com';
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
     const { locale } = await params;
@@ -33,9 +33,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
             title: t("metaTitle"),
             description: t("metaDescription"),
             url: `${BASE}/en/about`,
-            siteName: "TrustFamily",
+            siteName: "Raising Kids in Portugal",
             type: "website",
-            images: [{ url: `${BASE}/opengraph-image`, width: 1200, height: 630, alt: 'TrustFamily — International Schools & Neighborhoods in Portugal' }],
+            images: [{ url: `${BASE}/opengraph-image`, width: 1200, height: 630, alt: 'Raising Kids in Portugal — International Schools & Neighborhoods in Portugal' }],
         },
         twitter: {
             card: "summary_large_image",
@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function AboutPage({ params }: PageProps) {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: "AboutPage" });
-    const base = process.env.NEXT_PUBLIC_BASE_URL || "https://trustfamily.com";
+    const base = process.env.NEXT_PUBLIC_BASE_URL || "https://raisingkidsinportugal.com";
 
     const stats = [
         { value: t("stat1Value"), label: t("stat1Label") },
@@ -75,7 +75,7 @@ export default async function AboutPage({ params }: PageProps) {
     const orgSchema = {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "TrustFamily",
+        "name": "Raising Kids in Portugal",
         "description":
             "Independent intelligence platform for international families relocating to Portugal. Provides verified school comparisons, neighborhood guides, and relocation resources.",
         "url": base,
@@ -88,19 +88,19 @@ export default async function AboutPage({ params }: PageProps) {
             "IB British American curriculum comparison",
         ],
         // sameAs: add social/directory profiles when available
-        // "sameAs": ["https://www.linkedin.com/company/trustfamily"],
+        // "sameAs": ["https://www.linkedin.com/company/raisingkidsinportugal"],
     };
 
     // Person schema — E-E-A-T signal: editorial team with domain expertise
     const editorialPersonSchema = {
         "@context": "https://schema.org",
         "@type": "Person",
-        "name": "TrustFamily Editorial Team",
+        "name": "Raising Kids in Portugal Editorial Team",
         "jobTitle": "Education & Relocation Intelligence",
         "description": "A team of consultants who have guided 200+ international families through school selection and relocation to Portugal. Conducted 50+ in-person school visits across St. Julian's School, TASIS Portugal, CAISL, and United Lisbon International School.",
         "worksFor": {
             "@type": "Organization",
-            "name": "TrustFamily",
+            "name": "Raising Kids in Portugal",
             "url": base,
         },
         "knowsAbout": [

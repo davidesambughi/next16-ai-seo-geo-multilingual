@@ -56,7 +56,7 @@ interface RelatedItem {
 export async function generateMetadata({ params }: PageProps) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "NeighborhoodsGuidePage" });
-  const base = process.env.NEXT_PUBLIC_BASE_URL || "https://trustfamily.com";
+  const base = process.env.NEXT_PUBLIC_BASE_URL || "https://raisingkidsinportugal.com";
 
   return {
     title: t("metaTitle"),
@@ -77,9 +77,9 @@ export async function generateMetadata({ params }: PageProps) {
       title: t("metaTitle"),
       description: t("metaDescription"),
       url: `${base}/en/family-friendly-neighborhoods-portugal`,
-      siteName: "TrustFamily",
+      siteName: "Raising Kids in Portugal",
       type: "article",
-      images: [{ url: `${base}/opengraph-image`, width: 1200, height: 630, alt: "TrustFamily" }],
+      images: [{ url: `${base}/opengraph-image`, width: 1200, height: 630, alt: "Raising Kids in Portugal" }],
     },
     twitter: {
       card: "summary_large_image",
@@ -108,7 +108,7 @@ export default async function Page({ params }: PageProps) {
     "@context": "https://schema.org",
     "@type": "WebPage",
     speakable: { "@type": "SpeakableSpecification", cssSelector: ["#key-takeaways", "#faq"] },
-    url: `${process.env.NEXT_PUBLIC_BASE_URL || "https://trustfamily.com"}/en/family-friendly-neighborhoods-portugal`,
+    url: `${process.env.NEXT_PUBLIC_BASE_URL || "https://raisingkidsinportugal.com"}/en/family-friendly-neighborhoods-portugal`,
   };
 
   return (

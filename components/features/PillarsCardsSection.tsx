@@ -26,7 +26,7 @@ export function PillarsCardsSection() {
                     <div className="relative w-full aspect-[4/3] overflow-hidden bg-surface-subtle mb-7">
                         <Image
                             src="/guides-card-img.png"
-                            alt="Family relocating to Portugal — TrustFamily relocation guide 2026"
+                            alt="Family relocating to Portugal — Raising Kids in Portugal relocation guide 2026"
                             fill
                             loading="lazy"
                             sizes="(max-width: 1024px) 100vw, 60vw"
@@ -57,7 +57,7 @@ export function PillarsCardsSection() {
                         <div className="relative w-full aspect-video overflow-hidden bg-surface-subtle mb-4">
                             <Image
                                 src="/school-card-img.png"
-                                alt="International school campus in Portugal — TrustFamily schools guide"
+                                alt="International school campus in Portugal — Raising Kids in Portugal schools guide"
                                 fill
                                 loading="lazy"
                                 sizes="(max-width: 1024px) 100vw, 35vw"
@@ -81,7 +81,7 @@ export function PillarsCardsSection() {
                         <div className="relative w-full aspect-video overflow-hidden bg-surface-subtle mb-4">
                             <Image
                                 src="/neighborhood-card-img.png"
-                                alt="Family-friendly neighborhood in Cascais, Portugal — TrustFamily neighborhoods guide"
+                                alt="Family-friendly neighborhood in Cascais, Portugal — Raising Kids in Portugal neighborhoods guide"
                                 fill
                                 loading="lazy"
                                 sizes="(max-width: 1024px) 100vw, 35vw"

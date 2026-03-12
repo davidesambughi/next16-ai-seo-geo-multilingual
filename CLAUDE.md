@@ -95,5 +95,5 @@ FAQPage JSON-LD must exactly match rendered FAQ HTML (Google rich snippet requir
 
 ### Environment Variables
 
-- `NEXT_PUBLIC_BASE_URL` — must be set to `https://trustfamily.com` on Vercel; `.env.local` sets `http://localhost:3000` for dev
+- `NEXT_PUBLIC_BASE_URL` — must be set to `https://raisingkidsinportugal.com` on Vercel; `.env.local` sets `http://localhost:3000` for dev
 - `WEB3FORMS_ACCESS_KEY` — contact form integration

@@ -7,14 +7,14 @@ interface PageProps {
     params: Promise<{ locale: string }>;
 }
 
-const BASE = process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com';
+const BASE = process.env.NEXT_PUBLIC_BASE_URL || 'https://raisingkidsinportugal.com';
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: "Metadata" });
     return {
-        title: `Contact Us — TrustFamily`,
-        description: "Get in touch with TrustFamily. Our relocation experts help international families find the right school and neighborhood in Portugal.",
+        title: `Contact Us — Raising Kids in Portugal`,
+        description: "Get in touch with Raising Kids in Portugal. Our relocation experts help international families find the right school and neighborhood in Portugal.",
         alternates: {
             canonical: `${BASE}/en/contact`,
             languages: {
@@ -28,17 +28,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
             },
         },
         openGraph: {
-            title: `Contact Us — TrustFamily`,
-            description: "Get in touch with TrustFamily. Our relocation experts help international families find the right school and neighborhood in Portugal.",
+            title: `Contact Us — Raising Kids in Portugal`,
+            description: "Get in touch with Raising Kids in Portugal. Our relocation experts help international families find the right school and neighborhood in Portugal.",
             url: `${BASE}/en/contact`,
-            siteName: "TrustFamily",
+            siteName: "Raising Kids in Portugal",
             type: "website",
-            images: [{ url: `${BASE}/opengraph-image`, width: 1200, height: 630, alt: 'TrustFamily — International Schools & Neighborhoods in Portugal' }],
+            images: [{ url: `${BASE}/opengraph-image`, width: 1200, height: 630, alt: 'Raising Kids in Portugal — International Schools & Neighborhoods in Portugal' }],
         },
         twitter: {
             card: "summary_large_image",
-            title: `Contact Us — TrustFamily`,
-            description: "Get in touch with TrustFamily. Our relocation experts help international families find the right school and neighborhood in Portugal.",
+            title: `Contact Us — Raising Kids in Portugal`,
+            description: "Get in touch with Raising Kids in Portugal. Our relocation experts help international families find the right school and neighborhood in Portugal.",
         },
     };
 }

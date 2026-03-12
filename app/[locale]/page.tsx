@@ -32,7 +32,7 @@ export const revalidate = 43200;
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "HomePage" });
-  const base = process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com';
+  const base = process.env.NEXT_PUBLIC_BASE_URL || 'https://raisingkidsinportugal.com';
   const ogLocaleMap: Record<string, string> = {
     en: 'en_US', pt: 'pt_PT', de: 'de_DE', fr: 'fr_FR', nl: 'nl_NL', es: 'es_ES',
   };
@@ -56,10 +56,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       title: t("metaTitle"),
       description: t("metaDescription"),
       url: `${base}/${locale}`,
-      siteName: "TrustFamily",
+      siteName: "Raising Kids in Portugal",
       locale: ogLocaleMap[locale] ?? locale,
       type: "website",
-      images: [{ url: `${base}/opengraph-image`, width: 1200, height: 630, alt: 'TrustFamily — International Schools & Neighborhoods in Portugal' }],
+      images: [{ url: `${base}/opengraph-image`, width: 1200, height: 630, alt: 'Raising Kids in Portugal — International Schools & Neighborhoods in Portugal' }],
     },
     twitter: {
       card: "summary_large_image",
@@ -73,13 +73,13 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "HomePage" });
   const c = getHomeContent(locale);
-  const base = process.env.NEXT_PUBLIC_BASE_URL || "https://trustfamily.com";
+  const base = process.env.NEXT_PUBLIC_BASE_URL || "https://raisingkidsinportugal.com";
 
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": `${base}/#organization`,
-    "name": "TrustFamily",
+    "name": "Raising Kids in Portugal",
     "url": base,
     "logo": {
       "@type": "ImageObject",
@@ -98,14 +98,14 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     ],
     // TODO: add real social profile URLs before launch
     "sameAs": [
-      "https://www.linkedin.com/company/trustfamily",
+      "https://www.linkedin.com/company/raisingkidsinportugal",
     ],
   };
 
   const webSiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "TrustFamily",
+    "name": "Raising Kids in Portugal",
     "url": base,
     "description": "Independent intelligence for families relocating to Portugal — verified school comparisons, neighborhood guides, and relocation resources.",
     "inLanguage": ["en", "pt", "de", "fr", "nl", "es"],
@@ -235,7 +235,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
         {/* ── PROSE BLOCK 2: THE SCHOOL-FIRST PRINCIPLE ──────────────
             Keyword: "international schools near Lisbon", acceptance rates.
-            This is TrustFamily's core editorial thesis — the insight that
+            This is Raising Kids in Portugal's core editorial thesis — the insight that
             differentiates the guide from generic relocation resources.
         ──────────────────────────────────────────────────────────── */}
         <div className="px-6 py-16 border-t border-border">

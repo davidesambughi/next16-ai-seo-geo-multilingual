@@ -1,5 +1,5 @@
 /**
- * Shared domain types for TrustFamily Relocation.
+ * Shared domain types for Raising Kids in Portugal Relocation.
  *
  * Both School and Neighborhood are consumed by:
  *   - lib/schools-data.ts / lib/neighborhoods-data.ts (data)

@@ -42,7 +42,7 @@ export function Header() {
             <div className="flex h-16 items-center justify-between px-6 max-w-7xl mx-auto">
                 <div className="flex items-center gap-2">
                     <Link href="/" className="flex items-center gap-2">
-                        <span className="font-serif text-h3 font-semibold tracking-tight text-ink-primary">TrustFamily</span>
+                        <span className="font-serif text-h3 font-semibold tracking-tight text-ink-primary">Raising Kids in Portugal</span>
                     </Link>
                 </div>
 

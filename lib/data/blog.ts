@@ -1,5 +1,5 @@
 /**
- * Canonical article data for the TrustFamily blog.
+ * Canonical article data for the Raising Kids in Portugal blog.
  * Used by both the blog listing page and individual /blog/[slug] pages.
  * Phase 5: migrate to CMS (Sanity / Contentful) — keep shape stable.
  */
@@ -28,7 +28,7 @@ export const blogArticles: BlogArticle[] = [
   {
     slug: "how-to-choose-international-school-portugal",
     title: "How to Choose an International School in Portugal (2026 Guide)",
-    subtitle: "A framework used by TrustFamily with 200+ expat families",
+    subtitle: "A framework used by Raising Kids in Portugal with 200+ expat families",
     datePublished: "2026-01-15",
     dateModified: "2026-02-01",
     readTime: "8 min read",
@@ -45,7 +45,7 @@ export const blogArticles: BlogArticle[] = [
       },
       {
         heading: "Step 3: Visit before you commit",
-        body: "Every school in our guide has been visited by a TrustFamily consultant at least 3 times. The difference between a school's marketing materials and its actual atmosphere can be significant. Request a shadow day — where your child attends classes for a full morning — before signing any enrolment contract. Acceptance rates as low as 8% (St. Julian's) mean you should apply to 2–3 schools simultaneously.",
+        body: "Every school in our guide has been visited by a Raising Kids in Portugal consultant at least 3 times. The difference between a school's marketing materials and its actual atmosphere can be significant. Request a shadow day — where your child attends classes for a full morning — before signing any enrolment contract. Acceptance rates as low as 8% (St. Julian's) mean you should apply to 2–3 schools simultaneously.",
       },
     ],
     cta: { text: "Compare all 4 schools →", href: "/best-private-and-public-international-schools-portugal-2026" },
@@ -83,7 +83,7 @@ export const blogArticles: BlogArticle[] = [
     dateModified: "2026-02-10",
     readTime: "7 min read",
     intro:
-      "The headline annual fees for international schools in Portugal range from €12,000 to €32,000. But the total cost of education almost always exceeds those figures. Here is what TrustFamily's data from 200+ families reveals about the all-in cost.",
+      "The headline annual fees for international schools in Portugal range from €12,000 to €32,000. But the total cost of education almost always exceeds those figures. Here is what Raising Kids in Portugal's data from 200+ families reveals about the all-in cost.",
     sections: [
       {
         heading: "Registration & application fees",
