@@ -135,79 +135,91 @@ export function NeighborhoodDirectory({ neighborhoods }: Props) {
   return (
     <div className="space-y-6">
       {/* Filter bar */}
-      <div className="flex flex-wrap gap-3 items-end">
-        <div className="flex items-center gap-1.5 text-ink-muted text-sm font-medium">
-          <SlidersHorizontal className="h-4 w-4" />
-          <span>Filter</span>
+      <div className="flex flex-col lg:flex-row lg:items-end gap-4 p-4 sm:p-5 bg-surface-subtle border border-border rounded-xl mb-2">
+        <div className="flex items-center justify-between gap-1.5 shrink-0 lg:mb-1">
+          <div className="flex items-center gap-1.5 text-ink-muted text-sm font-medium">
+            <SlidersHorizontal className="h-4 w-4" />
+            <span>Filter</span>
+          </div>
+          {isFiltered && (
+            <button
+              onClick={clearFilters}
+              className="lg:hidden text-xs text-ink-muted underline hover:text-ink-primary"
+            >
+              Clear filters
+            </button>
+          )}
         </div>
 
-        {/* Sort */}
-        <div className="flex flex-col gap-1">
-          <label className="text-xs text-ink-muted font-medium">Sort</label>
-          <select
-            value={filters.sort}
-            onChange={(e) => updateFilter("sort", e.target.value)}
-            className="text-sm border border-border rounded-lg px-3 py-1.5 bg-white focus:outline-none focus:ring-2 focus:ring-trust/30"
-          >
-            <option value="az">A → Z</option>
-            <option value="za">Z → A</option>
-          </select>
-        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-row gap-3 flex-1 w-full">
+          {/* Sort */}
+          <div className="flex flex-col gap-1 w-full">
+            <label className="text-xs text-ink-muted font-medium">Sort</label>
+            <select
+              value={filters.sort}
+              onChange={(e) => updateFilter("sort", e.target.value)}
+              className="w-full text-sm border border-border rounded-lg px-3 py-2 lg:py-1.5 bg-white focus:outline-none focus:ring-2 focus:ring-trust/30"
+            >
+              <option value="az">A → Z</option>
+              <option value="za">Z → A</option>
+            </select>
+          </div>
 
-        {/* Area */}
-        <div className="flex flex-col gap-1">
-          <label className="text-xs text-ink-muted font-medium">Area</label>
-          <select
-            value={filters.area}
-            onChange={(e) => updateFilter("area", e.target.value)}
-            className="text-sm border border-border rounded-lg px-3 py-1.5 bg-white focus:outline-none focus:ring-2 focus:ring-trust/30"
-          >
-            {areaOptions.map((a) => (
-              <option key={a} value={a}>
-                {a === "all" ? "All Areas" : a}
-              </option>
-            ))}
-          </select>
-        </div>
-
-        {/* Price */}
-        <div className="flex flex-col gap-1">
-          <label className="text-xs text-ink-muted font-medium">Price Tier</label>
-          <select
-            value={filters.price}
-            onChange={(e) => updateFilter("price", e.target.value)}
-            className="text-sm border border-border rounded-lg px-3 py-1.5 bg-white focus:outline-none focus:ring-2 focus:ring-trust/30"
-          >
-            <option value="all">All Prices</option>
-            {Object.keys(PRICE_LABELS)
-              .sort((a, b) => (PRICE_ORDER[a] ?? 99) - (PRICE_ORDER[b] ?? 99))
-              .map((p) => (
-                <option key={p} value={p}>
-                  {PRICE_LABELS[p]}
+          {/* Area */}
+          <div className="flex flex-col gap-1 w-full">
+            <label className="text-xs text-ink-muted font-medium">Area</label>
+            <select
+              value={filters.area}
+              onChange={(e) => updateFilter("area", e.target.value)}
+              className="w-full text-sm border border-border rounded-lg px-3 py-2 lg:py-1.5 bg-white focus:outline-none focus:ring-2 focus:ring-trust/30"
+            >
+              {areaOptions.map((a) => (
+                <option key={a} value={a}>
+                  {a === "all" ? "All Areas" : a}
                 </option>
               ))}
-          </select>
-        </div>
+            </select>
+          </div>
 
-        {/* Family score */}
-        <div className="flex flex-col gap-1">
-          <label className="text-xs text-ink-muted font-medium">Family Score</label>
-          <select
-            value={filters.familyScore}
-            onChange={(e) => updateFilter("familyScore", e.target.value)}
-            className="text-sm border border-border rounded-lg px-3 py-1.5 bg-white focus:outline-none focus:ring-2 focus:ring-trust/30"
-          >
-            <option value="all">All Scores</option>
-            <option value="Excellent">Excellent (8+)</option>
-            <option value="Good">Good (7)</option>
-            <option value="Moderate">Moderate (6)</option>
-          </select>
+          {/* Price */}
+          <div className="flex flex-col gap-1 w-full">
+            <label className="text-xs text-ink-muted font-medium">Price Tier</label>
+            <select
+              value={filters.price}
+              onChange={(e) => updateFilter("price", e.target.value)}
+              className="w-full text-sm border border-border rounded-lg px-3 py-2 lg:py-1.5 bg-white focus:outline-none focus:ring-2 focus:ring-trust/30"
+            >
+              <option value="all">All Prices</option>
+              {Object.keys(PRICE_LABELS)
+                .sort((a, b) => (PRICE_ORDER[a] ?? 99) - (PRICE_ORDER[b] ?? 99))
+                .map((p) => (
+                  <option key={p} value={p}>
+                    {PRICE_LABELS[p]}
+                  </option>
+                ))}
+            </select>
+          </div>
+
+          {/* Family score */}
+          <div className="flex flex-col gap-1 w-full">
+            <label className="text-xs text-ink-muted font-medium">Family Score</label>
+            <select
+              value={filters.familyScore}
+              onChange={(e) => updateFilter("familyScore", e.target.value)}
+              className="w-full text-sm border border-border rounded-lg px-3 py-2 lg:py-1.5 bg-white focus:outline-none focus:ring-2 focus:ring-trust/30"
+            >
+              <option value="all">All Scores</option>
+              <option value="Excellent">Excellent (8+)</option>
+              <option value="Good">Good (7)</option>
+              <option value="Moderate">Moderate (6)</option>
+            </select>
+          </div>
         </div>
 
         {isFiltered && (
           <button
             onClick={clearFilters}
-            className="text-xs text-ink-muted underline hover:text-ink-primary self-end pb-1.5"
+            className="hidden lg:block text-xs text-ink-muted underline hover:text-ink-primary self-end pb-2 lg:pb-1 shrink-0"
           >
             Clear filters
           </button>

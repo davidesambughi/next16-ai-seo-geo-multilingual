@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { Link } from "@/i18n/navigation";
 import { usePathname } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
@@ -12,6 +13,8 @@ import { cn } from "@/lib/utils";
 export function Header() {
     const t = useTranslations('Navigation');
     const pathname = usePathname();
+
+    const [isOpen, setIsOpen] = useState(false);
 
     // IMPORTANT: these are the LOGICAL route keys from i18n/routing.ts
     // next-intl's Link component handles the locale-aware URL translation automatically.
@@ -41,7 +44,7 @@ export function Header() {
         <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
             <div className="flex h-16 items-center justify-between px-6 max-w-7xl mx-auto">
                 <div className="flex items-center gap-2">
-                    <Link href="/" className="flex items-center gap-2">
+                    <Link href="/" className="flex items-center gap-2" onClick={() => setIsOpen(false)}>
                         <span className="font-serif text-h3 font-semibold tracking-tight text-ink-primary">Raising Kids in Portugal</span>
                     </Link>
                 </div>
@@ -71,7 +74,7 @@ export function Header() {
                     </div>
 
                     {/* Mobile Navigation */}
-                    <Sheet>
+                    <Sheet open={isOpen} onOpenChange={setIsOpen}>
                         <SheetTrigger asChild>
                             <Button variant="ghost" size="icon" className="md:hidden">
                                 <Menu className="h-5 w-5" />
@@ -87,6 +90,7 @@ export function Header() {
                                     <Link
                                         key={item.href}
                                         href={item.href}
+                                        onClick={() => setIsOpen(false)}
                                         aria-current={item.match(pathname) ? "page" : undefined}
                                         className={cn(
                                             "text-body transition-colors",

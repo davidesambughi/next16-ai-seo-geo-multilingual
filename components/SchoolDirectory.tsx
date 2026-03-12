@@ -138,63 +138,76 @@ export function SchoolDirectory({ schools }: { schools: SchoolDirectoryItem[] })
 
   return (
     <div>
-      <div className="flex flex-wrap items-center gap-3 mb-5 p-4 bg-surface-subtle border border-border rounded-xl">
-        <div className="flex items-center gap-1.5 shrink-0">
-          <Filter className="h-4 w-4 text-ink-muted" />
-          <span className="text-sm font-medium text-ink-primary">{t("filterLabel")}</span>
+      <div className="flex flex-col lg:flex-row lg:items-center gap-4 mb-5 p-4 sm:p-5 bg-surface-subtle border border-border rounded-xl">
+        <div className="flex items-center justify-between gap-1.5 shrink-0">
+          <div className="flex items-center gap-1.5">
+            <Filter className="h-4 w-4 text-ink-muted" />
+            <span className="text-sm font-medium text-ink-primary">{t("filterLabel")}</span>
+          </div>
+          {isFiltered && (
+            <button
+              onClick={clearFilters}
+              className="lg:hidden flex items-center gap-1 text-xs text-ink-muted hover:text-ink-primary transition-colors"
+            >
+              <X className="h-3.5 w-3.5" />
+              {t("clearFilters")}
+            </button>
+          )}
         </div>
 
-        <select
-          value={filters.region}
-          onChange={(e) => updateFilter("region", e.target.value)}
-          aria-label={t("filterByRegionAria")}
-          className="text-sm border border-border rounded-lg px-3 py-1.5 bg-white text-ink-primary focus:outline-none focus:ring-2 focus:ring-brand/20 cursor-pointer"
-        >
-          <option value="all">{t("allRegions")}</option>
-          {regions.map((r) => (
-            <option key={r} value={r}>{translateRegion(r, t)}</option>
-          ))}
-        </select>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-row gap-3 flex-1 w-full">
+          <select
+            value={filters.region}
+            onChange={(e) => updateFilter("region", e.target.value)}
+            aria-label={t("filterByRegionAria")}
+            className="w-full text-sm border border-border rounded-lg px-3 py-2 lg:py-1.5 bg-white text-ink-primary focus:outline-none focus:ring-2 focus:ring-brand/20 cursor-pointer"
+          >
+            <option value="all">{t("allRegions")}</option>
+            {regions.map((r) => (
+              <option key={r} value={r}>{translateRegion(r, t)}</option>
+            ))}
+          </select>
 
-        <select
-          value={filters.curriculum}
-          onChange={(e) => updateFilter("curriculum", e.target.value)}
-          aria-label={t("filterByCurriculumAria")}
-          className="text-sm border border-border rounded-lg px-3 py-1.5 bg-white text-ink-primary focus:outline-none focus:ring-2 focus:ring-brand/20 cursor-pointer"
-        >
-          <option value="all">{t("allCurricula")}</option>
-          {curricula.map((c) => (
-            <option key={c} value={c}>{translateCurriculumTag(c, t)}</option>
-          ))}
-        </select>
+          <select
+            value={filters.curriculum}
+            onChange={(e) => updateFilter("curriculum", e.target.value)}
+            aria-label={t("filterByCurriculumAria")}
+            className="w-full text-sm border border-border rounded-lg px-3 py-2 lg:py-1.5 bg-white text-ink-primary focus:outline-none focus:ring-2 focus:ring-brand/20 cursor-pointer"
+          >
+            <option value="all">{t("allCurricula")}</option>
+            {curricula.map((c) => (
+              <option key={c} value={c}>{translateCurriculumTag(c, t)}</option>
+            ))}
+          </select>
 
-        <select
-          value={filters.price}
-          onChange={(e) => updateFilter("price", e.target.value)}
-          aria-label={t("filterByAnnualFeesAria")}
-          className="text-sm border border-border rounded-lg px-3 py-1.5 bg-white text-ink-primary focus:outline-none focus:ring-2 focus:ring-brand/20 cursor-pointer"
-        >
-          <option value="all">{t("anyPrice")}</option>
-          <option value="under10k">{t("priceUnder10k")}</option>
-          <option value="10k-20k">{t("price10k20k")}</option>
-          <option value="over20k">{t("priceOver20k")}</option>
-          <option value="contact">{t("priceContact")}</option>
-        </select>
+          <select
+            value={filters.price}
+            onChange={(e) => updateFilter("price", e.target.value)}
+            aria-label={t("filterByAnnualFeesAria")}
+            className="w-full text-sm border border-border rounded-lg px-3 py-2 lg:py-1.5 bg-white text-ink-primary focus:outline-none focus:ring-2 focus:ring-brand/20 cursor-pointer"
+          >
+            <option value="all">{t("anyPrice")}</option>
+            <option value="under10k">{t("priceUnder10k")}</option>
+            <option value="10k-20k">{t("price10k20k")}</option>
+            <option value="over20k">{t("priceOver20k")}</option>
+            <option value="contact">{t("priceContact")}</option>
+          </select>
 
-        <select
-          value={filters.language}
-          onChange={(e) => updateFilter("language", e.target.value)}
-          aria-label={t("filterByLanguageAria")}
-          className="text-sm border border-border rounded-lg px-3 py-1.5 bg-white text-ink-primary focus:outline-none focus:ring-2 focus:ring-brand/20 cursor-pointer"
-        >
-          <option value="all">{t("anyLanguage")}</option>
-          <option value="english">{t("englishMedium")}</option>
-        </select>
+          <select
+            value={filters.language}
+            onChange={(e) => updateFilter("language", e.target.value)}
+            aria-label={t("filterByLanguageAria")}
+            className="w-full text-sm border border-border rounded-lg px-3 py-2 lg:py-1.5 bg-white text-ink-primary focus:outline-none focus:ring-2 focus:ring-brand/20 cursor-pointer"
+          >
+            <option value="all">{t("anyLanguage")}</option>
+            <option value="english">{t("englishMedium")}</option>
+          </select>
+        </div>
 
         {isFiltered && (
           <button
             onClick={clearFilters}
-            className="flex items-center gap-1 text-xs text-ink-muted hover:text-ink-primary ml-auto transition-colors"
+            className="hidden lg:flex items-center gap-1 text-xs text-ink-muted hover:text-ink-primary shrink-0 transition-colors"
           >
             <X className="h-3.5 w-3.5" />
             {t("clearFilters")}
