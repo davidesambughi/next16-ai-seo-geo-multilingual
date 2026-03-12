@@ -62,7 +62,7 @@
       "relocation_support": null,
       "visa_guidance": null,
       "portuguese_integration_program": null,
-      "english_as_primary": null,
+      "english_as_primary": true,
       "parent_community_active": null,
       "after_school_care": null,
       "school_bus_routes": null,
@@ -161,7 +161,7 @@
       "relocation_support": null,
       "visa_guidance": null,
       "portuguese_integration_program": null,
-      "english_as_primary": null,
+      "english_as_primary": false,
       "parent_community_active": null,
       "after_school_care": null,
       "school_bus_routes": null,
@@ -251,7 +251,7 @@
       "relocation_support": null,
       "visa_guidance": null,
       "portuguese_integration_program": null,
-      "english_as_primary": null,
+      "english_as_primary": false,
       "parent_community_active": null,
       "after_school_care": null,
       "school_bus_routes": null,
@@ -3493,7 +3493,7 @@
       "relocation_support": null,
       "visa_guidance": null,
       "portuguese_integration_program": null,
-      "english_as_primary": null,
+      "english_as_primary": true,
       "parent_community_active": null,
       "after_school_care": null,
       "school_bus_routes": [],
@@ -3642,7 +3642,6 @@
       "city": "Lisbon",
       "region": "Portugal",
       "coordinates": {
-        
         "lat": 38.76880050809409,
         "lng": -9.379711401417946
       },

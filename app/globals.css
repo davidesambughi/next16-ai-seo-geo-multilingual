@@ -91,10 +91,10 @@
   --radius: 0.75rem;   /* was 0.375rem */
 
   /* ── Editorial type scale (single source for typography) ──── */
-  --ds-text-hero:    2.75rem;   /* 44px — hero H1 */
-  --ds-text-h1:      2.25rem;   /* 36px — page title */
-  --ds-text-h2:      1.75rem;   /* 28px — section heading */
-  --ds-text-h3:      1.375rem;  /* 22px — card/post title */
+  --ds-text-hero:    clamp(2rem, 5vw, 2.75rem);   /* 32px to 44px — hero H1 */
+  --ds-text-h1:      clamp(1.75rem, 4vw, 2.25rem); /* 28px to 36px — page title */
+  --ds-text-h2:      clamp(1.5rem, 3vw, 1.75rem);  /* 24px to 28px — section heading */
+  --ds-text-h3:      clamp(1.25rem, 2.5vw, 1.375rem); /* 20px to 22px — card/post title */
   --ds-text-h4:      1.125rem;  /* 18px — subtitle, benefit title */
   --ds-text-body:    1rem;      /* 16px — body */
   --ds-text-body-sm: 0.875rem;  /* 14px — secondary body */

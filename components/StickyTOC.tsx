@@ -145,14 +145,14 @@ export function StickyTOC({
                 {/* Mobile Menu Backdrop */}
                 {isMobileMenuOpen && (
                     <div
-                        className="fixed inset-0 bg-black/20 backdrop-blur-sm z-[-1]"
+                        className="fixed inset-0 bg-black/50 backdrop-blur-md z-[-1]"
                         onClick={() => setIsMobileMenuOpen(false)}
                     />
                 )}
 
                 {/* Mobile TOC List */}
                 <div className={cn(
-                    "bg-surface-card border-t border-border rounded-t-2xl px-6 py-6 transition-transform duration-300 shadow-float",
+                    "bg-white border-t border-border rounded-t-2xl px-6 py-6 transition-transform duration-300 shadow-float",
                     isMobileMenuOpen ? "translate-y-0" : "translate-y-full h-0 py-0 overflow-hidden border-none"
                 )}>
                     <div className="flex justify-between items-center mb-6">

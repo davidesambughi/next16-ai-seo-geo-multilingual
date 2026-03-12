@@ -10,12 +10,12 @@ Last updated: 2026-03-11 | Session: Bug-fix pass pre-go-live — 10/10 fix di co
 |---|-----|-------|------|
 | 1 | Breadcrumb: slug formattato invece del nome reale | `done` | bug-fix |
 | 2 | Breadcrumb: link parent punta al pillar invece della listing | `done` | bug-fix |
-| 3 | SchoolDirectory: filtro "English Medium" ha falsi positivi | `done (codice)` | bug-fix + fase JSON |
+| 3 | SchoolDirectory: filtro "English Medium" ha falsi positivi | `done` | bug-fix + fase JSON |
 | 4 | RouteScrollTop sovrascrive lo scroll verso hash anchor | `done` | bug-fix |
 | 5 | FAQ JSON-LD school-finder non coincide con l'HTML | `done` | bug-fix |
 | 6 | NeighborhoodsList: intestazioni sezioni non i18n'd | `done` | bug-fix |
-| 7 | ~12 scuole con `englishAsPrimary: null` nel JSON | `deferred` | fase JSON |
-| 8 | Valori `priceRangeLabel` non normalizzati nei neighborhood | `deferred` | fase JSON |
+| 7 | ~12 scuole con `englishAsPrimary: null` nel JSON | `done` | fase JSON |
+| 8 | Valori `priceRangeLabel` non normalizzati nei neighborhood | `done` | fase JSON |
 | 9 | Form contatti: `replyto` mancante nel payload Web3Forms | `done` | bug-fix |
 | 10 | Contact page: titolo e sottotitolo hardcoded EN | `done` | bug-fix |
 
@@ -50,7 +50,7 @@ Last updated: 2026-03-11 | Session: Bug-fix pass pre-go-live — 10/10 fix di co
 - **Fix codice:** Cambiare in `s.englishAsPrimary !== true`.
 - **Fix dati:** Popolare il campo `englishAsPrimary` nelle ~12 scuole mancanti (fase JSON).
 - **Fase:** bug-fix (codice) + fase JSON (dati)
-- **Stato:** `done (codice)` — `s.englishAsPrimary !== true`. Fix dati: `deferred` a fase JSON.
+- **Stato:** `done` — `s.englishAsPrimary !== true` nel codice. JSON aggiornato per fixare i null.
 
 ---
 
@@ -110,7 +110,7 @@ Last updated: 2026-03-11 | Session: Bug-fix pass pre-go-live — 10/10 fix di co
 - **Descrizione:** ~12 scuole importate hanno `expat_family_features.english_as_primary` assente o null. Il filtro language le esclude dopo la fix del Bug 3, anche se potrebbero essere EN-medium.
 - **Fix:** Verificare e popolare il campo nelle scuole mancanti.
 - **Fase:** fase JSON
-- **Stato:** `deferred`
+- **Stato:** `done` — Trovate 4 scuole (non 12) con valore null e fixate nel JSON.
 
 ---
 
@@ -120,4 +120,14 @@ Last updated: 2026-03-11 | Session: Bug-fix pass pre-go-live — 10/10 fix di co
 - **Descrizione:** Il filtro price in `NeighborhoodDirectory` usa match esatto contro `"Affordable"`, `"Mid"`, `"Upper-Mid"`, `"High"`. Se il JSON ha varianti (es. "Upper Mid", "High-End"), il filtro non funziona per quei record.
 - **Fix:** Verificare tutti i valori di `priceRangeLabel` nel JSON e normalizzarli.
 - **Fase:** fase JSON
-- **Stato:** `deferred`
+- **Stato:** `done` — Verifica effettuata: i valori nel JSON sono già normalizzati a 4 valori univoci ("Mid", "High", "Affordable", "Upper-Mid").
+
+---
+
+### Bug 11 — [NUOVO] Neighborhood `total_estimate` formula
+- **Causa:** Dati
+- **File:** `lib/data/raw/neighborhoods-database.json`
+- **Descrizione:** Il `total_estimate` per i budget familiari era hardcoded a `2280` per 58 su 64 quartieri e non includeva l'affitto.
+- **Fix:** Ricalcolato per includere `rent + groceries + utilities + transport + dining_out + healthcare` (omettendo school fees).
+- **Fase:** fase JSON
+- **Stato:** `done` — Valori ricalcolati via script nel JSON.

@@ -18,11 +18,12 @@ export default function Hero() {
       {/* Editorial grid — copy left, image right (bleeds off-canvas on desktop).
           items-stretch: both columns reach the same height — left column text
           top + secondary image bottom, right column portrait fills full height. */}
-      <div className="grid grid-cols-1 md:grid-cols-[1fr_42%] gap-8 md:gap-12 items-stretch pt-16">
+      {/* Desktop: Grid with 1fr copy and 42% image. Mobile: stacked block. */}
+      <div className="flex flex-col md:grid md:grid-cols-[1fr_42%] gap-8 md:gap-12 md:items-stretch pt-4 md:pt-16">
 
         {/* Copy — article header copy */}
-        <div className="order-2 md:order-1 flex flex-col justify-start md:pt-10 md:pb-8">
-          <p className="section-overline mb-5 tracking-widest">{t("overline")}</p>
+        <div className="order-last md:order-first flex flex-col justify-start md:pt-10 md:pb-8">
+          <p className="section-overline mb-4 md:mb-5 tracking-widest">{t("overline")}</p>
           <h1 className="font-serif text-hero font-bold tracking-tight text-ink-primary leading-[1.1] mb-7">
             {t("title")}
           </h1>
@@ -31,8 +32,9 @@ export default function Hero() {
           </p>
         </div>
 
-        {/* Hero image — fills full column height via grid stretch, bleeds right on desktop */}
-        <div className="order-1 md:order-2 relative aspect-[3/4] md:aspect-auto w-full md:-mr-6 lg:-mr-12 overflow-hidden bg-surface-subtle">
+        {/* Hero image — fills full column height via grid stretch, bleeds right on desktop.
+            On mobile, we break out of the standard padding (-mx-6) to make it full width. */}
+        <div className="order-first md:order-last relative aspect-[4/3] w-[calc(100%+3rem)] -ml-6 md:ml-0 md:aspect-auto md:w-full md:-mr-6 lg:-mr-12 overflow-hidden bg-surface-subtle overflow-x-hidden">
           <Image
             src="/hero-img.jpg"
             alt="Expat family in Lisbon, Portugal - TrustFamily relocation guide"
