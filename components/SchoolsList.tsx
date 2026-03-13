@@ -126,19 +126,16 @@ function parseFeesMin(fees: string): number | null {
 }
 
 /**
- * Determine whether a school has all 7 key profile fields populated.
- * Key fields: description, curriculum, fees, admission_process,
- *             extracurricular_activities, transport, language_support.
+ * Determine whether a school has the 5 core profile fields populated.
+ * Key fields: curriculum, fees, ageRange, qualifications, extracurriculars.
  */
 function computeIsFullProfile(school: School): boolean {
   return (
-    Boolean(school.rawDescription?.length) &&
     school.curriculum !== "International" &&
     school.fees !== "Contact school" &&
-    Boolean(school.admissionProcess) &&
-    Boolean(school.extracurriculars?.length) &&
-    Boolean(school.transport) &&
-    Boolean(school.languageSupport)
+    Boolean(school.ageRange) &&
+    Boolean(school.qualifications?.length) &&
+    Boolean(school.extracurriculars?.length)
   );
 }
 
