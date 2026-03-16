@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 
@@ -9,8 +10,15 @@ export default function Footer() {
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
                 {/* Brand */}
                 <div>
-                    <Link href="/" className="font-serif text-2xl font-semibold text-[var(--footer-heading)] mb-3 block tracking-tight">
-                        Raising Kids in Portugal
+                    <Link href="/" className="flex items-center gap-3 mb-3">
+                        <Image 
+                            src="/logo.png" 
+                            alt="Logo Raising Kids in Portugal" 
+                            width={24} 
+                            height={24} 
+                            className="w-6 h-6 object-contain"
+                        />
+                        <span className="font-serif text-xl font-semibold tracking-tight text-[var(--footer-heading)]">Raising Kids in Portugal</span>
                     </Link>
                     <p className="text-[var(--footer-text-muted)] text-sm leading-relaxed">
                         {t("description")}

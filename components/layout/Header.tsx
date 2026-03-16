@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { usePathname } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
@@ -44,8 +45,15 @@ export function Header() {
         <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
             <div className="flex h-16 items-center justify-between px-6 max-w-7xl mx-auto">
                 <div className="flex items-center gap-2">
-                    <Link href="/" className="flex items-center gap-2" onClick={() => setIsOpen(false)}>
-                        <span className="font-serif text-h3 font-semibold tracking-tight text-ink-primary">Raising Kids in Portugal</span>
+                    <Link href="/" className="flex items-center gap-3" onClick={() => setIsOpen(false)}>
+                        <Image 
+                            src="/logo.png" 
+                            alt="Logo Raising Kids in Portugal" 
+                            width={32} 
+                            height={32} 
+                            className="w-8 h-8 object-contain"
+                        />
+                        <span className="font-serif text-h3 font-semibold tracking-tight text-ink-primary hidden sm:block">Raising Kids in Portugal</span>
                     </Link>
                 </div>
 
