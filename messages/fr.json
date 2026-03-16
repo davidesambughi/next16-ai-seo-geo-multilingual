@@ -29,7 +29,7 @@
   "Hero": {
     "overline": "Le guide indépendant · Portugal 2026",
     "title": "Assurez l'Avenir de Vos Enfants au Portugal",
-    "subtitle": "Raising Kids in Portugal est le guide indépendant pour les familles internationales qui s'installent au Portugal. Nous comparons toutes les grandes écoles internationales proches de Lisbonne — programmes IB, britannique et américain à St. Julian's, TASIS Portugal, CAISL et United Lisbon — cartographions les quartiers familiaux de Cascais, Sintra et Parque das Nações, et vous guidons pas à pas dans les visas D7, D8 et Golden Visa. Deux ans de visites scolaires sur place, 200+ familles, aucune relation commerciale : la recherche structurée et honnête dont vous avez besoin avant de vous engager."
+    "subtitle": "Raising Kids in Portugal est le guide indépendant pour les familles internationales s'installant au Portugal. Nous comparons les meilleures écoles internationales près de Lisbonne — programmes IB, britanniques et américains à St. Julian's, TASIS Portugal, CAISL et United Lisbon — répertorions les quartiers familiaux à Cascais, Sintra et Parque das Nações, et vous guidons à travers les options de visa D7, D8 et Golden Visa. Basé sur une recherche approfondie en relocalisation et une analyse de données indépendante."
   },
   "TrustBar": {
     "independent": "Données 100% indépendantes",
@@ -595,11 +595,11 @@
     "metaTitle": "À propos de Raising Kids in Portugal — Intelligence indépendante sur les écoles et la relocalisation au Portugal",
     "metaDescription": "Raising Kids in Portugal est une plateforme indépendante aidant les familles internationales à s'installer au Portugal en toute confiance. Nous vérifions les écoles, les quartiers et les données de relocalisation — sans placements payants ni conflits d'intérêts.",
     "h1": "Le guide de confiance pour les familles qui s'installent au Portugal",
-    "opening": "Raising Kids in Portugal a été créé sur une seule prémisse : les familles qui se relocalisent méritent des informations vérifiées et impartiales — pas du contenu sponsorisé déguisé en conseils. Nous fournissons des informations indépendantes sur les écoles et les quartiers pour que vous puissiez prendre l'une des décisions les plus importantes pour vos enfants en toute confiance.",
-    "stat1Value": "200+",
-    "stat1Label": "familles accompagnées",
-    "stat2Value": "50+",
-    "stat2Label": "visites scolaires effectuées",
+    "opening": "Raising Kids in Portugal a été créé sur un principe simple : les familles qui s'installent méritent des informations indépendantes et basées sur des données — pas du contenu sponsorisé déguisé en conseil. Nous fournissons une intelligence indépendante sur les écoles et les quartiers afin que vous puissiez prendre l'une des décisions les plus importantes pour vos enfants en toute confiance.",
+    "stat1Value": "2026",
+    "stat1Label": "annuaire optimisé",
+    "stat2Value": "100%",
+    "stat2Label": "recherche indépendante",
     "stat3Value": "4",
     "stat3Label": "grandes écoles évaluées indépendamment",
     "stat4Value": "5",
@@ -611,8 +611,8 @@
     "howWeOperateH2": "Comment nous fonctionnons",
     "principle1Title": "L'indépendance est non négociable",
     "principle1Body": "Raising Kids in Portugal n'accepte aucun paiement, commission ou frais de référence de la part des écoles, agences immobilières ou sociétés de relocalisation. Chaque évaluation est entièrement autofinancée. C'est la seule façon pour nos données d'être fiables.",
-    "principle2Title": "Les données avant les opinions",
-    "principle2Body": "Nous visitons les écoles en personne, interviewons les familles actuelles et vérifions les frais et taux d'admission publiés avant de rien publier. Si nous ne pouvons pas le vérifier, nous ne le publions pas.",
+    "principle2Title": "Informations Basées sur les Données",
+    "principle2Body": "Nous regroupons et vérifions les frais publiés, les programmes et les points de données officiels. Si nous ne trouvons pas de données fiables, nous ne publions pas.",
     "principle3Title": "L'autorité se mérite, elle ne se réclame pas",
     "principle3Body": "Nous ne nous appelons pas experts parce que nous avons un site web. Nous gagnons notre crédibilité par la spécificité — données sur les taux d'admission, temps de trajet réels, analyses complètes des frais et les choses que les écoles ne font pas la publicité.",
     "principle4Title": "Vos données vous appartiennent",
@@ -662,7 +662,7 @@
     "metaTitle": "Blog — Guides d'écoles et de relocalisation au Portugal | Raising Kids in Portugal",
     "metaDescription": "Articles d'experts sur le choix des écoles internationales au Portugal, la comparaison des quartiers de Lisbonne pour les familles expatriées et des analyses réelles des coûts de relocalisation.",
     "h1": "Guides Écoles & Relocalisation",
-    "subtitle": "Des guides de première main par une équipe qui a aidé plus de 200 familles à s'installer au Portugal.",
+    "subtitle": "Guides détaillés d'une équipe dédiée à la recherche sur la relocalisation au Portugal.",
     "readMore": "Lire le guide complet →"
   },
   "BlogDetail": {
@@ -793,6 +793,23 @@
   },
   "ContactPage": {
     "h1": "Contactez-nous",
-    "subtitle": "Nos experts en relocalisation sont là pour vous aider à trouver la bonne école et le bon quartier au Portugal. Remplissez le formulaire ci-dessous et nous vous répondrons dans un jour ouvré."
+    "subtitle": "Nos experts en relocalisation sont là pour vous aider à trouver la bonne école et le bon quartier au Portugal. Remplissez le formulaire ci-dessous et nous vous répondrons dans un délai d'un jour ouvrable."
+  },
+  "Footer": {
+    "description": "Intelligence indépendante pour les familles s'installant au Portugal. Nous analysons les écoles et les quartiers pour que vous puissiez emménager en toute confiance.",
+    "tagline": "100% Indépendant · Recherche Basée sur les Données",
+    "explore": "Explorer",
+    "linkSchools": "Écoles Internationales",
+    "linkNeighborhoods": "Quartiers Familiaux",
+    "linkGuide": "Guide de Relocalisation",
+    "linkQuiz": "Quiz School Finder",
+    "linkBlog": "Blog et Guides",
+    "company": "Entreprise",
+    "linkAbout": "À Propos",
+    "linkContact": "Contactez-nous",
+    "legal": "Juridique",
+    "linkPrivacy": "Politique de Confidentialité",
+    "linkTerms": "Conditions d'Utilisation",
+    "disclaimer": "Avertissement : Les informations sont fournies à titre indicatif uniquement. Nous utilisons des recherches indépendantes et des analyses de données assistées par IA. Nous ne fournissons pas de conseils juridiques, de visa ou financiers. Vérifiez toujours les données auprès des sources officielles avant de prendre des décisions de relocalisation."
   }
 }

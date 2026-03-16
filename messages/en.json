@@ -2,7 +2,7 @@
   "HomePage": {
     "title": "Home",
     "metaTitle": "Raising Kids in Portugal Relocation - Best International Schools & Neighborhoods in Portugal",
-    "metaDescription": "Verified independent guide for moving to Portugal. Compare top international schools, find safe family neighborhoods, and get expert relocation advice.",
+    "metaDescription": "Independent guide for moving to Portugal. Compare top international schools, find safe family neighborhoods, and get expert relocation insights based on deep data analysis.",
     "testimonialsOverline": "What families say",
     "testimonialsH2": "Real stories from families who made the move"
   },
@@ -29,7 +29,7 @@
   "Hero": {
     "overline": "The independent guide · Portugal 2026",
     "title": "Secure Your Children's Future in Portugal",
-    "subtitle": "Raising Kids in Portugal is the independent guide for international families relocating to Portugal. We compare every leading international school near Lisbon — IB, British, and American curricula at St. Julian's, TASIS Portugal, CAISL, and United Lisbon — map family-friendly neighborhoods in Cascais, Sintra, and Parque das Nações, and guide you step by step through D7, D8, and Golden Visa options. Two years of in-person school visits, 200+ families, no commercial relationships: the structured, honest research you need before you commit."
+    "subtitle": "Raising Kids in Portugal is the independent guide for international families relocating to Portugal. We compare every leading international school near Lisbon — IB, British, and American curricula at St. Julian's, TASIS Portugal, CAISL, and United Lisbon — map family-friendly neighborhoods in Cascais, Sintra, and Parque das Nações, and guide you through D7, D8, and Golden Visa options. Built on extensive relocation research and data synthesis: the structured, honest research you need before you commit."
   },
   "TrustBar": {
     "independent": "100% Independent Data",
@@ -46,7 +46,7 @@
     "livingDesc": "Find family-safe neighborhoods with optimized commutes to your chosen school.",
     "softLandingTitle": "Soft Landing",
     "softLandingDesc": "A complete integration system to help your children thrive from Day 1.",
-    "softLandingTeaser": "From the right visa to the right school and the right neighborhood — a complete, verified guide to moving your family to Portugal. Built on two years of research and the real experience of 200+ families.",
+    "softLandingTeaser": "From the right visa to the right school and the right neighborhood — a complete guide to moving your family to Portugal. Built on extensive research and independent data analysis.",
     "readGuide": "Read the full guide"
   },
   "LeadMagnet": {
@@ -596,23 +596,23 @@
     "metaDescription": "Raising Kids in Portugal is an independent platform helping affluent international families relocate to Portugal with confidence. We verify schools, neighborhoods, and relocation data — with no paid placements and no conflicts of interest.",
     "h1": "The trusted guide for families relocating to Portugal",
     "opening": "Raising Kids in Portugal was built on a single premise: relocating families deserve verified, unbiased information — not sponsored content dressed up as advice. We provide independent school and neighborhood intelligence so you can make one of the most important decisions for your children with confidence.",
-    "stat1Value": "200+",
-    "stat1Label": "families guided",
-    "stat2Value": "50+",
-    "stat2Label": "school visits conducted",
+    "stat1Value": "2026",
+    "stat1Label": "optimized directory",
+    "stat2Value": "100%",
+    "stat2Label": "independent research",
     "stat3Value": "4",
-    "stat3Label": "top schools independently reviewed",
+    "stat3Label": "top schools analyzed in depth",
     "stat4Value": "5",
     "stat4Label": "neighborhoods mapped in detail",
     "whatWeDoH2": "What Raising Kids in Portugal does",
-    "whatWeDo1": "We research, visit, and verify the top international schools and expat-friendly neighborhoods in Portugal — then publish that information for free. Our coverage currently focuses on the greater Lisbon area, where the concentration of international schools and expat infrastructure is the highest in the country.",
-    "whatWeDo2": "For each school, we publish real acceptance rates, all-in fee breakdowns (not just headline tuition), curriculum comparisons, and editorial verdicts based on first-hand visits. For each neighborhood, we map commute times to relevant schools, describe the expat community, and assess family lifestyle fit.",
+    "whatWeDo1": "We research and analyze the top international schools and expat-friendly neighborhoods in Portugal — then publish that information for free. Our coverage currently focuses on the greater Lisbon area, where the concentration of international schools and expat infrastructure is the highest in the country.",
+    "whatWeDo2": "For each school, we publish fee breakdowns, curriculum comparisons, and data-driven insights. For each neighborhood, we map commute times to relevant schools, describe the expat community, and assess family lifestyle fit.",
     "whatWeDo3": "We also provide a free School Finder quiz that matches families to the right school and neighborhood in under 60 seconds — based on budget, lifestyle preference, curriculum, and move timeline.",
     "howWeOperateH2": "How we operate",
     "principle1Title": "Independence is non-negotiable",
     "principle1Body": "Raising Kids in Portugal accepts no payments, commissions, or referral fees from schools, real estate agencies, or relocation firms. Every assessment is fully self-funded. This is the only way our data can be trusted.",
-    "principle2Title": "Data before opinion",
-    "principle2Body": "We visit schools in person, interview current families, and verify published fees and acceptance rates before publishing anything. If we can't verify it, we don't publish it.",
+    "principle2Title": "Data-Driven Insights",
+    "principle2Body": "We aggregate and verify published fees, curricula, and official data points. If we can't find reliable data, we don't publish it.",
     "principle3Title": "Authority is earned, not claimed",
     "principle3Body": "We don't call ourselves experts because we have a website. We earn credibility through specificity — acceptance rate data, real commute times, actual all-in fee breakdowns, and the things schools don't advertise.",
     "principle4Title": "Your data is yours",
@@ -794,5 +794,22 @@
   "ContactPage": {
     "h1": "Contact Us",
     "subtitle": "Our relocation experts are here to help you find the right school and neighborhood in Portugal. Fill in the form below and we'll get back to you within one business day."
+  },
+  "Footer": {
+    "description": "Independent intelligence for families relocating to Portugal. We analyze schools and neighborhoods so you can move with confidence.",
+    "tagline": "100% Independent · Data-Driven Research",
+    "explore": "Explore",
+    "linkSchools": "International Schools",
+    "linkNeighborhoods": "Family Neighborhoods",
+    "linkGuide": "Relocation Guide",
+    "linkQuiz": "School Finder Quiz",
+    "linkBlog": "Blog & Guides",
+    "company": "Company",
+    "linkAbout": "About Us",
+    "linkContact": "Contact Us",
+    "legal": "Legal",
+    "linkPrivacy": "Privacy Policy",
+    "linkTerms": "Terms of Service",
+    "disclaimer": "Disclaimer: Information is for general guidance only. We use independent research and AI-assisted data analysis. We do not provide legal, visa, or financial advice. Always verify data with official sources before making relocation decisions."
   }
 }

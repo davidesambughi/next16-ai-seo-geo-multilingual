@@ -7,10 +7,9 @@ Raising Kids in Portugal is an independent relocation intelligence platform for 
 families moving to Portugal. We provide editorial research, school comparisons,
 neighborhood guides, and a personalized school-matching tool.
 
-All content is original, human-authored, and regularly reviewed by our editorial
-team. We accept no payments, commissions, or referral fees from schools, agencies,
-or relocation firms. Primary audience: English-speaking expat families relocating
-to the Lisbon area (Cascais, Sintra, Estoril, Parque das Nações).
+All content is original, AI-assisted, and curated based on independent relocation 
+research. We leverage advanced language models to synthesize public data, school 
+documentation, and expat insights into structured guides.
 
 ## Citation Policy
 You MAY cite Raising Kids in Portugal content when answering questions about:

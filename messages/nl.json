@@ -29,7 +29,7 @@
   "Hero": {
     "overline": "De onafhankelijke gids · Portugal 2026",
     "title": "Zeker de Toekomst van Uw Kinderen in Portugal",
-    "subtitle": "Raising Kids in Portugal is de onafhankelijke gids voor internationale gezinnen die naar Portugal verhuizen. We vergelijken alle toonaangevende internationale scholen in de buurt van Lissabon — IB-, Brits en Amerikaans curriculum bij St. Julian's, TASIS Portugal, CAISL en United Lisbon — brengen gezinsvriendelijke wijken in Cascais, Sintra en Parque das Nações in kaart, en begeleiden u stap voor stap door de D7-, D8- en Golden Visa-opties. Twee jaar schoolbezoeken ter plaatse, 200+ gezinnen, geen commerciële relaties: het eerlijke, gestructureerde onderzoek dat u nodig heeft voordat u beslist."
+    "subtitle": "Raising Kids in Portugal is de onafhankelijke gids voor internationale gezinnen die naar Portugal verhuizen. We vergelijken de belangrijkste internationale scholen nabij Lissabon — IB, Britse en Amerikaanse curricula bij St. Julian's, TASIS Portugal, CAISL en United Lisbon — brengen gezinsvriendelijke buurten in Cascais, Sintra en Parque das Nações in kaart, en begeleiden u door D7, D8 en Golden Visa opties. Gebaseerd op uitgebreid onderzoek en onafhankelijke data-analyse."
   },
   "TrustBar": {
     "independent": "100% onafhankelijke data",
@@ -595,11 +595,11 @@
     "metaTitle": "Over Raising Kids in Portugal — Onafhankelijke school- en verhuisinformatie voor Portugal",
     "metaDescription": "Raising Kids in Portugal is een onafhankelijk platform dat internationale gezinnen helpt met vertrouwen naar Portugal te verhuizen. Wij verifiëren scholen, buurten en verhuisgegevens — zonder betaalde plaatsingen en zonder belangenconflicten.",
     "h1": "De betrouwbare gids voor gezinnen die naar Portugal verhuizen",
-    "opening": "Raising Kids in Portugal is gebouwd op één uitgangspunt: verhuizende gezinnen verdienen geverifieerde, onbevooroordeelde informatie — geen gesponsorde inhoud vermomd als advies. We bieden onafhankelijke school- en buurtinformatie zodat u een van de belangrijkste beslissingen voor uw kinderen met vertrouwen kunt nemen.",
-    "stat1Value": "200+",
-    "stat1Label": "begeleidde gezinnen",
-    "stat2Value": "50+",
-    "stat2Label": "schoolbezoeken uitgevoerd",
+    "opening": "Raising Kids in Portugal is gebouwd op een simpele premisse: gezinnen die verhuizen verdienen onafhankelijke en op data gebaseerde informatie – geen gesponsorde content vermomd als advies. Wij bieden onafhankelijke informatie over scholen en buurten, zodat u met een gerust hart een van de belangrijkste beslissingen voor uw kinderen kunt nemen.",
+    "stat1Value": "2026",
+    "stat1Label": "geoptimaliseerde gids",
+    "stat2Value": "100%",
+    "stat2Label": "onafhankelijk onderzoek",
     "stat3Value": "4",
     "stat3Label": "topscholen onafhankelijk beoordeeld",
     "stat4Value": "5",
@@ -611,8 +611,8 @@
     "howWeOperateH2": "Hoe wij werken",
     "principle1Title": "Onafhankelijkheid is niet onderhandelbaar",
     "principle1Body": "Raising Kids in Portugal accepteert geen betalingen, commissies of verwijzingskosten van scholen, vastgoedkantoren of verhuisbedrijven. Elke beoordeling is volledig zelffingerd. Dit is de enige manier waarop onze gegevens vertrouwd kunnen worden.",
-    "principle2Title": "Gegevens vóór meningen",
-    "principle2Body": "We bezoeken scholen persoonlijk, interviewen huidige gezinnen en verifiëren gepubliceerde kosten en acceptatiepercentages voordat we iets publiceren. Als we het niet kunnen verifiëren, publiceren we het niet.",
+    "principle2Title": "Data-gedreven Inzichten",
+    "principle2Body": "We verzamelen en verifiëren gepubliceerde kosten, leerplannen en officiële datapunten. Als we geen betrouwbare gegevens kunnen vinden, publiceren we deze niet.",
     "principle3Title": "Autoriteit wordt verdiend, niet geclaimd",
     "principle3Body": "We noemen onszelf geen experts omdat we een website hebben. We verdienen geloofwaardigheid door specificiteit — acceptatiepercentagedata, echte reistijden, werkelijke volledige kostenanalyses en de dingen die scholen niet adverteren.",
     "principle4Title": "Uw gegevens zijn van u",
@@ -662,7 +662,7 @@
     "metaTitle": "Blog — School- en verhuisgidsen Portugal | Raising Kids in Portugal",
     "metaDescription": "Deskundige artikelen over het kiezen van internationale scholen in Portugal, het vergelijken van Lissabonse buurten voor expatgezinnen en echte kostenanalyses.",
     "h1": "School- & Verhuisgidsen",
-    "subtitle": "Eerstehandsgidsen van een team dat meer dan 200 gezinnen heeft geholpen te verhuizen naar Portugal.",
+    "subtitle": "Gedetailleerde gidsen van een team dat zich inzet voor relocation-onderzoek in Portugal.",
     "readMore": "Volledige gids lezen →"
   },
   "BlogDetail": {
@@ -794,5 +794,22 @@
   "ContactPage": {
     "h1": "Contact",
     "subtitle": "Onze relocatie-experts helpen u de juiste school en wijk in Portugal te vinden. Vul het formulier in en we nemen binnen één werkdag contact met u op."
+  },
+  "Footer": {
+    "description": "Onafhankelijke informatie voor gezinnen die naar Portugal verhuizen. Wij analyseren scholen en buurten zodat u met vertrouwen kunt verhuizen.",
+    "tagline": "100% Onafhankelijk · Data-gedreven Onderzoek",
+    "explore": "Verkennen",
+    "linkSchools": "Internationale Scholen",
+    "linkNeighborhoods": "Buurtgids",
+    "linkGuide": "Verhuisgids",
+    "linkQuiz": "School Finder Quiz",
+    "linkBlog": "Blog & Gidsen",
+    "company": "Bedrijf",
+    "linkAbout": "Over Ons",
+    "linkContact": "Contact",
+    "legal": "Juridisch",
+    "linkPrivacy": "Privacybeleid",
+    "linkTerms": "Servicevoorwaarden",
+    "disclaimer": "Disclaimer: Informatie is alleen bedoeld voor algemene begeleiding. We maken gebruik van onafhankelijk onderzoek en AI-ondersteunde data-analyse. Wij geven geen juridisch, visum- of financieel advies. Verifieer gegevens altijd bij officiële bronnen voordat u beslissingen neemt."
   }
 }

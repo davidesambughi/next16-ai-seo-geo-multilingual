@@ -77,7 +77,7 @@ export default async function AboutPage({ params }: PageProps) {
         "@type": "Organization",
         "name": "Raising Kids in Portugal",
         "description":
-            "Independent intelligence platform for international families relocating to Portugal. Provides verified school comparisons, neighborhood guides, and relocation resources.",
+            "Independent relocation intelligence platform for international families moving to Portugal. Built on data-driven school analysis, housing research, and independent relocation guides.",
         "url": base,
         "foundingDate": "2024",
         "areaServed": "PT",
@@ -91,13 +91,13 @@ export default async function AboutPage({ params }: PageProps) {
         // "sameAs": ["https://www.linkedin.com/company/raisingkidsinportugal"],
     };
 
-    // Person schema — E-E-A-T signal: editorial team with domain expertise
+    // Person schema — E-E-A-T signal: expertise based on research
     const editorialPersonSchema = {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Raising Kids in Portugal Editorial Team",
-        "jobTitle": "Education & Relocation Intelligence",
-        "description": "A team of consultants who have guided 200+ international families through school selection and relocation to Portugal. Conducted 50+ in-person school visits across St. Julian's School, TASIS Portugal, CAISL, and United Lisbon International School.",
+        "jobTitle": "Relocation Intelligence & Data Analysis",
+        "description": "An independent team dedicated to synthesizing complex relocation data into actionable guides for international families. We analyze fees, curricula, and neighborhood infrastructure across greater Lisbon to provide unbiased relocation strategy.",
         "worksFor": {
             "@type": "Organization",
             "name": "Raising Kids in Portugal",
@@ -110,7 +110,7 @@ export default async function AboutPage({ params }: PageProps) {
             "American curriculum schools",
             "Family relocation to Portugal",
             "Portugal D7 visa",
-            "Portugal Digital Nomad visa",
+            "Portugal D8 visa",
             "Cascais expat community",
             "Sintra schools",
         ],

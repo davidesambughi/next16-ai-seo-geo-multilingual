@@ -29,7 +29,7 @@
   "Hero": {
     "overline": "O guia independente · Portugal 2026",
     "title": "Garanta o Futuro dos Seus Filhos em Portugal",
-    "subtitle": "Raising Kids in Portugal é o guia independente para famílias internacionais que se mudam para Portugal. Comparamos as principais escolas internacionais perto de Lisboa — currículos IB, Britânico e Americano na St. Julian's, TASIS Portugal, CAISL e United Lisbon — mapeamos bairros como Cascais, Sintra e Parque das Nações, e orientamo-lo passo a passo nos vistos D7, D8 e Golden Visa. Dois anos de visitas presenciais, 200+ famílias, sem relações comerciais: a investigação que precisa antes de decidir."
+    "subtitle": "Raising Kids in Portugal é o guia independente para famílias internacionais que se mudam para Portugal. Comparamos as principais escolas internacionais perto de Lisboa — currículos IB, britânicos e americanos em St. Julian's, TASIS Portugal, CAISL e United Lisbon — mapeamos bairros ideais para famílias em Cascais, Sintra e Parque das Nações, e guiamos através das opções de vistos D7, D8 e Golden Visa. Baseado em extensa pesquisa de relocalização e análise de dados independente."
   },
   "TrustBar": {
     "independent": "Dados 100% Independentes",
@@ -595,11 +595,11 @@
     "metaTitle": "Sobre a Raising Kids in Portugal — Inteligência Independente sobre Escolas e Relocalização em Portugal",
     "metaDescription": "A Raising Kids in Portugal é uma plataforma independente que ajuda famílias internacionais a realojar-se em Portugal com confiança. Verificamos escolas, bairros e dados de relocalização — sem colocações pagas e sem conflitos de interesse.",
     "h1": "O guia de confiança para famílias que se mudam para Portugal",
-    "opening": "A Raising Kids in Portugal foi criada com uma premissa: as famílias que se relocalizam merecem informação verificada e imparcial — não conteúdo patrocinado disfarçado de conselho. Fornecemos inteligência independente sobre escolas e bairros para que possa tomar uma das decisões mais importantes para os seus filhos com confiança.",
-    "stat1Value": "200+",
-    "stat1Label": "famílias orientadas",
-    "stat2Value": "50+",
-    "stat2Label": "visitas a escolas realizadas",
+    "opening": "A Raising Kids in Portugal foi criada com uma premissa: as famílias que se relocalizam merecem informação independente e baseada em dados — não conteúdo patrocinado disfarçado de conselho. Fornecemos inteligência independente sobre escolas e bairros para que possa tomar uma das decisões mais importantes para os seus filhos com confiança.",
+    "stat1Value": "2026",
+    "stat1Label": "diretório otimizado",
+    "stat2Value": "100%",
+    "stat2Label": "investigação independente",
     "stat3Value": "4",
     "stat3Label": "escolas de topo avaliadas de forma independente",
     "stat4Value": "5",
@@ -611,8 +611,8 @@
     "howWeOperateH2": "Como operamos",
     "principle1Title": "A independência é inegociável",
     "principle1Body": "A Raising Kids in Portugal não aceita pagamentos, comissões ou taxas de referência de escolas, agências imobiliárias ou empresas de relocalização. Cada avaliação é totalmente autofinanciada. É a única forma de os nossos dados poderem ser confiáveis.",
-    "principle2Title": "Dados antes de opiniões",
-    "principle2Body": "Visitamos escolas pessoalmente, entrevistamos famílias atuais e verificamos propinas e taxas de aceitação publicadas antes de publicar qualquer coisa. Se não conseguirmos verificar, não publicamos.",
+    "principle2Title": "Insights Baseados em Dados",
+    "principle2Body": "Agregamos e verificamos propinas publicadas, currículos e pontos de dados oficiais. Se não conseguirmos encontrar dados fiáveis, não publicamos.",
     "principle3Title": "A autoridade é conquistada, não reivindicada",
     "principle3Body": "Não nos chamamos especialistas por termos um site. Ganhamos credibilidade através da especificidade — dados de taxas de aceitação, tempos de deslocação reais, análises detalhadas de propinas e as coisas que as escolas não divulgam.",
     "principle4Title": "Os seus dados são seus",
@@ -662,7 +662,7 @@
     "metaTitle": "Blog — Guias de Escolas e Relocalização Portugal | Raising Kids in Portugal",
     "metaDescription": "Artigos especializados sobre como escolher escolas internacionais em Portugal, comparar bairros de Lisboa para famílias expatriadas e análises reais dos custos de relocalização.",
     "h1": "Guias de Escolas e Relocalização",
-    "subtitle": "Guias de primeira mão de uma equipa que já ajudou mais de 200 famílias a mudar-se para Portugal.",
+    "subtitle": "Guias detalhados de uma equipa dedicada à investigação de relocalização em Portugal.",
     "readMore": "Ler o guia completo →"
   },
   "BlogDetail": {
@@ -793,6 +793,23 @@
   },
   "ContactPage": {
     "h1": "Fale Connosco",
-    "subtitle": "Os nossos especialistas em relocalização estão aqui para ajudá-lo a encontrar a escola e o bairro certos em Portugal. Preencha o formulário abaixo e responderemos em até um dia útil."
+    "subtitle": "Os nossos especialistas em relocalização estão qui para ajudá-lo a encontrar a escola e o bairro certos em Portugal. Preencha o formulário abaixo e responderemos em até um dia útil."
+  },
+  "Footer": {
+    "description": "Inteligência independente para famílias que se mudam para Portugal. Analisamos escolas e bairros para que possa mudar-se com confiança.",
+    "tagline": "100% Independente · Pesquisa Baseada em Dados",
+    "explore": "Explorar",
+    "linkSchools": "Escolas Internacionais",
+    "linkNeighborhoods": "Bairros para Famílias",
+    "linkGuide": "Guia de Relocalização",
+    "linkQuiz": "Quiz School Finder",
+    "linkBlog": "Blog e Guias",
+    "company": "Empresa",
+    "linkAbout": "Sobre Nós",
+    "linkContact": "Contacte-nos",
+    "legal": "Legal",
+    "linkPrivacy": "Política de Privacidade",
+    "linkTerms": "Termos de Serviço",
+    "disclaimer": "Aviso: A informação é apenas para orientação geral. Utilizamos pesquisa independente e análise de dados assistida por IA. Não fornecemos aconselhamento jurídico, de vistos ou financeiro. Verifique sempre os dados com fontes oficiais antes di tomar decisões de relocalização."
   }
 }

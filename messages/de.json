@@ -24,12 +24,12 @@
   },
   "Metadata": {
     "title": "Raising Kids in Portugal Relocation - Beste Schulen & Stadtteile in Portugal",
-    "description": "Expertenratgeber für Familienumzüge nach Portugal. Finden Sie die besten internationalen Schulen und familienfreundlichen Stadtteile."
+    "description": "Expertenratgeber für Familienumzüge nach Portugal. Finden Sie die besten internationalen Schulen und familienfreundliche Stadtteile."
   },
   "Hero": {
     "overline": "Der unabhängige Leitfaden · Portugal 2026",
     "title": "Sichern Sie die Zukunft Ihrer Kinder in Portugal",
-    "subtitle": "Raising Kids in Portugal ist der unabhängige Leitfaden für internationale Familien, die nach Portugal ziehen. Wir vergleichen alle führenden internationalen Schulen in der Nähe von Lissabon — IB-, britische und amerikanische Lehrpläne an St. Julian's, TASIS Portugal, CAISL und United Lisbon — kartieren familienfreundliche Stadtteile in Cascais, Sintra und Parque das Nações, und führen Sie Schritt für Schritt durch D7-, D8- und Golden-Visa-Optionen. Zwei Jahre Schulbesuche vor Ort, 200+ Familien, keine kommerziellen Interessen: die strukturierte Recherche, die Sie vor Ihrer Entscheidung brauchen."
+    "subtitle": "Raising Kids in Portugal ist der unabhängige Leitfaden für internationale Familien, die nach Portugal umziehen. Wir vergleichen alle führenden internationalen Schulen in der Nähe von Lissabon — IB, britische und amerikanische Lehrpläne an der St. Julian's, TASIS Portugal, CAISL und United Lisbon — zeigen familienfreundliche Viertel in Cascais, Sintra und Parque das Nações und führen Sie durch D7, D8 und Golden Visa Optionen. Basierend auf umfassender Relocation-Forschung und unabhängiger Datenauswertung."
   },
   "TrustBar": {
     "independent": "100% unabhängige Daten",
@@ -595,11 +595,11 @@
     "metaTitle": "Über Raising Kids in Portugal — Unabhängige Schul- und Umzugsintelligenz für Portugal",
     "metaDescription": "Raising Kids in Portugal ist eine unabhängige Plattform, die internationalen Familien hilft, sicher nach Portugal umzuziehen. Wir prüfen Schulen, Stadtteile und Umzugsdaten — ohne bezahlte Platzierungen und ohne Interessenkonflikte.",
     "h1": "Der vertrauenswürdige Leitfaden für Familien, die nach Portugal ziehen",
-    "opening": "Raising Kids in Portugal wurde auf einer einzigen Prämisse aufgebaut: Umziehende Familien verdienen verifizierte, unvoreingenommene Informationen — keine als Ratschläge verkleideten Werbeinhalte. Wir bieten unabhängige Schul- und Stadtteilinformationen, damit Sie eine der wichtigsten Entscheidungen für Ihre Kinder mit Vertrauen treffen können.",
-    "stat1Value": "200+",
-    "stat1Label": "betreute Familien",
-    "stat2Value": "50+",
-    "stat2Label": "durchgeführte Schulbesuche",
+    "opening": "Raising Kids in Portugal wurde auf einer einfachen Prämisse aufgebaut: Familien, die umziehen, verdienen unabhängige und datenbasierte Informationen – nicht gesponserte Inhalte, die als Ratschläge getarnt sind. Wir bieten unabhängige Informationen zu Schulen und Stadtteilen, damit Sie eine der wichtigsten Entscheidungen für Ihre Kinder mit Zuversicht treffen können.",
+    "stat1Value": "2026",
+    "stat1Label": "optimiertes Verzeichnis",
+    "stat2Value": "100%",
+    "stat2Label": "unabhängige Forschung",
     "stat3Value": "4",
     "stat3Label": "unabhängig bewertete Topschulen",
     "stat4Value": "5",
@@ -611,8 +611,8 @@
     "howWeOperateH2": "Wie wir arbeiten",
     "principle1Title": "Unabhängigkeit ist nicht verhandelbar",
     "principle1Body": "Raising Kids in Portugal akzeptiert keine Zahlungen, Provisionen oder Vermittlungsgebühren von Schulen, Immobilienagenturen oder Umzugsfirmen. Jede Bewertung ist vollständig selbstfinanziert. Nur so können unsere Daten vertrauenswürdig sein.",
-    "principle2Title": "Daten vor Meinungen",
-    "principle2Body": "Wir besuchen Schulen persönlich, befragen aktuelle Familien und überprüfen veröffentlichte Gebühren und Annahmequoten, bevor wir etwas veröffentlichen. Wenn wir es nicht verifizieren können, veröffentlichen wir es nicht.",
+    "principle2Title": "Datenbasierte Einblicke",
+    "principle2Body": "Wir sammeln und verifizieren veröffentlichte Gebühren, Lehrpläne und offizielle Datenpunkte. Wenn wir keine zuverlässigen Daten finden können, veröffentlichen wir sie nicht.",
     "principle3Title": "Autorität wird verdient, nicht beansprucht",
     "principle3Body": "Wir nennen uns keine Experten, weil wir eine Website haben. Wir gewinnen Glaubwürdigkeit durch Spezifität — Annahmequoten-Daten, echte Pendelzeiten, tatsächliche Gesamtgebühren-Aufstellungen und Dinge, die Schulen nicht bewerben.",
     "principle4Title": "Ihre Daten gehören Ihnen",
@@ -662,7 +662,7 @@
     "metaTitle": "Blog — Schul- und Umzugsratgeber Portugal | Raising Kids in Portugal",
     "metaDescription": "Expertenbeiträge zur Auswahl internationaler Schulen in Portugal, zum Vergleich von Lissaboner Stadtteilen für Expat-Familien und zu realen Umzugskostenanalysen.",
     "h1": "Schul- & Umzugsratgeber",
-    "subtitle": "Ratgeber aus erster Hand von einem Team, das über 200 Familien beim Umzug nach Portugal geholfen hat.",
+    "subtitle": "Detaillierte Leitfäden von einem Team, das sich der Relocation-Forschung in Portugal widmet.",
     "readMore": "Vollständigen Leitfaden lesen →"
   },
   "BlogDetail": {
@@ -792,7 +792,24 @@
     }
   },
   "ContactPage": {
-    "h1": "Kontakt",
-    "subtitle": "Unsere Relocation-Experten helfen Ihnen, die richtige Schule und Nachbarschaft in Portugal zu finden. Füllen Sie das Formular aus und wir melden uns innerhalb eines Werktages."
+    "h1": "Kontaktieren Sie uns",
+    "subtitle": "Unsere Relocation-Experten helfen Ihnen gerne dabei, die richtige Schule und den richtigen Stadtteil in Portugal zu finden. Füllen Sie das folgende Formular aus und wir werden uns innerhalb eines Werktages bei Ihnen melden."
+  },
+  "Footer": {
+    "description": "Unabhängige Informationen für Familien, die nach Portugal umziehen. Wir analysieren Schulen und Stadtteile, damit Sie sicher umziehen können.",
+    "tagline": "100% Unabhängig · Datenbasierte Forschung",
+    "explore": "Erkunden",
+    "linkSchools": "Internationale Schulen",
+    "linkNeighborhoods": "Familienviertel",
+    "linkGuide": "Relocation-Guide",
+    "linkQuiz": "School Finder Quiz",
+    "linkBlog": "Blog & Guides",
+    "company": "Unternehmen",
+    "linkAbout": "Über uns",
+    "linkContact": "Kontakt",
+    "legal": "Rechtliches",
+    "linkPrivacy": "Datenschutz",
+    "linkTerms": "Nutzungsbedingungen",
+    "disclaimer": "Haftungsausschluss: Die Informationen dienen nur zur allgemeinen Orientierung. Wir nutzen unabhängige Forschung und KI-gestützte Datenauswertung. Wir bieten keine Rechts-, Visum- oder Finanzberatung an. Verifizieren Sie Daten immer mit offiziellen Quellen, bevor Sie Entscheidungen treffen."
   }
 }
