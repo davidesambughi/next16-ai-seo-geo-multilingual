@@ -141,23 +141,12 @@ export default async function NeighborhoodDetailPage(props: PageProps) {
 
     const schoolsInArea = schoolsData.filter((s) => s.neighborhoodSlug === neighborhood.slug);
 
-    const breadcrumbSchema = {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": `${base}/en` },
-            { "@type": "ListItem", "position": 2, "name": "Family-Friendly Neighborhoods", "item": `${base}/en/family-friendly-neighborhoods-portugal` },
-            { "@type": "ListItem", "position": 3, "name": neighborhood.name, "item": `${base}/en/neighborhood/${neighborhood.slug}` },
-        ],
-    };
-
     // Derive city label for map search from location field (B4 fix)
     const mapCity = neighborhood.location;
 
     return (
         <div className="container mx-auto py-12 px-6">
             <JsonLd data={placeSchema} />
-            <JsonLd data={breadcrumbSchema} />
             <Breadcrumbs leafLabel={neighborhood.name} />
 
             <div className="relative w-full aspect-video overflow-hidden rounded-xl mb-8">

@@ -4,6 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { getTranslations } from "next-intl/server";
 import { JsonLd } from "@/components/JsonLd";
+import { SchoolSchema } from "@/components/seo/SchoolSchema";
 import { schoolsData, getSchoolT } from "@/lib/data";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
@@ -83,52 +84,19 @@ export default async function SchoolDetailPage(props: PageProps) {
     const t = await getTranslations({ locale, namespace: "SchoolDetail" });
     const schoolT = getSchoolT(school, locale);
 
-    // JSON-LD always uses English canonical content
-    const enT = school.translations.en;
-
-    const schoolSchema = {
-        "@context": "https://schema.org",
-        "@type": "EducationalOrganization",
-        "@id": `${process.env.NEXT_PUBLIC_BASE_URL || "https://raisingkidsinportugal.com"}/en/school/${school.slug}#school`,
-        "name": school.name,
-        "description": enT.description,
-        "url": `${process.env.NEXT_PUBLIC_BASE_URL || "https://raisingkidsinportugal.com"}/school/${school.slug}`,
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": school.location,
-            "addressCountry": "PT",
-        },
-        ...(school.coordinates && {
-            "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": school.coordinates.lat,
-                "longitude": school.coordinates.lng,
-            },
-        }),
-        ...(school.acceptanceRate && {
-            "additionalProperty": {
-                "@type": "PropertyValue",
-                "name": "acceptanceRate",
-                "value": school.acceptanceRate,
-            }
-        }),
-        ...(school.inspectionDate && { "dateModified": school.inspectionDate }),
-    };
-
-    const breadcrumbSchema = {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": `${process.env.NEXT_PUBLIC_BASE_URL || 'https://raisingkidsinportugal.com'}/en` },
-            { "@type": "ListItem", "position": 2, "name": "International Schools", "item": `${process.env.NEXT_PUBLIC_BASE_URL || 'https://raisingkidsinportugal.com'}/en/schools` },
-            { "@type": "ListItem", "position": 3, "name": school.name, "item": `${process.env.NEXT_PUBLIC_BASE_URL || 'https://raisingkidsinportugal.com'}/en/school/${school.slug}` },
-        ],
-    };
-
     return (
         <div className="container mx-auto py-12 px-6">
-            <JsonLd data={schoolSchema} />
-            <JsonLd data={breadcrumbSchema} />
+            <SchoolSchema 
+                name={school.name}
+                description={school.translations.en.description}
+                slug={school.slug}
+                location={school.location}
+                fees={school.fees}
+                curriculum={school.curriculum}
+                coordinates={school.coordinates}
+                acceptanceRate={school.acceptanceRate}
+                inspectionDate={school.inspectionDate}
+            />
             <Breadcrumbs leafLabel={school.name} />
 
             <div className="relative w-full aspect-video overflow-hidden rounded-xl mb-8">

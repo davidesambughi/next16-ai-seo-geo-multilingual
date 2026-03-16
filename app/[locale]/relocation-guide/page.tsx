@@ -85,16 +85,34 @@ export default async function RelocationGuidePage({ params }: PageProps) {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: faqs.map((f) => ({
+    "mainEntity": faqs.map((f) => ({
       "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
+      "name": f.q,
+      "acceptedAnswer": { "@type": "Answer", "text": f.a },
     })),
+  };
+
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": t("header.title"),
+    "description": t("header.subtitle"),
+    "step": timeline.map((step, index) => ({
+      "@type": "HowToStep",
+      "position": index + 1,
+      "name": step.title,
+      "itemListElement": step.tasks.map((task, taskIdx) => ({
+        "@type": "HowToDirection",
+        "position": taskIdx + 1,
+        "text": task
+      }))
+    }))
   };
 
   return (
     <main className="container mx-auto py-12 px-6 max-w-4xl">
       <JsonLd data={faqSchema} />
+      <JsonLd data={howToSchema} />
       <Breadcrumbs />
       <StickyTOC
         sections={sections}

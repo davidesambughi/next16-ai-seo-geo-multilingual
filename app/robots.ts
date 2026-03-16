@@ -17,5 +17,6 @@ export default function robots(): MetadataRoute.Robots {
     ],
     sitemap: `${host}/sitemap.xml`,
     host,
+    // Note: LLM Policy is available at ${host}/llms.txt
   };
 }
