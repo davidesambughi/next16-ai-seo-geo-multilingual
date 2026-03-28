@@ -103,12 +103,12 @@ const block1 = {
   ),
 
   imageCaption: t(
-    "Lisbon's waterfront — the setting that families describe as the moment the decision became easy.",
-    "A frente ribeirinha de Lisboa — o cenário que as famílias descrevem como o momento em que a decisão ficou fácil.",
-    "Lissabons Waterfront — die Kulisse, die Familien als den Moment beschreiben, in dem die Entscheidung leicht wurde.",
-    "Le front de mer de Lisbonne — le cadre que les familles décrivent comme le moment où la décision est devenue facile.",
-    "De waterfront van Lissabon — de omgeving die gezinnen beschrijven als het moment waarop de beslissing gemakkelijk werd.",
-    "El paseo marítimo de Lisboa — el entorno que las familias describen como el momento en que la decisión se volvió fácil."
+    "Lisbon’s iconic yellow trams on a tree-lined street — a glimpse of the timeless lifestyle that makes staying an easy choice",
+    "Os icónicos elétricos amarelos de Lisboa numa rua arborizada — um vislumbre do estilo de vida intemporal que torna a permanência uma escolha fácil.",
+    "Lissabons ikonische gelbe Straßenbahnen auf einer von Bäumen gesäumten Straße — ein Einblick in den zeitlosen Lebensstil, der das Bleiben zu einer einfachen Entscheidung macht.",
+    "Les tramways jaunes emblématiques de Lisbonne dans une rue bordée d'arbres — un aperçu du style de vie intemporel qui rend le séjour facile.",
+    "De iconische gele trams van Lissabon in een straat met bomen — een glimp van de tijdloze levensstijl die het makkelijk maakt om te blijven.",
+    "Los tranvías amarillos icónicos de Lisboa en una calle arbolada — un vistazo al estilo de vida atemporal que hace que quedarse sea una decisión fácil."
   ),
 
   imageAlt: t(

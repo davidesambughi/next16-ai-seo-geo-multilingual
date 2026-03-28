@@ -71,6 +71,17 @@ export default async function BlogPostPage({ params }: PageProps) {
 
   const canonicalUrl = `${BASE}/en/blog/${article.slug}`;
 
+  // FAQPage JSON-LD — only emitted when the article has FAQ items
+  const faqSchema = article.faq && article.faq.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": article.faq.map(({ q, a }) => ({
+      "@type": "Question",
+      "name": q,
+      "acceptedAnswer": { "@type": "Answer", "text": a },
+    })),
+  } : null;
+
   // Article JSON-LD — full schema for E-E-A-T and AI engine freshness signals
   const articleSchema = {
     "@context": "https://schema.org",
@@ -117,6 +128,7 @@ export default async function BlogPostPage({ params }: PageProps) {
     <main className="container mx-auto py-12 px-6 max-w-3xl">
       <JsonLd data={articleSchema} />
       <JsonLd data={breadcrumbSchema} />
+      {faqSchema && <JsonLd data={faqSchema} />}
       <Breadcrumbs />
 
       {/* Meta row */}
@@ -148,6 +160,34 @@ export default async function BlogPostPage({ params }: PageProps) {
           </section>
         ))}
       </div>
+
+      {/* Key Takeaways — id used by Speakable schema and GEO crawlers */}
+      {article.keyTakeaways && article.keyTakeaways.length > 0 && (
+        <div id="key-takeaways" className="mt-12 bg-brand-50 border border-border rounded-2xl p-6">
+          <h2 className="font-serif font-semibold text-xl text-ink-primary mb-4">Key Takeaways</h2>
+          <ul className="space-y-3">
+            {article.keyTakeaways.map((point) => (
+              <li key={point} className="flex gap-3 text-ink-secondary text-sm leading-relaxed">
+                <span className="text-brand mt-0.5 shrink-0">✓</span>
+                <span>{point}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {/* FAQ — id used by Speakable schema; content matches FAQPage JSON-LD exactly */}
+      {article.faq && article.faq.length > 0 && (
+        <div id="faq" className="mt-10 space-y-6">
+          <h2 className="font-serif font-semibold text-2xl text-ink-primary">Frequently Asked Questions</h2>
+          {article.faq.map(({ q, a }) => (
+            <div key={q}>
+              <h3 className="font-semibold text-ink-primary mb-2">{q}</h3>
+              <p className="text-ink-secondary leading-relaxed text-sm">{a}</p>
+            </div>
+          ))}
+        </div>
+      )}
 
       {/* CTA */}
       <div className="mt-12 bg-brand-50 border border-border rounded-2xl p-6 text-center">

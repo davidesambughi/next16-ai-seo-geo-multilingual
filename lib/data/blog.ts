@@ -9,6 +9,11 @@ export interface BlogSection {
   body: string;
 }
 
+export interface BlogFaqItem {
+  q: string;
+  a: string;
+}
+
 export interface BlogArticle {
   slug: string;
   title: string;
@@ -18,6 +23,8 @@ export interface BlogArticle {
   readTime: string;
   intro: string;
   sections: BlogSection[];
+  keyTakeaways?: string[];
+  faq?: BlogFaqItem[];
   cta: {
     text: string;
     href: '/best-private-and-public-international-schools-portugal-2026' | '/top-neighborhoods' | '/relocation-guide' | '/school-finder';
@@ -99,6 +106,47 @@ export const blogArticles: BlogArticle[] = [
       },
     ],
     cta: { text: "Compare all school fees →", href: "/best-private-and-public-international-schools-portugal-2026" },
+  },
+  {
+    slug: "what-age-enrol-child-international-school-portugal",
+    title: "What Age Should You Enrol Your Child in an International School in Portugal?",
+    subtitle: "Entry points, waitlists, and application deadlines — a practical guide for 2026–2027",
+    datePublished: "2026-03-28",
+    dateModified: "2026-03-28",
+    readTime: "7 min read",
+    intro:
+      "Choosing the right age to enrol your child in an international school in Portugal can feel like a high-stakes decision: too early, and the transition may be overwhelming; too late, and you risk missing out on popular year groups or facing multi-year waitlists. Around Lisbon, families often debate whether to start Reception/Pre-K at age 3–4 or wait until Year 1 or Grade 1, especially when juggling relocation timelines, language, and visa steps. This guide covers the practical realities — entry points, waitlists, and application deadlines — for St. Julian's School, CAISL, TASIS Portugal, and United Lisbon International School.",
+    sections: [
+      {
+        heading: "Entry points: when schools accept new students",
+        body: "Most international schools in Greater Lisbon cluster their entry around a few key year groups. For British-style and IB-influenced schools, typical entry points are Reception (age 3–4), Year 1 (age 5–6), and Year 7 (age 11–12) — the years when schools form larger cohorts and language-support structures are most robust. At St. Julian's, these three entry points see the most available places. CAISL and United Lisbon follow a similar cycle, while TASIS Portugal's American curriculum sees its highest turnover at Kindergarten (age 5) and Grade 1 (age 6). Families moving with children aged 4–6 generally find the transition fastest — younger learners absorb English more fluidly in play-based settings. For children entering late primary or early secondary (Years 5–7), places are scarcer and language expectations are higher. For secondary entry (Year 7+), schools strongly prefer a September start to avoid missed assessments and curriculum gaps.",
+      },
+      {
+        heading: "Waitlists: how early is early enough",
+        body: "In Lisbon's international-school market, popular entry points fill up fast and some schools now operate on a near-first-come basis once a cohort closes. St. Julian's School has an acceptance rate of roughly 8% for popular year groups and maintains waitlists of approximately two to three years for Reception, Year 1, and Year 7. CAISL and United Lisbon also report 18–24 month waitlists for early-years and Grade 1 cohorts. TASIS Portugal's Upper School (Grades 9–12) sees constrained capacity in IB-track years — apply no later than the year before the intended start. Many schools now operate priority or rolling lists: families pay a small deposit to register, then advance as spaces open. Sibling-priority rules mean non-sibling applicants can find the queue longer than expected. If your child is in a middle year group (Year 4/Grade 4) and you are flexible on timing, mid-year entry is occasionally possible when a space opens — but cannot be relied on.",
+      },
+      {
+        heading: "Application deadlines and what to do right now",
+        body: "For the 2026–2027 school year, most major international schools in Greater Lisbon open application windows roughly 12–18 months before the September start. St. Julian's and CAISL typically open applications in September of the prior year, with firm deadlines between January and March. TASIS Portugal and United Lisbon encourage submissions by end of calendar year, with decisions communicated by March or April. Late applications are accepted on a case-by-case basis, but by late spring only less-popular year groups or long-term waitlist positions remain. If you are in early research mode: start your school search at least 12–15 months before your child's intended start date. Register with each school's admissions portal now, and begin collecting documents — birth certificates, passports, previous school reports, and vaccination records. Most schools also require a short admissions assessment or interview; scheduling a visit or virtual meeting early lets you gauge fit and understand available language-support options.",
+      },
+    ],
+    keyTakeaways: [
+      "International schools near Lisbon treat Reception (age 3–4), Year 1 (age 5–6), and Year 7 (age 11–12) as their main entry points — these are the year groups with the most available places.",
+      "St. Julian's School has an acceptance rate of ~8% for popular year groups and waitlists of roughly 2–3 years for Reception, Year 1, and Year 7.",
+      "For the 2026–2027 academic year, most Lisbon-area schools open applications around September of the prior year, with firm deadlines between January and March.",
+      "Start your school search at least 12–15 months before your intended start date and register with waitlists immediately — documents needed include passports, school reports, and vaccination records.",
+    ],
+    faq: [
+      {
+        q: "What age should I enrol my child in an international school in Portugal?",
+        a: "Most international schools in Portugal — including St. Julian's School, CAISL, TASIS Portugal, and United Lisbon International School — treat Reception (age 3–4), Year 1/Grade 1 (age 5–6), and Year 7/Grade 7 (age 11–12) as their main entry points. Younger children typically adapt more quickly to language and school routines, but families can join at any stage — availability and waitlist length vary by year group.",
+      },
+      {
+        q: "How early should I apply to an international school in Portugal?",
+        a: "For popular entry points like Reception and Year 1, families should apply 18–24 months in advance. St. Julian's School, the most competitive school near Lisbon, operates a 2–3 year waitlist for its most sought-after year groups. A safe rule is to start researching and registering at least 12–15 months before your intended start date.",
+      },
+    ],
+    cta: { text: "Compare all international schools →", href: "/best-private-and-public-international-schools-portugal-2026" },
   },
 ];
 

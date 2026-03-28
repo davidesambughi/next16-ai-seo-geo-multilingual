@@ -27,6 +27,7 @@ Next.js 16 renamed `middleware.ts` → **`proxy.ts`**. This file runs next-intl 
 - **`i18n/routing.ts`** is the single source of truth for all typed routes + locale-specific pathnames. Adding a new route here is required or TypeScript will error.
 - UI strings live in `messages/{locale}.json`; next-intl resolves automatically.
 - Server components: `getLocale()` from `next-intl/server`; client components: `useLocale()` from `next-intl`.
+- **Navigation**: always import `Link`, `useRouter`, `redirect` from `@/i18n/navigation` (typed, locale-aware) — never from `next/link` or `next/navigation` directly.
 
 ### Data Layer
 
@@ -45,6 +46,11 @@ Key data files:
 - `lib/data/blog.ts` — BlogArticle type, blogArticles, `getBlogArticle()`
 - `lib/types.ts` — all shared types: School, Neighborhood, Testimonial, LocaleKey
 - `lib/content/schools-guide.ts` — `GUIDE_SCHOOL_FACTS` (acceptance rates, wait times — single source of truth)
+- `lib/content/homepage.ts` — homepage editorial content (hero copy, pillar summaries)
+- `lib/actions.ts` — Server Action `submitLead()`: Zod validation → allowlist check → Web3Forms API; honeypot field (trap) blocks bots at step 0
+- `lib/schemas/lead-form.ts` — Zod schema for the lead capture form
+- `lib/breadcrumbs.ts` — `buildBreadcrumbs()` helper for BreadcrumbList JSON-LD + `<Breadcrumbs>` component
+- `components/seo/SchoolSchema.tsx` — EducationalOrganization JSON-LD (used by school detail pages)
 
 ### Server vs. Client Components
 
@@ -67,6 +73,7 @@ app/
 │   ├── relocation-guide/page.tsx
 │   ├── school-finder/page.tsx
 │   ├── blog/[slug]/page.tsx
+│   ├── about/page.tsx
 │   ├── contact/page.tsx
 │   ├── privacy/page.tsx
 │   └── terms/page.tsx
@@ -95,5 +102,5 @@ FAQPage JSON-LD must exactly match rendered FAQ HTML (Google rich snippet requir
 
 ### Environment Variables
 
-- `NEXT_PUBLIC_BASE_URL` — must be set to `https://raisingkidsinportugal.com` on Vercel; `.env.local` sets `http://localhost:3000` for dev
-- `WEB3FORMS_ACCESS_KEY` — contact form integration
+- `NEXT_PUBLIC_BASE_URL` — canonical domain (`https://trustfamily.com` on Vercel, `http://localhost:3000` locally via `.env.local`)
+- `WEB3FORMS_ACCESS_KEY` — lead form submission (Web3Forms); if unset, lead data is logged to Vercel logs as fallback

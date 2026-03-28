@@ -7,7 +7,8 @@
       "mcp__ide__getDiagnostics",
       "Bash(find \"C:\\\\Users\\\\sambu\\\\school-funnel4\\\\raisingkidsinportugal-relocation-funnel\\\\components\" -type f -name \"*.tsx\" 2>/dev/null | wc -l)",
       "Bash(find lib/data/raw -name \"*.json\" -type f 2>/dev/null | head -20)",
-      "Bash(cd \"lib/data/raw\" && wc -l schools-database.json && grep -c '\"id\"' schools-database.json)"
+      "Bash(cd \"lib/data/raw\" && wc -l schools-database.json && grep -c '\"id\"' schools-database.json)",
+      "Bash(npx tsc:*)"
     ]
   }
 }
