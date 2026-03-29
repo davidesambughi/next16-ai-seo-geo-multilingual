@@ -20,6 +20,7 @@ import { PillarsCardsSection } from "@/components/features/PillarsCardsSection";
 import { LeadMagnetSection } from "@/components/features/LeadMagnetSection";
 import { QuizSection } from "@/components/features/quiz/QuizSection";
 import { Testimonials } from "@/components/features/Testimonials";
+import { featuredTestimonials, getTestimonialT } from "@/lib/data/testimonials";
 import { JsonLd } from "@/components/JsonLd";
 import { Link as I18nLink } from "@/i18n/navigation";
 import { Metadata } from "next";
@@ -100,6 +101,12 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     "sameAs": [
       "https://www.linkedin.com/company/raisingkidsinportugal",
     ],
+    "review": featuredTestimonials.map((t) => ({
+      "@type": "Review",
+      "author": { "@type": "Person", "name": t.attribution },
+      "reviewBody": getTestimonialT(t, "en").quote,
+      "datePublished": "2024-01-01",
+    })),
   };
 
   const webSiteSchema = {

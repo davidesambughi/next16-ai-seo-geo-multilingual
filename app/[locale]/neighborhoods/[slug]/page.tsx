@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: PageProps) {
 
     const nbhT = getNeighborhoodT(neighborhood, locale);
     const base = process.env.NEXT_PUBLIC_BASE_URL || 'https://raisingkidsinportugal.com';
-    const title = `${neighborhood.name} — Family Friendly Neighborhood Portugal | Raising Kids in Portugal`;
+    const title = `${neighborhood.name} — Family Neighborhood in Portugal`;
     const description = `${nbhT.description} Vibe: ${nbhT.vibe}. ${nbhT.highlights.join(", ")}.`;
     const neighborhoodPaths = routing.pathnames['/neighborhoods/[slug]'] as Record<string, string>;
     const canonical = `${base}/en${neighborhoodPaths.en.replace('[slug]', neighborhood.slug)}`;
@@ -162,7 +162,8 @@ export default async function NeighborhoodDetailPage(props: PageProps) {
 
             <div className="flex flex-col md:flex-row gap-8 justify-between items-start mb-8">
                 <div>
-                    <h1 className="text-4xl font-bold mb-2">{neighborhood.name}</h1>
+                    <h1 className="text-4xl font-bold mb-1">{neighborhood.name}</h1>
+                    <p className="text-sm font-medium text-brand mb-2">{t("h1Tagline")}</p>
                     <div className="flex items-center gap-2 text-muted-foreground">
                         <MapPin className="h-5 w-5" />
                         <span className="text-lg">{neighborhood.location}</span>

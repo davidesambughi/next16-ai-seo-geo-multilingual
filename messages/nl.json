@@ -673,6 +673,7 @@
     "backToAll": "← Alle artikelen"
   },
   "SchoolDetail": {
+    "h1Tagline": "Internationale School · Portugal",
     "contactBtn": "Schooladviseur contacteren",
     "aboutHeading": "Over de school",
     "verdictLabel": "Het Oordeel",
@@ -697,6 +698,7 @@
     "schoolsAcrossPortugal": "{count} scholen in Portugal - filter op regio, curriculum of budget"
   },
   "NeighborhoodDetail": {
+    "h1Tagline": "Gezinsvriendelijke Buurt · Portugal",
     "contactBtn": "Verhuisexpert contacteren",
     "aboutHeading": "Over {name}",
     "whyFamiliesHeading": "Waarom gezinnen er van houden",

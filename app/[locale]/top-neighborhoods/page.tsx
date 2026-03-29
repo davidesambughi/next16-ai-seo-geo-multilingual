@@ -104,16 +104,29 @@ export default async function Page({ params }: PageProps) {
   const faqs = t.raw("faq.items") as FaqItem[];
   const related = t.raw("related.items") as RelatedItem[];
 
+  const base = process.env.NEXT_PUBLIC_BASE_URL || "https://raisingkidsinportugal.com";
+
   const speakableSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
     speakable: { "@type": "SpeakableSpecification", cssSelector: ["#key-takeaways", "#faq"] },
-    url: `${process.env.NEXT_PUBLIC_BASE_URL || "https://raisingkidsinportugal.com"}/en/family-friendly-neighborhoods-portugal`,
+    url: `${base}/en/family-friendly-neighborhoods-portugal`,
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map(({ q, a }) => ({
+      "@type": "Question",
+      name: q,
+      acceptedAnswer: { "@type": "Answer", text: a },
+    })),
   };
 
   return (
     <main className="container mx-auto py-12 px-6 max-w-4xl">
       <JsonLd data={speakableSchema} />
+      <JsonLd data={faqSchema} />
       <Breadcrumbs />
       <StickyTOC
         sections={sections}

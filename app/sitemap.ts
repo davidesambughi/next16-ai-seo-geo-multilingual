@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { routing } from '@/i18n/routing';
 import { schoolsData, neighborhoodsData, blogArticles } from '@/lib/data';
 
-const host = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+const host = process.env.NEXT_PUBLIC_BASE_URL || 'https://raisingkidsinportugal.com';
 
 /**
  * Resolves the translated URL for a logical pathname key and a given locale.

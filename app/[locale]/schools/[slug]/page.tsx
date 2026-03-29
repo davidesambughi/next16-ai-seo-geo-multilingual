@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: PageProps) {
     const schoolT = getSchoolT(school, locale);
     const isCurated = Boolean(school.translations.en.verdict);
     const base = process.env.NEXT_PUBLIC_BASE_URL || 'https://raisingkidsinportugal.com';
-    const title = `${school.name} — International School Portugal | Raising Kids in Portugal`;
+    const title = `${school.name} — International School Portugal`;
     const description = `${schoolT.description} Curriculum: ${school.curriculum}. Annual fees: ${school.fees}. Location: ${school.location}.`;
     const schoolPaths = routing.pathnames['/schools/[slug]'] as Record<string, string>;
     const canonical = `${base}/en${schoolPaths.en.replace('[slug]', school.slug)}`;
@@ -112,7 +112,8 @@ export default async function SchoolDetailPage(props: PageProps) {
 
             <div className="flex flex-col md:flex-row gap-8 justify-between items-start mb-8">
                 <div>
-                    <h1 className="font-serif font-semibold text-4xl text-ink-primary mb-2">{school.name}</h1>
+                    <h1 className="font-serif font-semibold text-4xl text-ink-primary mb-1">{school.name}</h1>
+                    <p className="text-sm font-medium text-brand mb-2">{t("h1Tagline")}</p>
                     <div className="flex items-center gap-2 text-muted-foreground">
                         <MapPin className="h-5 w-5" />
                         <span className="text-lg">{school.location}</span>

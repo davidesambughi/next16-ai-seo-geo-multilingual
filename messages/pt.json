@@ -673,6 +673,7 @@
     "backToAll": "← Todos os artigos"
   },
   "SchoolDetail": {
+    "h1Tagline": "Escola Internacional · Portugal",
     "contactBtn": "Contactar Consultor Escolar",
     "aboutHeading": "Sobre a Escola",
     "verdictLabel": "O Veredicto",
@@ -697,6 +698,7 @@
     "schoolsAcrossPortugal": "{count} escolas em Portugal - filtre por regiao, curriculo ou orcamento"
   },
   "NeighborhoodDetail": {
+    "h1Tagline": "Bairro Familiar · Portugal",
     "contactBtn": "Contactar Especialista em Relocalização",
     "aboutHeading": "Sobre {name}",
     "whyFamiliesHeading": "Por Que as Famílias Adoram",

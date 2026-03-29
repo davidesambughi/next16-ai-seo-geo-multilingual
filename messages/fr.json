@@ -673,6 +673,7 @@
     "backToAll": "← Tous les articles"
   },
   "SchoolDetail": {
+    "h1Tagline": "École Internationale · Portugal",
     "contactBtn": "Contacter un conseiller scolaire",
     "aboutHeading": "À propos de l'école",
     "verdictLabel": "Le Verdict",
@@ -697,6 +698,7 @@
     "schoolsAcrossPortugal": "{count} ecoles au Portugal - filtrer par region, programme ou budget"
   },
   "NeighborhoodDetail": {
+    "h1Tagline": "Quartier Familial · Portugal",
     "contactBtn": "Contacter un expert en relocalisation",
     "aboutHeading": "À propos de {name}",
     "whyFamiliesHeading": "Pourquoi les familles l'adorent",

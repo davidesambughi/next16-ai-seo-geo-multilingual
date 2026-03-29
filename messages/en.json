@@ -1,7 +1,7 @@
 {
   "HomePage": {
     "title": "Home",
-    "metaTitle": "Raising Kids in Portugal Relocation - Best International Schools & Neighborhoods in Portugal",
+    "metaTitle": "Raising Kids in Portugal — Family Relocation Guide",
     "metaDescription": "Independent guide for moving to Portugal. Compare top international schools, find safe family neighborhoods, and get expert relocation insights based on deep data analysis.",
     "testimonialsOverline": "What families say",
     "testimonialsH2": "Real stories from families who made the move"
@@ -127,12 +127,12 @@
     "privacyNote": "We respect your privacy. No spam, ever."
   },
   "SchoolsGuidePage": {
-    "metaTitle": "Best International Schools Portugal 2026 — Top Private & Public | Raising Kids in Portugal",
+    "metaTitle": "Best International Schools Portugal 2026",
     "metaDescription": "Independent guide to the best private and public international schools in Portugal 2026. Compare IB, British, and American curricula, fees, locations, and acceptance rates."
   },
   "NeighborhoodsGuidePage": {
-    "metaTitle": "Best family-friendly neighborhoods Portugal 2026 | Raising Kids in Portugal",
-    "metaDescription": "Compare top neighborhoods for families in Portugal by commute, lifestyle, and school proximity.",
+    "metaTitle": "Family-Friendly Neighborhoods Portugal 2026",
+    "metaDescription": "Best neighborhoods in Portugal for expat families. Compare Cascais, Estoril, Sintra, and Lisbon on international schools, safety, commute, and lifestyle.",
     "sticky": {
       "title": "In this guide",
       "sections": "Guide sections",
@@ -368,8 +368,8 @@
     }
   },
   "RelocationGuidePage": {
-    "metaTitle": "Family Relocation Guide Portugal 2026 | Raising Kids in Portugal",
-    "metaDescription": "Visa, schools, housing and timeline for family relocation to Portugal.",
+    "metaTitle": "Family Relocation Guide Portugal 2026",
+    "metaDescription": "Complete guide to relocating your family to Portugal: D7 & D8 visas, international schools, best neighborhoods, housing costs, and a 12-month relocation timeline.",
     "sticky": {
       "title": "In this guide",
       "sections": "Guide sections",
@@ -592,7 +592,7 @@
     }
   },
   "AboutPage": {
-    "metaTitle": "About Raising Kids in Portugal — Independent School & Relocation Intelligence for Portugal",
+    "metaTitle": "About Raising Kids in Portugal",
     "metaDescription": "Raising Kids in Portugal is an independent platform helping affluent international families relocate to Portugal with confidence. We verify schools, neighborhoods, and relocation data — with no paid placements and no conflicts of interest.",
     "h1": "The trusted guide for families relocating to Portugal",
     "opening": "Raising Kids in Portugal was built on a single premise: relocating families deserve verified, unbiased information — not sponsored content dressed up as advice. We provide independent school and neighborhood intelligence so you can make one of the most important decisions for your children with confidence.",
@@ -632,7 +632,7 @@
     "ctaBtn2": "Browse All Schools"
   },
   "SchoolFinderPage": {
-    "metaTitle": "School Finder — Find Your Perfect International School in Portugal | Raising Kids in Portugal",
+    "metaTitle": "Find Your International School in Portugal",
     "metaDescription": "Answer 4 questions and get matched with the right international school and neighborhood in Portugal. Free, unbiased, based on your budget, curriculum preference, and lifestyle.",
     "overline": "Free · 60 seconds",
     "h1": "Find Your Perfect School in Portugal",
@@ -659,7 +659,7 @@
     "faq3a": "No. Raising Kids in Portugal accepts no payments, commissions, or referral fees from schools. Our assessments are fully independent. This is non-negotiable for us."
   },
   "BlogPage": {
-    "metaTitle": "Blog — School & Relocation Guides Portugal | Raising Kids in Portugal",
+    "metaTitle": "School & Relocation Blog Portugal",
     "metaDescription": "Expert articles on selecting international schools in Portugal, comparing Lisbon neighborhoods for expat families, and real relocation cost breakdowns.",
     "h1": "School & Relocation Guides",
     "subtitle": "First-hand guides from a team that has helped 200+ families relocate to Portugal.",
@@ -673,6 +673,7 @@
     "backToAll": "← All articles"
   },
   "SchoolDetail": {
+    "h1Tagline": "International School · Portugal",
     "contactBtn": "Contact School Advisor",
     "aboutHeading": "About the School",
     "verdictLabel": "The Verdict",
@@ -697,6 +698,7 @@
     "schoolsAcrossPortugal": "{count} schools across Portugal - filter by region, curriculum or budget"
   },
   "NeighborhoodDetail": {
+    "h1Tagline": "Family-Friendly Neighborhood · Portugal",
     "contactBtn": "Contact Relocation Expert",
     "aboutHeading": "About {name}",
     "whyFamiliesHeading": "Why Families Love It",

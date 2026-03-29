@@ -461,6 +461,7 @@
     "backToAll": "← Todos los artículos"
   },
   "SchoolDetail": {
+    "h1Tagline": "Escuela Internacional · Portugal",
     "contactBtn": "Contactar asesor escolar",
     "aboutHeading": "Sobre el colegio",
     "verdictLabel": "El Veredicto",
@@ -485,6 +486,7 @@
     "schoolsAcrossPortugal": "{count} colegios en Portugal - filtra por región, currículo o presupuesto"
   },
   "NeighborhoodDetail": {
+    "h1Tagline": "Barrio Familiar · Portugal",
     "contactBtn": "Contactar experto en relocalización",
     "aboutHeading": "Sobre {name}",
     "whyFamiliesHeading": "Por qué las familias lo adoran",

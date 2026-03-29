@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 
-const host = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+const host = process.env.NEXT_PUBLIC_BASE_URL || 'https://raisingkidsinportugal.com';
 
 export default function robots(): MetadataRoute.Robots {
   return {
