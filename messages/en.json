@@ -189,14 +189,14 @@
     "imageAlt": "Family-friendly neighborhood in Portugal",
     "tocTitle": "In this guide",
     "overview": {
-      "title": "1. Overview",
+      "title": "1. Where do expat families live near Lisbon?",
       "p1": "Greater Lisbon is made of distinct family zones with different commute realities.",
       "p2": "School location should drive neighborhood choice.",
       "p3": "Start by school, then map housing around it:",
       "schoolsGuideLink": "schools guide"
     },
     "schoolFirst": {
-      "title": "2. School-first rule",
+      "title": "2. Which neighborhood is closest to international schools?",
       "p1": "Use this quick table to compare practical fit before deep dives.",
       "headers": {
         "neighborhood": "Neighborhood",
@@ -240,7 +240,7 @@
       "note": "Morning traffic can add meaningful time. Test routes at school-run hour."
     },
     "coastal": {
-      "title": "3. Coastal belt: Cascais and Estoril",
+      "title": "3. Is the Cascais–Estoril coast right for expat families?",
       "p1": "The Cascais line is the strongest coastal option for international families.",
       "strengths": "Strengths",
       "tradeoffs": "Trade-offs",
@@ -274,7 +274,7 @@
       "verdict": "Pick Cascais for network; pick Estoril for quiet."
     },
     "sintra": {
-      "title": "4. Sintra",
+      "title": "4. Is Sintra a good place for expat families?",
       "p1": "Sintra combines nature and school access.",
       "p2": "Main trade-off is distance to central Lisbon.",
       "bestForLabel": "Best for:",
@@ -282,7 +282,7 @@
       "p3": "Typically lower housing prices than Cascais."
     },
     "lisbon": {
-      "title": "5. Inside Lisbon",
+      "title": "5. Which Lisbon neighborhoods suit international families?",
       "p1": "Best for families prioritizing urban convenience.",
       "cards": [
         {
@@ -298,7 +298,7 @@
       ]
     },
     "howToChoose": {
-      "title": "6. How to choose",
+      "title": "6. How do you choose the right neighborhood in Portugal?",
       "p1": "Use this practical checklist before signing a lease.",
       "items": [
         {
@@ -334,19 +334,19 @@
       "items": [
         {
           "q": "Where do expat families live near Lisbon?",
-          "a": "Cascais, Estoril and Sintra are the most common options."
+          "a": "The most popular areas for expat families near Lisbon are Cascais, Estoril, Sintra, and Parque das Nações. Cascais has the largest concentration of international families and the most established expat community on the Estoril Coast. Sintra appeals to families who want more space and greenery at a lower price per square metre. Parque das Nações suits families relocating for work to eastern Lisbon or those choosing United Lisbon International School, which is within walking distance."
         },
         {
-          "q": "Which area is closest to St. Julian's?",
-          "a": "Cascais and Estoril."
+          "q": "Which area is closest to St. Julian's School?",
+          "a": "Cascais and Estoril are the closest residential areas to St. Julian's School in Carcavelos — approximately 15–20 minutes by car. Both towns are served by the Cascais Line train, with Carcavelos station a direct stop on the line, so families can also use the train without depending on a school bus. Oeiras, slightly closer to Lisbon, is another option roughly 10 minutes from the school by car."
         },
         {
-          "q": "Is Sintra family-friendly?",
-          "a": "Yes, especially for space and nature."
+          "q": "Is Sintra a good place for expat families with children?",
+          "a": "Yes. Sintra is an excellent base for families whose children attend TASIS Portugal or CAISL, both of which are located in or near Sintra. The town offers spacious villas and quintas at lower prices than Cascais, a UNESCO World Heritage setting, and a quieter pace of life. The main trade-off is distance: central Lisbon is 40–50 minutes by car, and families without their own vehicle find daily life more challenging than in Cascais or Parque das Nações."
         },
         {
-          "q": "Best option without a car?",
-          "a": "Parque das Nacoes and Campo de Ourique."
+          "q": "What is the best neighborhood in Lisbon for expat families without a car?",
+          "a": "Parque das Nações is the best car-free option for families in Lisbon — it has wide pedestrian avenues, a riverside park, direct metro access, and United Lisbon International School within walking distance. Campo de Ourique is the best walkable village-style neighborhood inside central Lisbon, with good metro and tram connections and a strong local community feel. Both areas have private clinics, international supermarkets, and family activities accessible on foot."
         }
       ]
     },

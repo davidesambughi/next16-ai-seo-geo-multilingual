@@ -175,7 +175,7 @@ const toc = {
 
 const overview = {
   h2: t(
-    "1. Overview: Portugal's international school market",
+    "1. What is the international school market in Portugal?",
     "1. Visão geral: o mercado de escolas internacionais em Portugal",
     "1. Überblick: Portugals internationaler Schulmarkt",
     "1. Aperçu : le marché des écoles internationales au Portugal",
@@ -222,7 +222,7 @@ const overview = {
 
 const curriculum = {
   h2: t(
-    "2. Curriculum guide: which track is right for your children",
+    "2. Which school curriculum is right for your children?",
     "2. Guia curricular: qual percurso é o certo para os seus filhos",
     "2. Lehrplan-Leitfaden: welcher Weg ist der richtige für Ihre Kinder",
     "2. Guide des programmes : quelle filière est la bonne pour vos enfants",
@@ -297,7 +297,7 @@ const curriculumCards = [
 
 const fees = {
   h2: t(
-    "3. The real cost of international school fees",
+    "3. What are the real costs of international school fees in Portugal?",
     "3. O custo real das propinas das escolas internacionais",
     "3. Die realen Kosten internationaler Schulgebühren",
     "3. Le coût réel des frais de scolarité internationaux",
@@ -355,7 +355,7 @@ const fees = {
 
 const admissions = {
   h2: t(
-    "4. The admissions reality",
+    "4. What is the admission process really like?",
     "4. A realidade das admissões",
     "4. Die Zulassungsrealität",
     "4. La réalité des admissions",

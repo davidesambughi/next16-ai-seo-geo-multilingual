@@ -109,6 +109,19 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     })),
   };
 
+  const webPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${base}/${locale}#webpage`,
+    "url": `${base}/${locale}`,
+    "name": "Raising Kids in Portugal — Family Relocation Guide",
+    "description": "Independent intelligence for families relocating to Portugal: verified school comparisons, neighborhood guides, visa information, and a personalized school-matching tool.",
+    "inLanguage": locale,
+    "isPartOf": { "@type": "WebSite", "@id": `${base}/#website` },
+    "about": { "@type": "Organization", "@id": `${base}/#organization` },
+    "dateModified": new Date().toISOString().split("T")[0],
+  };
+
   const webSiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -130,6 +143,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     <main>
       <JsonLd data={organizationSchema} />
       <JsonLd data={webSiteSchema} />
+      <JsonLd data={webPageSchema} />
 
       {/*
         ══════════════════════════════════════════════════════════════
