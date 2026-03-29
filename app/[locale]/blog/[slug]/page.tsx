@@ -111,6 +111,12 @@ export default async function BlogPostPage({ params }: PageProps) {
       { "@type": "Thing", "name": "Expat families Portugal" },
       { "@type": "Place", "name": "Portugal" },
     ],
+    // SpeakableSpecification — allows voice AI (Google Assistant, Alexa) to read
+    // the most important sections aloud and signals GEO priority content to crawlers.
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["h1", "#key-takeaways", "#faq"],
+    },
   };
 
   // BreadcrumbList JSON-LD
@@ -131,6 +137,7 @@ export default async function BlogPostPage({ params }: PageProps) {
       {faqSchema && <JsonLd data={faqSchema} />}
       <Breadcrumbs />
 
+      <article>
       {/* Meta row */}
       <div className="flex items-center gap-3 text-xs text-ink-muted mb-4">
         <time dateTime={article.datePublished}>{article.datePublished}</time>
@@ -214,6 +221,7 @@ export default async function BlogPostPage({ params }: PageProps) {
           {t("backToAll")}
         </Link>
       </div>
+      </article>
 
     </main>
   );

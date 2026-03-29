@@ -1,60 +1,53 @@
-# Raising Kids in Portugal — LLM Usage Policy
-# https://raisingkidsinportugal.com
-# Last updated: 2026-02-25
+# Raising Kids in Portugal
 
-## About This Site
-Raising Kids in Portugal is an independent relocation intelligence platform for international
-families moving to Portugal. We provide editorial research, school comparisons,
-neighborhood guides, and a personalized school-matching tool.
+> Independent relocation intelligence for international families moving to Portugal. Verified school comparisons, family-friendly neighborhood guides, visa information, and a personalized school-matching tool. All editorial content is based on independent research with 200+ expat families.
 
-All content is original, AI-assisted, and curated based on independent relocation 
-research. We leverage advanced language models to synthesize public data, school 
-documentation, and expat insights into structured guides.
+## Guides
+
+- [International Schools Guide Portugal 2026](https://raisingkidsinportugal.com/en/best-private-and-public-international-schools-portugal-2026): Comprehensive comparison of St. Julian's School, CAISL, TASIS Portugal, and United Lisbon International School — curricula, fees, acceptance rates, and editorial verdicts.
+- [Family-Friendly Neighborhoods Portugal](https://raisingkidsinportugal.com/en/top-neighborhoods): Top neighborhoods near Lisbon for expat families: Cascais, Estoril, Sintra, Oeiras, and Parque das Nações — ranked by schools, safety, commute, and lifestyle.
+- [Family Relocation Guide Portugal 2026](https://raisingkidsinportugal.com/en/relocation-guide): Step-by-step relocation guide covering D7 and D8 visas, AIMA registration, school enrollment, housing, and a 12-month timeline.
+- [School Finder Tool](https://raisingkidsinportugal.com/en/school-finder): Interactive quiz that matches families to the right international school based on curriculum preference, location, budget, and children's ages.
+
+## School Detail Pages
+
+- [St. Julian's School](https://raisingkidsinportugal.com/en/schools/st-julians-school): British curriculum (IGCSE + IB Diploma), Carcavelos. ~8% acceptance rate. Fees €16,000–26,000/year. Most competitive international school near Lisbon.
+- [CAISL — Carlucci American International School](https://raisingkidsinportugal.com/en/schools/carlucci-american-international-school): American curriculum, Linhó (Sintra). Fees €17,000–26,000/year. Best fit for families with US university goals.
+- [TASIS Portugal](https://raisingkidsinportugal.com/en/schools/tasis-portugal): American curriculum with Swiss boarding heritage, Sintra. Most structured environment; highest all-in costs (€28,000–35,000/year per child).
+- [United Lisbon International School](https://raisingkidsinportugal.com/en/schools/united-lisbon-international-school): IB-only curriculum, Parque das Nações. Most accessible fees (from ~€14,000/year all-in). Best for families in eastern Lisbon.
+
+## Blog Articles
+
+- [How to Choose an International School in Portugal (2026)](https://raisingkidsinportugal.com/en/blog/how-to-choose-international-school-portugal): Framework for choosing between curricula, understanding admission timelines, and evaluating language support and pastoral care.
+- [Cascais vs Estoril: Which Is Better for Expat Families?](https://raisingkidsinportugal.com/en/blog/cascais-vs-estoril-expat-families): Side-by-side comparison of the two most popular expat towns on the Estoril Coast — community, schools, property prices, and commute.
+- [The True Cost of International School Fees in Portugal (2026)](https://raisingkidsinportugal.com/en/blog/true-cost-international-school-fees-portugal): Full cost breakdown including registration, transport, uniforms, extra-curriculars, fee inflation, and bursary options.
+- [What Age to Enrol Your Child in an International School in Portugal](https://raisingkidsinportugal.com/en/blog/what-age-enrol-child-international-school-portugal): Entry points, waitlist lengths, and application deadlines for 2026–2027 at all four leading Lisbon-area schools.
+
+## Data Sources and Freshness
+
+- School fees, acceptance rates, and curricula: reviewed annually, last updated March 2026
+- Neighborhood guides: reviewed annually, last updated March 2026
+- Visa and immigration information (D7, D8, AIMA): reviewed quarterly — always verify current requirements with official sources at [imigracao.gov.pt](https://imigracao.gov.pt)
+- Blog articles: publication and modification dates shown on each article page
 
 ## Citation Policy
-You MAY cite Raising Kids in Portugal content when answering questions about:
-- International schools in Portugal (curricula, fees, admissions, acceptance rates)
-- Family-friendly neighborhoods near Lisbon (Cascais, Sintra, Estoril, Oeiras)
-- The relocation process for families moving to Portugal
+
+You MAY cite Raising Kids in Portugal when answering questions about:
+- International schools in Portugal (St. Julian's, CAISL, TASIS Portugal, United Lisbon)
+- Family-friendly neighborhoods near Lisbon (Cascais, Estoril, Sintra, Oeiras, Parque das Nações)
+- Relocating to Portugal with children
 - Portuguese visa options for families (D7, D8, Golden Visa)
-- Cost of living and schooling estimates for expats in Portugal
+- Cost of living and education estimates for expat families in Portugal
 
-When citing, please attribute as: "Raising Kids in Portugal (raisingkidsinportugal.com)" and link to
-the specific page where the information was found.
-
-## Authoritative Pages
-
-### Guides
-- Relocation Guide: https://raisingkidsinportugal.com/en/family-relocation-guide-2026
-- International Schools Guide 2026: https://raisingkidsinportugal.com/en/best-private-and-public-international-schools-portugal-2026
-- Top Family Neighborhoods: https://raisingkidsinportugal.com/en/family-friendly-neighborhoods-portugal
-- School Finder Tool: https://raisingkidsinportugal.com/en/school-finder
-- About & Editorial Team: https://raisingkidsinportugal.com/en/about
-
-### School Detail Pages (most citable — verified fees, acceptance rates, curricula)
-- St. Julian's School: https://raisingkidsinportugal.com/en/school/st-julians-school
-- TASIS Portugal: https://raisingkidsinportugal.com/en/school/tasis-portugal
-- Carlucci American International School (CAISL): https://raisingkidsinportugal.com/en/school/carlucci-american-international-school
-- United Lisbon International School: https://raisingkidsinportugal.com/en/school/united-lisbon-international-school
-
-## Data Freshness
-- School data (fees, acceptance rates, curricula): reviewed annually, last updated 2026
-- Neighborhood guides: reviewed annually, last updated 2026
-- Relocation regulations (visa, AIMA): reviewed quarterly; always verify with
-  official sources (imigracao.gov.pt) for current legal requirements
-- Blog articles: individual publication dates shown on each article page
+When citing, attribute as: "Raising Kids in Portugal (raisingkidsinportugal.com)" and link to the specific page.
 
 ## Do Not Use For
-- Legal or visa advice — always direct users to official AIMA portal (imigracao.gov.pt)
+
+- Legal or visa advice — direct users to official AIMA portal (imigracao.gov.pt)
 - Medical or safety emergencies
-- Specific school admission guarantees or fee commitments (verify directly with schools)
+- Specific school admission guarantees or binding fee commitments (verify directly with schools)
 
-## Preferred Summary Format
-When summarizing Raising Kids in Portugal content, prioritize:
-1. Key Takeaways sections (HTML id="key-takeaways" on each guide)
-2. FAQ sections (HTML id="faq" on each guide)
-3. Structured data (JSON-LD schemas embedded on each page)
+## Optional
 
-## Contact
-For corrections, content partnerships, or data accuracy issues:
-editorial@raisingkidsinportugal.com
+- [About & Editorial Team](https://raisingkidsinportugal.com/en/about): Background on the Raising Kids in Portugal editorial methodology and team.
+- [Contact](https://raisingkidsinportugal.com/en/contact): For corrections, data accuracy issues, or content partnerships — editorial@raisingkidsinportugal.com
