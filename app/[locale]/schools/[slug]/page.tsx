@@ -102,7 +102,7 @@ export default async function SchoolDetailPage(props: PageProps) {
             <div className="relative w-full aspect-video overflow-hidden rounded-xl mb-8">
                 <Image
                     src="/schools-img.jpg"
-                    alt="International school campus in Portugal"
+                    alt={`${school.name} — international school campus in ${school.location}, Portugal`}
                     fill
                     priority
                     sizes="100vw"
