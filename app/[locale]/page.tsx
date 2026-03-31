@@ -101,10 +101,23 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     "sameAs": [
       "https://www.linkedin.com/company/raisingkidsinportugal",
     ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": featuredTestimonials.length,
+    },
     "review": featuredTestimonials.map((t) => ({
       "@type": "Review",
       "author": { "@type": "Person", "name": t.attribution },
       "reviewBody": getTestimonialT(t, "en").quote,
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1",
+      },
       "datePublished": "2024-01-01",
     })),
   };
