@@ -20,7 +20,8 @@
     "neighborhoods": "Bairros",
     "guides": "Guias",
     "schoolFinder": "Encontrar Escola",
-    "about": "Sobre nós"
+    "about": "Sobre nós",
+    "blog": "Blog"
   },
   "Metadata": {
     "title": "Raising Kids in Portugal Relocation - Melhores Escolas & Bairros em Portugal",
@@ -670,7 +671,8 @@
     "ctaHeading": "Pronto para saber mais?",
     "ctaDescription": "Use os nossos guias independentes para comparar escolas e bairros — ou faça o quiz School Finder de 60 segundos.",
     "ctaSchoolFinder": "Quiz School Finder",
-    "backToAll": "← Todos os artigos"
+    "backToAll": "← Todos os artigos",
+    "ctaRelocationGuide": "Guia de Relocalização"
   },
   "SchoolDetail": {
     "h1Tagline": "Escola Internacional · Portugal",

@@ -94,13 +94,28 @@ Detail pages resolve locale-specific paths via `routing.pathnames` (never hardco
 
 FAQPage JSON-LD must exactly match rendered FAQ HTML (Google rich snippet requirement).
 
+Speakable schema: `cssSelector: ["#key-takeaways", "#faq"]` on all pillar guides — those section IDs must be present in the rendered HTML.
+
+### Component Organization
+
+```
+components/
+├── layout/          # Header, Footer
+├── features/        # Domain components (Hero, Testimonials, quiz/, maps, etc.)
+├── seo/             # JSON-LD schema components (SchoolSchema, etc.)
+└── ui/              # shadcn/Radix primitives
+```
+
+`lib/utils.ts` exports `cn(...inputs)` (clsx + tailwind-merge) — use for all conditional className merging.
+
 ### TypeScript Gotchas
 
 - next-intl hash links: `href={{ pathname: "/", hash: "quiz" }}` not `href="/#quiz"`
 - `neighborhoodSlug` is optional on `School` type — render neighborhood cards conditionally
 - Slug sanitization: `decodeURIComponent` + accent transliteration (é→e, ç→c, etc.)
+- Route pathname vs. URL mismatch: `/schools/[slug]` (internal key in `routing.ts`) maps to `/school/[slug]` (actual URL, singular); same for `/neighborhoods/[slug]` → `/neighborhood/[slug]`
 
 ### Environment Variables
 
-- `NEXT_PUBLIC_BASE_URL` — canonical domain (`https://trustfamily.com` on Vercel, `http://localhost:3000` locally via `.env.local`)
+- `NEXT_PUBLIC_BASE_URL` — canonical domain (`https://raisingkidsinportugal.com` on Vercel, `http://localhost:3000` locally via `.env.local`)
 - `WEB3FORMS_ACCESS_KEY` — lead form submission (Web3Forms); if unset, lead data is logged to Vercel logs as fallback

@@ -372,6 +372,15 @@ export default async function Page({ params }: PageProps) {
                     ))}
                 </div>
             </section>
+
+            <div className="mt-8 text-center">
+                <p className="text-sm text-ink-muted">
+                    Planning your move?{" "}
+                    <Link href="/relocation-guide" className="text-brand font-medium hover:underline">
+                        Read our complete family relocation guide →
+                    </Link>
+                </p>
+            </div>
         </main>
     );
 }

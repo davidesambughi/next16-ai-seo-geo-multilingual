@@ -209,6 +209,9 @@ export default async function BlogPostPage({ params }: PageProps) {
           <Button size="lg" variant="outline" asChild>
             <Link href="/school-finder">{t("ctaSchoolFinder")}</Link>
           </Button>
+          <Button size="lg" variant="outline" asChild>
+            <Link href="/relocation-guide">{t("ctaRelocationGuide")}</Link>
+          </Button>
         </div>
       </div>
 

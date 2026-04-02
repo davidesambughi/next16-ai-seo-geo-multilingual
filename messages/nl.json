@@ -20,7 +20,8 @@
     "neighborhoods": "Buurten",
     "guides": "Gidsen",
     "schoolFinder": "Schoolzoeker",
-    "about": "Over ons"
+    "about": "Over ons",
+    "blog": "Blog"
   },
   "Metadata": {
     "title": "Raising Kids in Portugal Relocation - Beste scholen & buurten in Portugal",
@@ -670,7 +671,8 @@
     "ctaHeading": "Klaar om dieper te duiken?",
     "ctaDescription": "Gebruik onze onafhankelijke gidsen om scholen en wijken te vergelijken — of doe de 60-seconden School Finder quiz.",
     "ctaSchoolFinder": "School Finder Quiz",
-    "backToAll": "← Alle artikelen"
+    "backToAll": "← Alle artikelen",
+    "ctaRelocationGuide": "Verhuisgids"
   },
   "SchoolDetail": {
     "h1Tagline": "Internationale School · Portugal",

@@ -39,6 +39,7 @@ export function Header() {
         { href: "/relocation-guide" as const, label: t('guides'), match: (path: string) => path === "/relocation-guide" },
         { href: "/school-finder" as const, label: t('schoolFinder'), match: (path: string) => path === "/school-finder" },
         { href: "/about" as const, label: t('about'), match: (path: string) => path === "/about" },
+        { href: "/blog" as const, label: t('blog'), match: (path: string) => path.startsWith("/blog") },
     ];
 
     return (

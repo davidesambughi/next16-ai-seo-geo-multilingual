@@ -2,7 +2,7 @@
 
 A content-driven lead generation site for expat families relocating to Portugal. Helps families research international schools and family-friendly neighborhoods, then captures consultation leads.
 
-**Live site:** [trustfamily.com](https://trustfamily.com)
+**Live site:** [raisingkidsinportugal.com](https://raisingkidsinportugal.com)
 
 ---
 
@@ -127,7 +127,7 @@ npm run lint
 
 | Variable               | Purpose                                                              |
 | ---------------------- | -------------------------------------------------------------------- |
-| `NEXT_PUBLIC_BASE_URL` | Canonical domain (`https://trustfamily.com` in production)           |
+| `NEXT_PUBLIC_BASE_URL` | Canonical domain (`https://raisingkidsinportugal.com` in production) |
 | `WEB3FORMS_ACCESS_KEY` | Lead form submissions — omit locally to log leads to console instead |
 
 ---

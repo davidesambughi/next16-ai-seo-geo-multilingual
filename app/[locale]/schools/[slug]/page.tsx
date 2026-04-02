@@ -308,6 +308,17 @@ export default async function SchoolDetailPage(props: PageProps) {
                     )}
                 </div>
             </div>
+
+            {/* Keep exploring — internal linking */}
+            <section className="mt-16 pt-8 border-t border-border">
+                {/* TODO i18n */}
+                <h2 className="font-serif font-semibold text-xl text-ink-primary mb-4">Keep exploring</h2>
+                <div className="flex flex-wrap gap-6">
+                    <Link href="/relocation-guide" className="text-sm font-medium text-brand hover:underline">Complete relocation guide →</Link>
+                    <Link href="/top-neighborhoods" className="text-sm font-medium text-brand hover:underline">Family neighborhoods in Portugal →</Link>
+                    <Link href="/blog" className="text-sm font-medium text-brand hover:underline">Latest articles →</Link>
+                </div>
+            </section>
         </div>
     );
 }

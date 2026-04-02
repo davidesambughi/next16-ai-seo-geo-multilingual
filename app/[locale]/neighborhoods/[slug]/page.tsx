@@ -614,6 +614,17 @@ export default async function NeighborhoodDetailPage(props: PageProps) {
                     </div>
                 </div>
             </div>
+
+            {/* Keep exploring — internal linking */}
+            <section className="mt-16 pt-8 border-t border-border">
+                {/* TODO i18n */}
+                <h2 className="font-serif font-semibold text-xl text-ink-primary mb-4">Keep exploring</h2>
+                <div className="flex flex-wrap gap-6">
+                    <Link href="/relocation-guide" className="text-sm font-medium text-brand hover:underline">Complete relocation guide →</Link>
+                    <Link href="/best-private-and-public-international-schools-portugal-2026" className="text-sm font-medium text-brand hover:underline">International schools guide →</Link>
+                    <Link href="/blog" className="text-sm font-medium text-brand hover:underline">Latest articles →</Link>
+                </div>
+            </section>
         </div>
     );
 }
