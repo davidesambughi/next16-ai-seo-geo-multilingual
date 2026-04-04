@@ -2,7 +2,12 @@
  * Canonical article data for the Raising Kids in Portugal blog.
  * Used by both the blog listing page and individual /blog/[slug] pages.
  * Phase 5: migrate to CMS (Sanity / Contentful) — keep shape stable.
+ *
+ * Translations are stored in separate files (blog-translations*.ts) and indexed
+ * in blog-translations-index.ts for maintainability and easier CMS migration.
  */
+
+import { blogTranslationsMap } from './blog-translations-index';
 
 export interface BlogSection {
   heading: string;
@@ -14,13 +19,26 @@ export interface BlogFaqItem {
   a: string;
 }
 
-export interface BlogArticle {
-  slug: string;
+export interface BlogTranslation {
   title: string;
   subtitle: string;
+  intro: string;
+  sections: BlogSection[];
+  keyTakeaways?: string[];
+  faq?: BlogFaqItem[];
+  cta: {
+    text: string;
+  };
+}
+
+export interface BlogArticle {
+  slug: string;
   datePublished: string;
   dateModified: string;
   readTime: string;
+  // Default (English) content
+  title: string;
+  subtitle: string;
   intro: string;
   sections: BlogSection[];
   keyTakeaways?: string[];
@@ -29,6 +47,18 @@ export interface BlogArticle {
     text: string;
     href: '/best-private-and-public-international-schools-portugal-2026' | '/top-neighborhoods' | '/relocation-guide' | '/school-finder';
   };
+  // Translations for other locales
+  translations?: {
+    pt?: BlogTranslation;
+    de?: BlogTranslation;
+    fr?: BlogTranslation;
+    nl?: BlogTranslation;
+    es?: BlogTranslation;
+  };
+  // GEO/LLM metadata
+  author?: string;
+  expertise?: string[];
+  citations?: string[];
 }
 
 export const blogArticles: BlogArticle[] = [
@@ -41,6 +71,14 @@ export const blogArticles: BlogArticle[] = [
     readTime: "8 min read",
     intro:
       "Choosing an international school in Portugal is one of the most consequential decisions expat families make — and one of the most stressful. With four major international schools within 45 minutes of Lisbon, each with different curricula, admission processes, and cultures, the choice is far from obvious.",
+    author: "Raising Kids in Portugal Editorial Team",
+    expertise: ["international school selection", "Portugal education", "expat family relocation", "school admissions"],
+    citations: [
+      "St. Julian's School admission data 2026",
+      "CAISL curriculum framework",
+      "TASIS Portugal admissions statistics",
+      "United Lisbon International School profile"
+    ],
     sections: [
       {
         heading: "Step 1: Align curriculum with your long-term plan",
@@ -99,6 +137,14 @@ export const blogArticles: BlogArticle[] = [
     readTime: "6 min read",
     intro:
       "Cascais and Estoril sit just 3 km apart on the Estoril Coast — and both are consistently in the top 3 choices for expat families relocating to greater Lisbon. They share the same train line, similar beaches, and comparable property prices. So what actually separates them?",
+    author: "Raising Kids in Portugal Editorial Team",
+    expertise: ["Portugal neighborhoods", "expat communities", "Lisbon Riviera", "family relocation"],
+    citations: [
+      "Cascais municipality quality of life survey 2025",
+      "Estoril Line train schedule and commute data",
+      "Hospital CUF Cascais paediatric services",
+      "Property market analysis Cascais-Estoril 2026"
+    ],
     sections: [
       {
         heading: "Community & atmosphere",
@@ -157,6 +203,15 @@ export const blogArticles: BlogArticle[] = [
     readTime: "7 min read",
     intro:
       "The headline annual fees for international schools in Portugal range from €12,000 to €32,000. But the total cost of education almost always exceeds those figures. Here is what Raising Kids in Portugal's data from 200+ families reveals about the all-in cost.",
+    author: "Raising Kids in Portugal Editorial Team",
+    expertise: ["school fees analysis", "education budgeting", "Portugal international schools", "cost of living"],
+    citations: [
+      "St. Julian's School fee schedule 2026",
+      "CAISL tuition and ancillary costs",
+      "TASIS Portugal fee structure",
+      "United Lisbon International School pricing",
+      "Portuguese inflation data 2023-2025"
+    ],
     sections: [
       {
         heading: "Registration & application fees",
@@ -215,6 +270,14 @@ export const blogArticles: BlogArticle[] = [
     readTime: "7 min read",
     intro:
       "Choosing the right age to enrol your child in an international school in Portugal can feel like a high-stakes decision: too early, and the transition may be overwhelming; too late, and you risk missing out on popular year groups or facing multi-year waitlists. Around Lisbon, families often debate whether to start Reception/Pre-K at age 3–4 or wait until Year 1 or Grade 1, especially when juggling relocation timelines, language, and visa steps. This guide covers the practical realities — entry points, waitlists, and application deadlines — for St. Julian's School, CAISL, TASIS Portugal, and United Lisbon International School.",
+    author: "Raising Kids in Portugal Editorial Team",
+    expertise: ["school admissions", "application timelines", "waitlist management", "child development"],
+    citations: [
+      "St. Julian's School admissions data 2026",
+      "CAISL enrollment statistics",
+      "TASIS Portugal application timeline",
+      "United Lisbon International School admissions process"
+    ],
     sections: [
       {
         heading: "Entry points: when schools accept new students",
@@ -247,9 +310,148 @@ export const blogArticles: BlogArticle[] = [
     ],
     cta: { text: "Compare all international schools →", href: "/best-private-and-public-international-schools-portugal-2026" },
   },
+  {
+    slug: "healthcare-children-portugal-expat-families",
+    title: "Healthcare for Children in Portugal: What Expat Families Need to Know (2026)",
+    subtitle: "SNS registration, private insurance, vaccinations, and the family doctor shortage — a practical guide for relocating families",
+    datePublished: "2026-04-04",
+    dateModified: "2026-04-04",
+    readTime: "9 min read",
+    intro:
+      "Healthcare is one of the first things expat parents ask about when relocating to Portugal — and one of the areas where expectations most often diverge from reality. Portugal has a genuinely good public health system (the SNS) that is completely free for children. But there is a gap between arriving in Portugal and accessing it, a family doctor shortage that is particularly acute in the Lisbon region, and a set of practical steps that no school admissions officer will tell you about. This guide covers what you actually need to know: what the SNS covers, what private insurance is necessary and when, how to register your child, and which private hospitals expat families near Lisbon rely on.",
+    author: "Raising Kids in Portugal Editorial Team",
+    expertise: ["healthcare systems", "SNS registration", "expat health insurance", "paediatric care", "Portugal relocation"],
+    citations: [
+      "Serviço Nacional de Saúde (SNS) official guidelines",
+      "AIMA residence permit requirements",
+      "Hospital CUF paediatric services",
+      "Hospital da Luz children's hospital",
+      "Programa Nacional de Vacinação (PNV) 2025",
+      "Cheque Dentista programme guidelines",
+      "Portuguese health insurance providers data"
+    ],
+    sections: [
+      {
+        heading: "What the SNS covers for children — and what it costs",
+        body: "Portugal's Serviço Nacional de Saúde (SNS) is a universal public health system funded by taxation. For children, it is one of the most generous in Europe: all children under 18 are fully exempt from taxas moderadoras — the user co-payments that apply to adults for GP visits, specialist consultations, exams, and hospital outpatient care. In practice, this means that once your child is registered with the SNS, every GP appointment, paediatric consultation, blood test, and referral costs nothing. Emergency care at any public hospital is also available for children regardless of registration status. The SNS covers primary care through health centres (centros de saúde), specialist referrals through public hospitals, the national vaccination programme (Programa Nacional de Vacinação), and dental care through the Cheque Dentista voucher scheme. The main public paediatric hospital in Lisbon is Hospital Dona Estefânia — a specialist children's hospital that handles complex cases referred from across the country. For day-to-day paediatric care, your child's assigned health centre handles routine consultations, growth checks, and vaccination appointments.",
+      },
+      {
+        heading: "The gap before residency — why private insurance is not optional",
+        body: "The most important thing to understand about healthcare in Portugal is the sequence: SNS registration requires a valid residence permit (Autorização de Residência) issued by AIMA, Portugal's immigration authority. You cannot register your child with the SNS until that document exists. For families on the D7 passive income visa or D8 digital nomad visa — both popular among international families — the wait between arriving in Portugal and receiving the residence permit can be several months, and in some cases longer, due to AIMA appointment backlogs. During this entire period, private health insurance is your only structured access to healthcare. This is not a workaround: private insurance is a legal requirement of the D7 and D8 visa applications themselves — you must show proof of adequate coverage to obtain the visa. EU/EEA citizens have a partial bridge: the European Health Insurance Card (EHIC) covers emergency and medically necessary care during the interim period, but it does not provide access to routine or preventive care and cannot substitute for a comprehensive insurance policy. Emergency care at public hospitals is available to anyone in Portugal regardless of immigration status, but routine paediatric appointments, vaccinations at a private clinic, and specialist consultations all require either insurance or out-of-pocket payment. The practical rule: take out private health insurance before you arrive and maintain it until your SNS registration is confirmed. Most expat families then keep private insurance alongside SNS access — for reasons covered in the final section of this guide.",
+      },
+      {
+        heading: "Registering your child with the SNS: what you need and what to expect",
+        body: "Once your residence permit is issued, SNS registration at your local Centro de Saúde is generally a walk-in process. You will need your child's passport or ID document, proof of address (a rental contract, utility bill, or a declaration from the Junta de Freguesia if your lease is not in your name), your own NIF (Portuguese tax number), and your own valid residence permit. Your child does not need to be present — one parent or guardian handles the registration. At most health centres, particularly in smaller towns, you can register on the same visit; busier urban centres in Lisbon may require you to call ahead or take a numbered ticket. You will receive a Número de Utente — the SNS health number — which is the gateway to all public healthcare services. Bring this number to every appointment. Some families report receiving the number on the same day; others wait several weeks for it to be processed and posted. If your child has vaccination records from their home country, bring them to the registration appointment — the health centre nursing team will review which vaccines the child has already received and schedule any catch-up doses needed to align with the Portuguese national schedule.",
+      },
+      {
+        heading: "The family doctor shortage in Lisbon — and what to do while you wait",
+        body: "Getting registered with the SNS and getting assigned a family doctor (médico de família) are two separate things — and the gap between them is the biggest practical frustration for expat families in the Lisbon region. As of early 2026, approximately 1.6 million people in Portugal — around 15% of the population — had no assigned family doctor. The Lisbon and Tagus Valley region is the worst-affected: 31% of its population has no GP, compared to just 3% in the North of Portugal. The root cause is structural: a wave of retirements coinciding with younger doctors emigrating to France, the UK, and other countries offering better pay. In a 2025 recruitment competition, only 24 of 84 open family doctor positions in Lisbon were filled. Families in the Cascais, Estoril, and Sintra corridors — where most international schools are located — should realistically expect to wait months to over a year after SNS registration before being assigned a GP. While you wait, you are not without options. Walk-in care at the health centre (via the duty doctor — médico de serviço) covers acute needs. SNS 24, the 24/7 telephone triage line (808 24 24 24), provides medical advice and referral guidance at no cost. Public hospital emergency departments are available for urgent situations. And most expat families in this position simply use a private paediatrician for routine care while waiting for NHS assignment — which is why maintaining private insurance during this period is standard practice, not a luxury.",
+      },
+      {
+        heading: "Free vaccinations for all children in Portugal — including yours",
+        body: "The Programa Nacional de Vacinação (PNV) is one of the strongest aspects of Portuguese public health. All vaccines in the national schedule are free for every person in Portugal — and uniquely, this applies even to children who are not yet registered with the SNS. The official policy states that any person presenting at any SNS unit will be vaccinated or directed to the nearest unit with the vaccines available, regardless of registration status. The 2025 PNV schedule for children covers hepatitis B (given at birth), diphtheria, tetanus, whooping cough, polio, and Hib (combined vaccine), pneumococcal disease, meningitis C, meningitis B (for children born after January 2019), measles, mumps and rubella (MMR, given at 15 months), and HPV for adolescents — now including boys born after January 2009. BCG for tuberculosis is no longer given universally and is reserved for high-risk groups. Some vaccines that paediatricians commonly recommend are not included in the free PNV and must be purchased privately: varicella (chickenpox) is the most common example, followed by hepatitis A and the broader meningitis ACWY vaccine. Expect to pay €50–100 per private vaccine dose at a pharmacy or private clinic. For families arriving with children who have already been vaccinated on a different national schedule, bring all vaccination records from your home country to the first SNS appointment. The nursing team will assess equivalency and schedule any missing doses free of charge.",
+      },
+      {
+        heading: "The Cheque Dentista: free dental care for children from age 2",
+        body: "Portugal runs a national oral health programme (Programa Nacional de Promoção da Saúde Oral — PNPSO) that provides free dental care to children through a voucher system called the Cheque Dentista. Each voucher is worth €35 and can be used at any participating private dentist across Portugal for preventive care, fillings, extractions, root canals, and scaling. The vouchers are issued digitally (by SMS or email) and are valid nationwide. Children aged 2 to 6 receive a prevention and diagnosis voucher automatically each year. Children aged 7, 10, and 13 receive an annual voucher automatically. Children at other ages between 7 and 15 receive a voucher if their family doctor refers them due to a detected cavity. There is an ongoing expansion of the programme to cover all children and young people aged 7 to 18 regardless of the referral trigger. The important caveat for international families: the school-based distribution channel — through which vouchers are most commonly distributed — covers children in public schools and state-subsidised private institutions (IPSS). Children in independent private international schools are excluded from this channel. However, vouchers can always be issued directly by the child's assigned SNS family doctor — so once your child has an SNS registration and a GP, they are fully eligible. If you are still waiting for a GP assignment, request the voucher through SNS 24 or at your health centre's nursing team. A list of participating dentists is available at the Ordem dos Médicos Dentistas website.",
+      },
+      {
+        heading: "Private hospitals near Lisbon: CUF, Lusíadas, and Hospital da Luz",
+        body: "The three private hospital groups that expat families in the Lisbon area use most are CUF, Hospital Lusíadas, and Hospital da Luz. All three have dedicated paediatric units with 24-hour emergency services, English-speaking paediatricians, and direct specialist access without SNS referral requirements. CUF is the largest private hospital network in Portugal and has the most locations — Hospital CUF Descobertas in Parque das Nações and Hospital CUF Tejo in western Lisbon are the most-used by expat families. CUF Tejo has a dedicated Centro da Criança e do Adolescente covering the full range of paediatric specialties. Hospital da Luz Lisboa distinguishes itself as the only private hospital in Portugal with exclusively dedicated paediatric areas — its Children and Adolescent Hospital covers all specialties from neonatology to adolescent medicine for patients aged 0 to 17, with a coordinated 24-hour triage system for under-18s. Hospital da Luz Cascais, part of the same group, serves families on the Estoril Line directly. Hospital Lusíadas Lisboa covers general paediatrics through to specialist outpatient consultations in neurology, cardiology, gastroenterology, and pulmonology, with online booking available. Without insurance, a routine private paediatric consultation at any of these hospitals costs €50–90; an urgent or emergency paediatric visit runs €80–150. All three accept the major Portuguese domestic insurers — Médis, Multicare, and AdvanceCare — which makes the cost manageable within a family plan. Families in the Cascais and Sintra corridors most commonly use Hospital da Luz Cascais or CUF Cascais for routine care and transfer to the Lisbon campuses for specialist needs.",
+      },
+      {
+        heading: "How most expat families actually structure their healthcare",
+        body: "The experience of hundreds of international families who have relocated to the Lisbon area converges on the same practical model. Step one is private health insurance from the moment you arrive — before residency, before SNS registration, from day one. The main Portuguese domestic insurers (Médis, Multicare, AdvanceCare) offer family plans that cost approximately €300–400 per month for two adults and children with comprehensive coverage. Adding a child to an existing plan typically costs €15–30 per month. International expat policies (Cigna Global, AXA, Bupa Global) cost more but provide worldwide coverage — relevant for families who travel frequently or want repatriation included. Step two is SNS registration as soon as the residence permit arrives, primarily to access the national vaccination programme, secure a Número de Utente, and eventually be assigned a family doctor. Step three is using private hospitals — CUF, Lusíadas, or Hospital da Luz — for day-to-day paediatric care via the insurance plan, rather than waiting for SNS appointment availability. Step four is leaning on the SNS for what it does best: vaccination catch-ups, the Cheque Dentista dental programme, and as a back-up system once a family doctor is finally assigned. This hybrid approach is not a workaround for a broken system — it reflects how the Portuguese middle class also navigates healthcare. Private insurance penetration in Portugal is among the highest in Europe specifically because it complements, rather than replaces, the SNS.",
+      },
+    ],
+    keyTakeaways: [
+      "Children under 18 pay nothing on the SNS — all co-payments are waived, covering GP visits, specialist consultations, exams, and paediatric hospital care.",
+      "SNS registration requires a valid Portuguese residence permit: families on D7 or D8 visas must have private health insurance from day one and maintain it until residency is confirmed.",
+      "In the Lisbon region, 31% of the population has no assigned family doctor — expect to wait 6–12+ months after SNS registration before being allocated a GP.",
+      "All vaccines on the national schedule (PNV) are free for every child in Portugal, even before SNS registration — bring home-country vaccination records to your first health centre visit for a free catch-up assessment.",
+      "The Cheque Dentista programme provides €35 dental vouchers to children from age 2; expat children in private schools should request vouchers through their SNS GP or health centre rather than through school.",
+    ],
+    faq: [
+      {
+        q: "Is healthcare free for children in Portugal?",
+        a: "Yes. All children under 18 are fully exempt from co-payments (taxas moderadoras) across all SNS services — GP appointments, specialist consultations, exams, and hospital outpatient care are all free. Emergency care is available to any child in Portugal regardless of residency status. The national vaccination programme is also free for all children, including those not yet registered with the SNS.",
+      },
+      {
+        q: "Can my child access the SNS before our residency permit is approved?",
+        a: "No — SNS registration requires a valid Portuguese residence permit (Autorização de Residência) issued by AIMA. Until that document exists, your child cannot be registered. During this period, private health insurance is essential and is a legal requirement of the D7 and D8 visa applications. EU/EEA citizens can use the European Health Insurance Card (EHIC) for emergency and medically necessary care, but not for routine or preventive appointments. Emergency care at public hospitals is available to anyone in Portugal regardless of status.",
+      },
+      {
+        q: "How long does it take to get a family doctor in Portugal?",
+        a: "In the Lisbon and Tagus Valley region — where most international schools and expat families are located — you should expect to wait several months to over a year after SNS registration before being assigned a family doctor. As of early 2026, 31% of the Lisbon region's population had no assigned GP, the worst rate in the country. While waiting, families can use the duty doctor at the health centre, the SNS 24 triage line (808 24 24 24), and private paediatricians via health insurance.",
+      },
+      {
+        q: "Do expat children qualify for the Cheque Dentista dental vouchers?",
+        a: "Yes, once they have an SNS registration and an assigned family doctor. Children aged 2–6 receive annual dental vouchers automatically; children at ages 7, 10, and 13 also receive automatic vouchers. Children in private international schools do not receive vouchers through the school distribution channel, but their GP can issue them directly. Each voucher is worth €35 and is accepted at any participating private dentist across Portugal.",
+      },
+      {
+        q: "Which private hospital should expat families in Lisbon use for children?",
+        a: "The three most-used options are Hospital da Luz (Lisbon and Cascais campuses — the only private hospital with exclusively dedicated paediatric areas), CUF (Hospital CUF Tejo and Hospital CUF Descobertas in Lisbon, with a dedicated Children and Adolescent Centre at CUF Tejo), and Hospital Lusíadas Lisboa. All three have English-speaking paediatricians, 24-hour emergency services, and full specialist coverage. Without insurance, expect €50–90 for a routine paediatric consultation and €80–150 for an urgent visit. All three accept the major Portuguese domestic health insurers.",
+      },
+    ],
+    cta: { text: "Read the full relocation guide →", href: "/relocation-guide" },
+  },
 ];
 
 /** Returns a single article by slug, or undefined if not found. */
 export function getBlogArticle(slug: string): BlogArticle | undefined {
   return blogArticles.find((a) => a.slug === slug);
+}
+
+/** Returns article content in the specified locale, falling back to English if translation not available. */
+export function getBlogArticleContent(
+  article: BlogArticle,
+  locale: string
+): {
+  title: string;
+  subtitle: string;
+  intro: string;
+  sections: BlogSection[];
+  keyTakeaways?: string[];
+  faq?: BlogFaqItem[];
+  ctaText: string;
+} {
+  // Default to English
+  if (locale === 'en') {
+    return {
+      title: article.title,
+      subtitle: article.subtitle,
+      intro: article.intro,
+      sections: article.sections,
+      keyTakeaways: article.keyTakeaways,
+      faq: article.faq,
+      ctaText: article.cta.text,
+    };
+  }
+
+  // Try to get translation from index
+  const articleTranslations = blogTranslationsMap[article.slug as keyof typeof blogTranslationsMap];
+  const translation = articleTranslations?.[locale as keyof typeof articleTranslations];
+
+  if (translation) {
+    return {
+      title: translation.title,
+      subtitle: translation.subtitle,
+      intro: translation.intro,
+      sections: translation.sections,
+      keyTakeaways: translation.keyTakeaways,
+      faq: translation.faq,
+      ctaText: translation.cta.text,
+    };
+  }
+
+  // Fallback to English if translation not found
+  return {
+    title: article.title,
+    subtitle: article.subtitle,
+    intro: article.intro,
+    sections: article.sections,
+    keyTakeaways: article.keyTakeaways,
+    faq: article.faq,
+    ctaText: article.cta.text,
+  };
 }

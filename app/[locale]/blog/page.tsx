@@ -3,7 +3,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Link } from "@/i18n/navigation";
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
-import { blogArticles } from "@/lib/data";
+import { blogArticles, getBlogArticleContent } from "@/lib/data";
 
 /**
  * Blog listing page — shows teasers with links to individual /blog/[slug] pages.
@@ -72,25 +72,29 @@ export default async function BlogPage({ params }: PageProps) {
       "name": "Raising Kids in Portugal",
       "logo": { "@type": "ImageObject", "url": `${BASE}/logo.png` },
     },
-    "blogPost": blogArticles.map((a) => ({
-      "@type": "BlogPosting",
-      "headline": a.title,
-      "description": a.intro.slice(0, 160),
-      "datePublished": a.datePublished,
-      "dateModified": a.dateModified,
-      "url": `${BASE}/en/blog/${a.slug}`,
-      "author": {
-        "@type": "Person",
-        "name": "Raising Kids in Portugal Editorial Team",
-        "url": `${BASE}/en/about`,
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Raising Kids in Portugal",
-        "logo": { "@type": "ImageObject", "url": `${BASE}/logo.png` },
-      },
-      "mainEntityOfPage": { "@type": "WebPage", "@id": `${BASE}/en/blog/${a.slug}` },
-    })),
+    "blogPost": blogArticles.map((a) => {
+      const content = getBlogArticleContent(a, locale);
+      return {
+        "@type": "BlogPosting",
+        "headline": content.title,
+        "description": content.intro.slice(0, 160),
+        "datePublished": a.datePublished,
+        "dateModified": a.dateModified,
+        "url": `${BASE}/en/blog/${a.slug}`,
+        "author": {
+          "@type": "Person",
+          "name": a.author || "Raising Kids in Portugal Editorial Team",
+          "url": `${BASE}/en/about`,
+          ...(a.expertise && { "knowsAbout": a.expertise }),
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Raising Kids in Portugal",
+          "logo": { "@type": "ImageObject", "url": `${BASE}/logo.png` },
+        },
+        "mainEntityOfPage": { "@type": "WebPage", "@id": `${BASE}/en/blog/${a.slug}` },
+      };
+    }),
   };
 
   return (
@@ -106,37 +110,40 @@ export default async function BlogPage({ params }: PageProps) {
       </p>
 
       <div className="space-y-10">
-        {blogArticles.map((article) => (
-          <article key={article.slug} className="border-b border-border pb-10 last:border-0">
-            {/* Meta row */}
-            <div className="flex items-center gap-3 text-xs text-ink-muted mb-3">
-              <time dateTime={article.datePublished}>{article.datePublished}</time>
-              <span>·</span>
-              <span>{article.readTime}</span>
-            </div>
+        {blogArticles.map((article) => {
+          const content = getBlogArticleContent(article, locale);
+          return (
+            <article key={article.slug} className="border-b border-border pb-10 last:border-0">
+              {/* Meta row */}
+              <div className="flex items-center gap-3 text-xs text-ink-muted mb-3">
+                <time dateTime={article.datePublished}>{article.datePublished}</time>
+                <span>·</span>
+                <span>{article.readTime}</span>
+              </div>
 
-            {/* Title — links to individual page */}
-            <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-1 hover:text-brand transition-colors">
-              <Link href={{ pathname: '/blog/[slug]', params: { slug: article.slug } }}>
-                {article.title}
+              {/* Title — links to individual page */}
+              <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-1 hover:text-brand transition-colors">
+                <Link href={{ pathname: '/blog/[slug]', params: { slug: article.slug } }}>
+                  {content.title}
+                </Link>
+              </h2>
+              <p className="text-ink-muted text-sm mb-4 italic">{content.subtitle}</p>
+
+              {/* Teaser (first 220 chars of intro) */}
+              <p className="text-ink-secondary leading-relaxed mb-5">
+                {content.intro.slice(0, 220)}…
+              </p>
+
+              {/* Read more CTA */}
+              <Link
+                href={{ pathname: '/blog/[slug]', params: { slug: article.slug } }}
+                className="inline-flex items-center text-sm font-medium text-brand hover:text-[var(--brand-hover)] transition-colors"
+              >
+                {t("readMore")}
               </Link>
-            </h2>
-            <p className="text-ink-muted text-sm mb-4 italic">{article.subtitle}</p>
-
-            {/* Teaser (first 220 chars of intro) */}
-            <p className="text-ink-secondary leading-relaxed mb-5">
-              {article.intro.slice(0, 220)}…
-            </p>
-
-            {/* Read more CTA */}
-            <Link
-              href={{ pathname: '/blog/[slug]', params: { slug: article.slug } }}
-              className="inline-flex items-center text-sm font-medium text-brand hover:text-[var(--brand-hover)] transition-colors"
-            >
-              {t("readMore")}
-            </Link>
-          </article>
-        ))}
+            </article>
+          );
+        })}
       </div>
     </main>
   );

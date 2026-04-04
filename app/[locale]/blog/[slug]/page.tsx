@@ -4,7 +4,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { getTranslations } from "next-intl/server";
-import { blogArticles, getBlogArticle } from "@/lib/data";
+import { blogArticles, getBlogArticle, getBlogArticleContent } from "@/lib/data";
 import type { Metadata } from "next";
 
 // ISR: regenerate every 24 h — article content is stable but may be updated
@@ -22,11 +22,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!article) return { title: "Article not found | Raising Kids in Portugal" };
 
+  const content = getBlogArticleContent(article, locale);
   const canonicalUrl = `${BASE}/en/blog/${article.slug}`;
 
   return {
-    title: `${article.title} | Raising Kids in Portugal`,
-    description: article.intro.slice(0, 160),
+    title: `${content.title} | Raising Kids in Portugal`,
+    description: content.intro.slice(0, 160),
     alternates: {
       canonical: canonicalUrl,
       languages: {
@@ -40,20 +41,20 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       },
     },
     openGraph: {
-      title: `${article.title} | Raising Kids in Portugal`,
-      description: article.intro.slice(0, 160),
+      title: `${content.title} | Raising Kids in Portugal`,
+      description: content.intro.slice(0, 160),
       url: canonicalUrl,
       siteName: "Raising Kids in Portugal",
       type: "article",
       publishedTime: article.datePublished,
       modifiedTime: article.dateModified,
-      authors: ["Raising Kids in Portugal Editorial Team"],
+      authors: article.author ? [article.author] : ["Raising Kids in Portugal Editorial Team"],
       images: [{ url: `${BASE}/opengraph-image`, width: 1200, height: 630, alt: 'Raising Kids in Portugal — International Schools & Neighborhoods in Portugal' }],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${article.title} | Raising Kids in Portugal`,
-      description: article.intro.slice(0, 160),
+      title: `${content.title} | Raising Kids in Portugal`,
+      description: content.intro.slice(0, 160),
     },
   };
 }
@@ -69,13 +70,14 @@ export default async function BlogPostPage({ params }: PageProps) {
 
   if (!article) notFound();
 
+  const content = getBlogArticleContent(article, locale);
   const canonicalUrl = `${BASE}/en/blog/${article.slug}`;
 
   // FAQPage JSON-LD — only emitted when the article has FAQ items
-  const faqSchema = article.faq && article.faq.length > 0 ? {
+  const faqSchema = content.faq && content.faq.length > 0 ? {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": article.faq.map(({ q, a }) => ({
+    "mainEntity": content.faq.map(({ q, a }) => ({
       "@type": "Question",
       "name": q,
       "acceptedAnswer": { "@type": "Answer", "text": a },
@@ -86,16 +88,17 @@ export default async function BlogPostPage({ params }: PageProps) {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": article.title,
-    "description": article.intro,
+    "headline": content.title,
+    "description": content.intro,
     "datePublished": article.datePublished,
     "dateModified": article.dateModified,
     "url": canonicalUrl,
     "author": {
       "@type": "Person",
-      "name": "Raising Kids in Portugal Editorial Team",
+      "name": article.author || "Raising Kids in Portugal Editorial Team",
       "url": `${BASE}/en/about`,
       "worksFor": { "@type": "Organization", "name": "Raising Kids in Portugal", "url": BASE },
+      ...(article.expertise && { "knowsAbout": article.expertise }),
     },
     "publisher": {
       "@type": "Organization",
@@ -105,12 +108,13 @@ export default async function BlogPostPage({ params }: PageProps) {
     },
     "mainEntityOfPage": { "@type": "WebPage", "@id": canonicalUrl },
     "articleSection": "Relocation Guides",
-    "inLanguage": "en",
+    "inLanguage": locale,
     "about": [
       { "@type": "Thing", "name": "International schools Portugal" },
       { "@type": "Thing", "name": "Expat families Portugal" },
       { "@type": "Place", "name": "Portugal" },
     ],
+    ...(article.citations && { "citation": article.citations }),
     // SpeakableSpecification — allows voice AI (Google Assistant, Alexa) to read
     // the most important sections aloud and signals GEO priority content to crawlers.
     "speakable": {
@@ -124,9 +128,9 @@ export default async function BlogPostPage({ params }: PageProps) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": `${BASE}/en` },
-      { "@type": "ListItem", "position": 2, "name": "Blog", "item": `${BASE}/en/blog` },
-      { "@type": "ListItem", "position": 3, "name": article.title, "item": canonicalUrl },
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": `${BASE}/${locale}` },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": `${BASE}/${locale}/blog` },
+      { "@type": "ListItem", "position": 3, "name": content.title, "item": canonicalUrl },
     ],
   };
 
@@ -149,16 +153,16 @@ export default async function BlogPostPage({ params }: PageProps) {
 
       {/* Title */}
       <h1 className="font-serif font-semibold text-4xl md:text-5xl text-ink-primary mb-3 leading-tight">
-        {article.title}
+        {content.title}
       </h1>
-      <p className="text-ink-muted text-base mb-8 italic">{article.subtitle}</p>
+      <p className="text-ink-muted text-base mb-8 italic">{content.subtitle}</p>
 
       {/* Intro */}
-      <p className="text-lg text-ink-secondary leading-relaxed mb-10">{article.intro}</p>
+      <p className="text-lg text-ink-secondary leading-relaxed mb-10">{content.intro}</p>
 
       {/* Article sections */}
       <div className="space-y-10">
-        {article.sections.map((section, i) => (
+        {content.sections.map((section, i) => (
           <section key={section.heading}>
             <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-3">
               {i + 1}. {section.heading}
@@ -169,11 +173,11 @@ export default async function BlogPostPage({ params }: PageProps) {
       </div>
 
       {/* Key Takeaways — id used by Speakable schema and GEO crawlers */}
-      {article.keyTakeaways && article.keyTakeaways.length > 0 && (
+      {content.keyTakeaways && content.keyTakeaways.length > 0 && (
         <div id="key-takeaways" className="mt-12 bg-brand-50 border border-border rounded-2xl p-6">
           <h2 className="font-serif font-semibold text-xl text-ink-primary mb-4">Key Takeaways</h2>
           <ul className="space-y-3">
-            {article.keyTakeaways.map((point) => (
+            {content.keyTakeaways.map((point) => (
               <li key={point} className="flex gap-3 text-ink-secondary text-sm leading-relaxed">
                 <span className="text-brand mt-0.5 shrink-0">✓</span>
                 <span>{point}</span>
@@ -184,10 +188,10 @@ export default async function BlogPostPage({ params }: PageProps) {
       )}
 
       {/* FAQ — id used by Speakable schema; content matches FAQPage JSON-LD exactly */}
-      {article.faq && article.faq.length > 0 && (
+      {content.faq && content.faq.length > 0 && (
         <div id="faq" className="mt-10 space-y-6">
           <h2 className="font-serif font-semibold text-2xl text-ink-primary">Frequently Asked Questions</h2>
-          {article.faq.map(({ q, a }) => (
+          {content.faq.map(({ q, a }) => (
             <div key={q}>
               <h3 className="font-semibold text-ink-primary mb-2">{q}</h3>
               <p className="text-ink-secondary leading-relaxed text-sm">{a}</p>

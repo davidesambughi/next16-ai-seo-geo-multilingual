@@ -133,20 +133,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
   );
 
   // ── 4. Blog post pages ───────────────────────────────────────────────────────
-  // Blog is English-only for now — canonical URL is /en/blog/[slug]
-  const blogEntries: MetadataRoute.Sitemap = blogArticles.map((article) => ({
-    url: `${host}/en/blog/${article.slug}`,
-    lastModified: new Date(article.dateModified),
-    changeFrequency: 'monthly' as const,
-    priority: 0.6,
-    alternates: {
-      languages: {
-        en: `${host}/en/blog/${article.slug}`,
+  // Blog articles are now available in all 5 locales with full translations
+  const blogEntries: MetadataRoute.Sitemap = blogArticles.flatMap((article) =>
+    routing.locales.map((locale) => ({
+      url: `${host}/${locale}/blog/${article.slug}`,
+      lastModified: new Date(article.dateModified),
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+      alternates: {
+        languages: Object.fromEntries(
+          routing.locales.map((l) => [l, `${host}/${l}/blog/${article.slug}`])
+        ),
       },
-    },
-  }));
+    }))
+  );
 
-  // Blog listing page
+  // Blog listing page — available in all locales
   const blogListEntry: MetadataRoute.Sitemap = [
     {
       url: `${host}/en/blog`,
@@ -154,9 +156,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly' as const,
       priority: 0.7,
       alternates: {
-        languages: {
-          en: `${host}/en/blog`,
-        },
+        languages: Object.fromEntries(
+          routing.locales.map((l) => [l, `${host}/${l}/blog`])
+        ),
       },
     },
   ];
