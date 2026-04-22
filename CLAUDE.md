@@ -40,10 +40,12 @@ translations: { en: T } & Partial<Record<LocaleKey, T>>
 Helper functions (`getSchoolT`, `getNeighborhoodT`, `getTestimonialT`) always fall back to `translations.en`. JSON-LD schemas always use `translations.en` (canonical EN data).
 
 Key data files:
+- `lib/data/index.ts` — barrel re-export for `schoolsData` and `neighborhoodsData`
 - `lib/data/schools.ts` — schoolsData + `getSchoolT()` + `buildAutoDescription()`
 - `lib/data/neighborhoods.ts` — neighborhoodsData + `getNeighborhoodT()`
 - `lib/data/testimonials.ts` — testimonials + `getTestimonialT()`
 - `lib/data/blog.ts` — BlogArticle type, blogArticles, `getBlogArticle()`
+- `lib/data/blog-translations-index.ts` — aggregates all blog translations into `blogTranslationsMap` keyed by slug; each locale's translations live in separate `blog-translations*.ts` files imported here
 - `lib/types.ts` — all shared types: School, Neighborhood, Testimonial, LocaleKey
 - `lib/content/schools-guide.ts` — `GUIDE_SCHOOL_FACTS` (acceptance rates, wait times — single source of truth)
 - `lib/content/homepage.ts` — homepage editorial content (hero copy, pillar summaries)
@@ -51,6 +53,8 @@ Key data files:
 - `lib/schemas/lead-form.ts` — Zod schema for the lead capture form
 - `lib/breadcrumbs.ts` — `buildBreadcrumbs()` helper for BreadcrumbList JSON-LD + `<Breadcrumbs>` component
 - `components/seo/SchoolSchema.tsx` — EducationalOrganization JSON-LD (used by school detail pages)
+- `components/JsonLd.tsx` — generic JSON-LD wrapper used on all pages
+- `components/form.tsx` — lead capture form (`"use client"`, React 19 `useActionState` bound to `submitLead`)
 
 ### Server vs. Client Components
 
@@ -108,12 +112,21 @@ components/
 
 `lib/utils.ts` exports `cn(...inputs)` (clsx + tailwind-merge) — use for all conditional className merging.
 
+### Blog Translation Architecture
+
+Blog articles have 5 entries, each translated into all 6 locales. To keep `blog.ts` readable, translations are split across per-locale files (`blog-translations.ts`, `blog-translations-fr.ts`, etc.) and aggregated in `blog-translations-index.ts` into `blogTranslationsMap[slug][locale]`. When adding a new article, add its translation exports to the relevant per-locale files and register them in the index.
+
 ### TypeScript Gotchas
 
 - next-intl hash links: `href={{ pathname: "/", hash: "quiz" }}` not `href="/#quiz"`
 - `neighborhoodSlug` is optional on `School` type — render neighborhood cards conditionally
 - Slug sanitization: `decodeURIComponent` + accent transliteration (é→e, ç→c, etc.)
 - Route pathname vs. URL mismatch: `/schools/[slug]` (internal key in `routing.ts`) maps to `/school/[slug]` (actual URL, singular); same for `/neighborhoods/[slug]` → `/neighborhood/[slug]`
+
+### Docs Reference
+
+- `docs/BUG-TRACKER.md` — historical bug log (all 11 bugs are `done`; useful for context on current code patterns)
+- `docs/IMPROVEMENTS.md` — post-launch improvement backlog (form lead fields, narrative text for 73 imported schools, client-side validation)
 
 ### Environment Variables
 

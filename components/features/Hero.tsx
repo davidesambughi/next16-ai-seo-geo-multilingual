@@ -35,11 +35,14 @@ export default function Hero() {
         {/* Hero image — fills full column height via grid stretch, bleeds right on desktop.
             On mobile, we break out of the standard padding (-mx-6) to make it full width. */}
         <div className="order-first md:order-last relative aspect-[4/3] w-[calc(100%+3rem)] -ml-6 md:ml-0 md:aspect-auto md:w-full md:-mr-6 lg:-mr-12 overflow-hidden bg-surface-subtle overflow-x-hidden">
+          {/* Explicit preload so the browser discovers the LCP image before render-blocking resources */}
+          <link rel="preload" as="image" href="/hero-img.jpg" fetchPriority="high" />
           <Image
             src="/hero-img.jpg"
             alt="Expat family in Lisbon, Portugal - Raising Kids in Portugal relocation guide"
             fill
             priority
+            fetchPriority="high"
             sizes="(max-width: 768px) 100vw, 45vw"
             placeholder="blur"
             blurDataURL={HERO_BLUR}

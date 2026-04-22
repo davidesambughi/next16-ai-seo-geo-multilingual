@@ -157,8 +157,12 @@ export function StickyTOC({
                 )}>
                     <div className="flex justify-between items-center mb-6">
                         <h2 className="section-overline">{mobileSectionsTitle}</h2>
-                        <button onClick={() => setIsMobileMenuOpen(false)} className="text-ink-muted p-1">
-                            <ChevronDown size={20} />
+                        <button
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            aria-label="Close table of contents"
+                            className="text-ink-muted p-1"
+                        >
+                            <ChevronDown size={20} aria-hidden="true" />
                         </button>
                     </div>
                     <ul className="space-y-4 max-h-[50vh] overflow-y-auto pb-4">
@@ -197,9 +201,10 @@ export function StickyTOC({
 
                     <button
                         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                        aria-label="Scroll to top"
                         className="p-2 text-ink-muted hover:text-brand transition-colors"
                     >
-                        <ChevronUp size={20} />
+                        <ChevronUp size={20} aria-hidden="true" />
                     </button>
                 </div>
             </div>

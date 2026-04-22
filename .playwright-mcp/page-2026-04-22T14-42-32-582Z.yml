@@ -1,0 +1,302 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Logo Raising Kids in Portugal Raising Kids in Portugal" [ref=e6] [cursor=pointer]:
+        - /url: /en
+        - img "Logo Raising Kids in Portugal" [ref=e7]
+        - generic [ref=e8]: Raising Kids in Portugal
+      - navigation [ref=e9]:
+        - link "Home" [ref=e10] [cursor=pointer]:
+          - /url: /en
+        - link "Schools" [ref=e11] [cursor=pointer]:
+          - /url: /en/best-private-and-public-international-schools-portugal-2026
+        - link "Neighborhoods" [ref=e12] [cursor=pointer]:
+          - /url: /en/family-friendly-neighborhoods-portugal
+        - link "Guides" [ref=e13] [cursor=pointer]:
+          - /url: /en/family-relocation-guide-2026
+        - link "School Finder" [ref=e14] [cursor=pointer]:
+          - /url: /en/school-finder
+        - link "About" [ref=e15] [cursor=pointer]:
+          - /url: /en/about
+        - link "Blog" [ref=e16] [cursor=pointer]:
+          - /url: /en/blog
+      - combobox "Select language" [ref=e19] [cursor=pointer]:
+        - option "EN" [selected]
+        - option "PT"
+        - option "DE"
+        - option "FR"
+        - option "NL"
+        - option "ES"
+  - main [ref=e21]:
+    - article [ref=e22]:
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - generic [ref=e26]:
+            - paragraph [ref=e27]: The independent guide · Portugal 2026
+            - heading "Secure Your Children's Future in Portugal" [level=1] [ref=e28]
+            - paragraph [ref=e29]: "Raising Kids in Portugal is the independent guide for international families relocating to Portugal. We compare every leading international school near Lisbon — IB, British, and American curricula at St. Julian's, TASIS Portugal, CAISL, and United Lisbon — map family-friendly neighborhoods in Cascais, Sintra, and Parque das Nações, and guide you through D7, D8, and Golden Visa options. Built on extensive relocation research and data synthesis: the structured, honest research you need before you commit."
+          - img "Expat family in Lisbon, Portugal - Raising Kids in Portugal relocation guide" [ref=e31]
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - img [ref=e36]
+            - generic [ref=e39]: 100% Independent Data
+          - generic [ref=e41]:
+            - img [ref=e42]
+            - generic [ref=e46]: Validated by Families
+          - generic [ref=e48]:
+            - img [ref=e49]
+            - generic [ref=e52]: Updated for 2026 Admissions
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - heading "Why Portugal has become the first choice for relocating families" [level=2] [ref=e57]
+          - paragraph [ref=e58]: Something shifted around 2022. The data was already pointing in one direction — and by 2024, Portugal had moved from an aspirational destination to the most researched relocation option in Europe among international families with school-age children. The reasons are layered, but they are not accidental, and they are unlikely to reverse.
+          - paragraph [ref=e59]:
+            - text: Relocating to Portugal with a family means landing in a country that ranks among the top seven safest globally (
+            - link "Global Peace Index 2025, Institute for Economics and Peace" [ref=e60] [cursor=pointer]:
+              - /url: https://www.economicsandpeace.org/research/global-peace-index/
+            - text: ), records more than 300 sunny days per year in the Lisbon area, and offers a concentration of world-class international schools within a 45-minute radius of a major European capital. That specific combination — safety, climate, education quality, and urban accessibility — does not exist in the same proportion anywhere else on the continent.
+          - paragraph [ref=e61]: "The Lisbon area is home to four leading international schools: St. Julian's School in Carcavelos (British curriculum and IB Diploma), TASIS Portugal and Carlucci American International School (CAISL) in Sintra (American and IB curricula), and United Lisbon International School in Parque das Nações (American and IB). For a family relocating from London, Amsterdam, Munich, or New York, the curriculum compatibility is not a compromise — it is often an upgrade in terms of class size, pastoral care, and international community."
+          - paragraph [ref=e62]: "The cost asymmetry is real, though frequently misunderstood. Portugal is not inexpensive in absolute terms — particularly when international school fees, which range from €12,000 to €32,000 per child per year, are factored in. What it offers is quality-adjusted value: a lifestyle comparable to the London commuter belt or the Geneva suburbs, at roughly half the total cost of living, in a climate measurably better for outdoor family life."
+        - complementary "Key statistics" [ref=e63]:
+          - generic [ref=e64]:
+            - paragraph [ref=e65]: "#7"
+            - separator [ref=e66]
+            - paragraph [ref=e67]: Portugal's global safety ranking — Global Peace Index 2025. One of the safest countries in the world to raise children.
+          - generic [ref=e68]:
+            - paragraph [ref=e69]: 300+
+            - separator [ref=e70]
+            - paragraph [ref=e71]: Sunny days per year in Lisbon. Atlantic climate — mild winters, warm summers, year-round outdoor life for families.
+          - generic [ref=e72]:
+            - img "Family in Lisbon, Portugal — Raising Kids in Portugal relocation 2026" [ref=e74]
+            - paragraph [ref=e75]: Lisbon’s iconic yellow trams on a tree-lined street — a glimpse of the timeless lifestyle that makes staying an easy choice
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - paragraph [ref=e80]: Your Portugal relocation roadmap
+          - heading "Three decisions that define your family's move to Portugal" [level=2] [ref=e81]
+          - paragraph [ref=e82]: Which international school near Lisbon — IB, British, or American. Which neighborhood in Cascais, Sintra, or Parque das Nações. And how to navigate visas, housing, and timelines without costly mistakes. Each guide below is independent, built on data from 200+ families who made this move.
+        - generic [ref=e83]:
+          - link "Family relocating to Portugal — Raising Kids in Portugal relocation guide 2026 Soft Landing Three decisions that define your family's move to Portugal From the right visa to the right school and the right neighborhood — a complete guide to moving your family to Portugal. Built on extensive research and independent data analysis. Read the full guide" [ref=e84] [cursor=pointer]:
+            - /url: /en/family-relocation-guide-2026
+            - img "Family relocating to Portugal — Raising Kids in Portugal relocation guide 2026" [ref=e86]
+            - paragraph [ref=e87]: Soft Landing
+            - heading "Three decisions that define your family's move to Portugal" [level=3] [ref=e88]
+            - paragraph [ref=e89]: From the right visa to the right school and the right neighborhood — a complete guide to moving your family to Portugal. Built on extensive research and independent data analysis.
+            - generic [ref=e90]:
+              - text: Read the full guide
+              - generic [ref=e91]: →
+          - generic [ref=e92]:
+            - link "International school campus in Portugal — Raising Kids in Portugal schools guide Education First Compare IB, British, and American curriculums with unbiased performance data. Read the full guide" [ref=e93] [cursor=pointer]:
+              - /url: /en/best-private-and-public-international-schools-portugal-2026
+              - img "International school campus in Portugal — Raising Kids in Portugal schools guide" [ref=e95]
+              - paragraph [ref=e96]: Education First
+              - heading "Compare IB, British, and American curriculums with unbiased performance data." [level=3] [ref=e97]
+              - generic [ref=e98]:
+                - text: Read the full guide
+                - generic [ref=e99]: →
+            - separator [ref=e100]
+            - link "Family-friendly neighborhood in Cascais, Portugal — Raising Kids in Portugal neighborhoods guide Living Strategy Find family-safe neighborhoods with optimized commutes to your chosen school. Read the full guide" [ref=e101] [cursor=pointer]:
+              - /url: /en/family-friendly-neighborhoods-portugal
+              - img "Family-friendly neighborhood in Cascais, Portugal — Raising Kids in Portugal neighborhoods guide" [ref=e103]
+              - paragraph [ref=e104]: Living Strategy
+              - heading "Find family-safe neighborhoods with optimized commutes to your chosen school." [level=3] [ref=e105]
+              - generic [ref=e106]:
+                - text: Read the full guide
+                - generic [ref=e107]: →
+      - generic [ref=e110]:
+        - generic [ref=e111]:
+          - heading "The school decision is the relocation decision" [level=2] [ref=e112]
+          - paragraph [ref=e113]: Every family we work with arrives believing the school choice and the neighborhood choice are two parallel decisions. They are not. In the Lisbon area, the school drives the neighborhood — because the morning school run, if misjudged, can absorb 90 minutes of daily family life in traffic. This is the single most consequential structural mistake that relocating families make, and it is almost entirely preventable with the right sequencing of decisions.
+          - paragraph [ref=e114]: St. Julian's School, in Carcavelos, draws its community primarily from Cascais and Estoril — a 15-to-20 minute coastal drive. TASIS Portugal and CAISL, both in Sintra, are most naturally paired with a residence in Sintra itself or the surrounding hills. United Lisbon International School, in Parque das Nações, is walkable from the riverfront apartments surrounding it. Choose a neighborhood first, and you risk a daily commute that erodes the quality of life the move was supposed to provide.
+          - paragraph [ref=e115]: Most international schools near Lisbon open applications for September entry in October or November of the preceding year. St. Julian's often closes its waitlist well before January. The families who arrive well-placed are those who applied 12 to 18 months in advance, to two or three schools simultaneously. The application is not a formality — it is the first real commitment of the relocation.
+        - complementary "Key statistics" [ref=e116]:
+          - generic [ref=e117]:
+            - paragraph [ref=e118]: 8%
+            - separator [ref=e119]
+            - paragraph [ref=e120]: Acceptance rate at St. Julian's School — the most selective international school in Portugal. Apply to two or three schools simultaneously, and apply early.
+          - blockquote [ref=e121]:
+            - paragraph [ref=e122]: “Choose the school first. The neighborhood follows. The commute is the quality of life.”
+            - paragraph [ref=e124]: Raising Kids in Portugal research principle
+      - paragraph [ref=e127]:
+        - text: Not sure which school fits your family’s priorities — curriculum, lifestyle, or budget? Our
+        - link "School Finder" [ref=e128] [cursor=pointer]:
+          - /url: /en/school-finder
+        - text: matches your situation to the right school and neighborhood in 60 seconds.
+      - generic [ref=e131]:
+        - generic [ref=e132]:
+          - paragraph [ref=e133]: Free School & Neighborhood Matcher
+          - heading "Not sure which school or area fits your family?" [level=2] [ref=e134]
+          - paragraph [ref=e135]: Answer 4 questions — budget, lifestyle, curriculum, and timeline — and get matched with the right international school near Lisbon and the neighborhood that makes your life easier. 60 seconds.
+        - generic [ref=e137]:
+          - generic [ref=e143]:
+            - paragraph [ref=e144]: Question 1 of 4
+            - heading "What's your annual school budget?" [level=3] [ref=e145]
+          - generic [ref=e146]:
+            - generic [ref=e147]:
+              - button "Under €15,000" [ref=e149] [cursor=pointer]
+              - button "€15,000 – €25,000" [ref=e151] [cursor=pointer]
+              - button "€25,000+" [ref=e153] [cursor=pointer]
+            - generic [ref=e155]:
+              - button "Under €15,000" [ref=e156] [cursor=pointer]
+              - button "€15,000 – €25,000" [ref=e157] [cursor=pointer]
+              - button "€25,000+" [ref=e158] [cursor=pointer]
+          - generic [ref=e159]:
+            - button "← Back" [disabled]
+            - button "Next" [disabled]:
+              - text: Next
+              - img
+      - img "Family life in Portugal — Raising Kids in Portugal relocation" [ref=e161]
+      - generic [ref=e164]:
+        - generic [ref=e165]:
+          - heading "What independent intelligence looks like in practice" [level=2] [ref=e166]
+          - paragraph [ref=e167]: "Raising Kids in Portugal was built from a specific frustration: the near-total absence of honest, structured, non-commercial information for families seriously considering a move to Portugal. The market offered two things — relocation agencies with financial relationships with specific schools and landlords, and expat forums where individual experience often ran ahead of verified fact. Neither served families making a decision worth hundreds of thousands of euros in school fees, housing deposits, and life reorganisation."
+          - paragraph [ref=e168]: "Every school profile in our guides reflects in-person visits, direct conversations with admissions teams and parent communities, and careful verification of the data points that actually matter: real acceptance rates (not the selective figures schools publish), the full fee structure including registration and capital levy charges, curriculum transition considerations for children arriving mid-programme, and the texture of each school's culture that does not appear in any prospectus."
+          - paragraph [ref=e169]:
+            - text: No school pays for placement here. No property company refers traffic to these guides. There are no affiliate links. The neighborhood commute data is observed at actual school-run times, not mapping software estimates in off-peak conditions. The visa information — covering the D7 Passive Income Visa, the D8 Digital Nomad Visa, and the restructured Golden Visa program — is reviewed against
+            - link "official AIMA guidance" [ref=e170] [cursor=pointer]:
+              - /url: https://www.aima.gov.pt
+            - text: and updated when the rules change, as they did significantly between 2023 and 2025.
+          - paragraph [ref=e171]: The information that matters most — visa changes, admission openings, school fee updates — moves faster than most guides can keep pace with. Join the families already following Raising Kids in Portugal’s research updates for 2026.
+        - generic [ref=e173]:
+          - generic [ref=e174]:
+            - generic [ref=e175]:
+              - img [ref=e177]
+              - generic [ref=e179]:
+                - heading "Ask Any Question" [level=3] [ref=e180]
+                - paragraph [ref=e181]: Unsure about schools or neighborhoods? Send us your specific questions and get a personalized answer.
+            - generic [ref=e182]:
+              - img [ref=e184]
+              - generic [ref=e187]:
+                - heading "Stay Updated for 2026" [level=3] [ref=e188]
+                - paragraph [ref=e189]: School fees and availability change fast. Join our list to get the latest 2026 admission updates.
+            - generic [ref=e190]:
+              - img [ref=e192]
+              - generic [ref=e195]:
+                - heading "Get Your Free Guide" [level=3] [ref=e196]
+                - paragraph [ref=e197]: Receive our comprehensive relocation checklist and school comparison guide instantly.
+          - generic [ref=e198]:
+            - generic [ref=e199]:
+              - heading "Get Personalized Help" [level=3] [ref=e200]
+              - paragraph [ref=e201]: Fill out the form below to start your journey
+            - generic [ref=e203]:
+              - generic [ref=e204]:
+                - generic [ref=e205]:
+                  - generic [ref=e206]: Full Name *
+                  - textbox "Full Name *" [ref=e207]:
+                    - /placeholder: John Doe
+                - generic [ref=e208]:
+                  - generic [ref=e209]: Nationality *
+                  - textbox "Nationality *" [ref=e210]:
+                    - /placeholder: e.g. American
+              - generic [ref=e211]:
+                - generic [ref=e212]:
+                  - generic [ref=e213]: Email *
+                  - textbox "Email *" [ref=e214]:
+                    - /placeholder: john@example.com
+                - generic [ref=e215]:
+                  - generic [ref=e216]: Phone (Optional)
+                  - textbox "Phone (Optional)" [ref=e217]:
+                    - /placeholder: +1 234 567 890
+              - generic [ref=e218]:
+                - generic [ref=e219]:
+                  - generic [ref=e220]: Interested School (Optional)
+                  - combobox [ref=e221]:
+                    - generic: Select a school
+                    - img
+                  - combobox [ref=e222]
+                - generic [ref=e223]:
+                  - generic [ref=e224]: Interested Area (Optional)
+                  - combobox [ref=e225]:
+                    - generic: Select an area
+                    - img
+                  - combobox [ref=e226]
+              - generic [ref=e227]:
+                - generic [ref=e228]: Questions or Comments
+                - textbox "Questions or Comments" [ref=e229]:
+                  - /placeholder: "Tell us about your family: children's ages, preferred area, budget, and timeline for moving to Portugal."
+              - generic [ref=e230]:
+                - text: Leave this field empty
+                - textbox [ref=e231]
+              - button "Get Your Personalized Guide" [ref=e232]
+              - paragraph [ref=e233]: We respect your privacy. No spam, ever.
+          - generic [ref=e234]:
+            - img [ref=e235]
+            - generic [ref=e238]: 100% Free & Unbiased
+            - img [ref=e240]
+            - generic [ref=e243]: Privacy Protected
+      - generic [ref=e245]:
+        - paragraph [ref=e246]: What families say
+        - heading "Real stories from families who made the move" [level=2] [ref=e247]
+      - generic [ref=e249]:
+        - generic [ref=e250]:
+          - blockquote [ref=e251]:
+            - generic [ref=e252]:
+              - paragraph [ref=e253]: Caroline & James H.
+              - paragraph [ref=e254]: London → Cascais, 2024
+            - paragraph [ref=e255]: “We spent months researching schools before finding Raising Kids in Portugal. Within a week of using the guide, we had shortlisted St. Julian's and CAISL, visited both, and made our decision. The acceptance rate data alone saved us from an embarrassing situation.”
+          - blockquote [ref=e256]:
+            - generic [ref=e257]:
+              - paragraph [ref=e258]: Pieter V.
+              - paragraph [ref=e259]: Amsterdam → Parque das Nações, 2024
+            - paragraph [ref=e260]: “What I trusted about Raising Kids in Portugal is what it doesn't do — no sponsored content, no affiliate links, no sales pressure. The school comparison is honest. We enrolled at United Lisbon International School and it was exactly as described.”
+          - blockquote [ref=e261]:
+            - generic [ref=e262]:
+              - paragraph [ref=e263]: David O.
+              - paragraph [ref=e264]: Dubai → Lisbon, 2024
+            - paragraph [ref=e265]: “I've used relocation consultants before and paid a lot of money for generic advice. Raising Kids in Portugal's free guide was more specific and honest than anything I paid for. Parque das Nações was the right call — I can walk my son to United Lisbon every morning.”
+        - generic [ref=e266]:
+          - blockquote [ref=e267]:
+            - paragraph [ref=e268]: “TASIS Portugal wasn't on our radar at all until Raising Kids in Portugal's guide. The 'parent whisper' quotes felt genuine — not marketing copy. We visited, loved it, applied, and our daughter started in September.”
+            - generic [ref=e269]:
+              - paragraph [ref=e270]: Amélie & François D.
+              - paragraph [ref=e271]: Paris → Sintra, 2023
+          - blockquote [ref=e272]:
+            - paragraph [ref=e273]: “Three kids, three different ages, two curriculum preferences — our situation was complicated. The school finder quiz helped us realise that St. Julian's IB + British path was actually the right compromise.”
+            - generic [ref=e274]:
+              - paragraph [ref=e275]: Markus & Claudia S.
+              - paragraph [ref=e276]: Munich → Cascais, 2023
+          - blockquote [ref=e277]:
+            - paragraph [ref=e278]: “I needed clarity, not more noise. Raising Kids in Portugal gave me a real cost breakdown — not just headline fees — and explained what a shadow day is and how to request one. Those details made a huge difference.”
+            - generic [ref=e279]:
+              - paragraph [ref=e280]: Katherine M.
+              - paragraph [ref=e281]: New York → Estoril, 2024
+  - contentinfo [ref=e282]:
+    - generic [ref=e283]:
+      - generic [ref=e284]:
+        - link "Logo Raising Kids in Portugal Raising Kids in Portugal" [ref=e285] [cursor=pointer]:
+          - /url: /en
+          - img "Logo Raising Kids in Portugal" [ref=e286]
+          - generic [ref=e287]: Raising Kids in Portugal
+        - paragraph [ref=e288]: Independent intelligence for families relocating to Portugal. We analyze schools and neighborhoods so you can move with confidence.
+        - paragraph [ref=e289]: 100% Independent · Data-Driven Research
+      - generic [ref=e290]:
+        - heading "Explore" [level=3] [ref=e291]
+        - generic [ref=e292]:
+          - link "International Schools" [ref=e293] [cursor=pointer]:
+            - /url: /en/best-private-and-public-international-schools-portugal-2026
+          - link "Family Neighborhoods" [ref=e294] [cursor=pointer]:
+            - /url: /en/family-friendly-neighborhoods-portugal
+          - link "Relocation Guide" [ref=e295] [cursor=pointer]:
+            - /url: /en/family-relocation-guide-2026
+          - link "School Finder Quiz" [ref=e296] [cursor=pointer]:
+            - /url: /en/school-finder
+          - link "Blog & Guides" [ref=e297] [cursor=pointer]:
+            - /url: /en/blog
+      - generic [ref=e298]:
+        - heading "Company" [level=3] [ref=e299]
+        - generic [ref=e300]:
+          - link "About Us" [ref=e301] [cursor=pointer]:
+            - /url: /en/about
+          - link "Contact Us" [ref=e302] [cursor=pointer]:
+            - /url: /en/contact
+      - generic [ref=e303]:
+        - heading "Legal" [level=3] [ref=e304]
+        - generic [ref=e305]:
+          - link "Privacy Policy" [ref=e306] [cursor=pointer]:
+            - /url: /en/privacy
+          - link "Terms of Service" [ref=e307] [cursor=pointer]:
+            - /url: /en/terms
+        - generic [ref=e308]:
+          - paragraph [ref=e309]: © 2026 Raising Kids in Portugal.
+          - paragraph [ref=e310]: "Disclaimer: Information is for general guidance only. We use independent research and AI-assisted data analysis. We do not provide legal, visa, or financial advice. Always verify data with official sources before making relocation decisions."

@@ -103,7 +103,7 @@
   /* ── Ink (text) ────────────────────────────────────────────── */
   --ink-primary:   oklch(0.19 0.022 260);   /* warm near-black */
   --ink-secondary: oklch(0.44 0.028 255);   /* medium slate */
-  --ink-muted:     oklch(0.58 0.018 255);   /* muted prose */
+  --ink-muted:     oklch(0.50 0.018 255);   /* muted prose — L=0.50 gives ≥4.5:1 on white (WCAG AA) */
   --ink-inverse:   oklch(0.985 0.004 80);   /* for dark backgrounds */
 
   /* ── Surfaces ───────────────────────────────────────────────── */

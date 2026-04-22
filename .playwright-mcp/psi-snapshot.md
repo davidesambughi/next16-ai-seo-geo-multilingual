@@ -1,0 +1,101 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - link "PageSpeed Insights logo PageSpeed Insights" [ref=e3] [cursor=pointer]:
+      - /url: ./
+      - img "PageSpeed Insights logo" [ref=e4]
+      - generic [ref=e5]: PageSpeed Insights
+    - generic [ref=e6]:
+      - button "Copy link" [ref=e8]:
+        - img [ref=e11]
+        - generic [ref=e14]: Copy link
+      - generic [ref=e16]:
+        - generic [ref=e18]: Docs
+        - link "Docs" [ref=e19] [cursor=pointer]:
+          - /url: https://developers.google.com/speed/docs/insights/v5/about
+  - generic [ref=e26]:
+    - generic [ref=e27]:
+      - generic [ref=e28]: This site uses cookies from Google to deliver its services and to analyse traffic.
+      - generic [ref=e29]:
+        - generic [ref=e31]:
+          - generic [ref=e33]: Learn more.
+          - link "Learn more." [ref=e34] [cursor=pointer]:
+            - /url: https://policies.google.com/technologies/cookies
+        - button "OK, I understand." [ref=e36]:
+          - generic [ref=e39]: OK, I understand.
+    - generic [ref=e40]: Report from 22 Apr 2026, 15:34:43
+    - generic [ref=e41]:
+      - generic [ref=e42]:
+        - textbox [active] [ref=e44]:
+          - /placeholder: Enter a web page URL
+          - text: https://raisingkidsinportugal.com/
+        - paragraph [ref=e46]: Enter a valid URL
+      - button "Analyse" [ref=e48]:
+        - generic [ref=e51]: Analyse
+    - generic [ref=e54]:
+      - tablist [ref=e55]:
+        - generic [ref=e58]:
+          - tab "Mobile" [ref=e59] [cursor=pointer]:
+            - generic
+          - tab "Desktop" [selected] [ref=e61] [cursor=pointer]:
+            - generic
+      - text: — — — — — — — —
+      - tabpanel "Desktop" [ref=e63]:
+        - generic [ref=e65]:
+          - generic [ref=e66]:
+            - generic [ref=e67]
+            - text: Run with original URL
+          - generic [ref=e70]:
+            - generic [ref=e71]
+            - separator [ref=e81]
+          - generic [ref=e82]:
+            - generic [ref=e85]: Diagnose performance issues
+            - article [ref=e89]
+  - contentinfo [ref=e539]:
+    - generic [ref=e540]:
+      - generic [ref=e541]:
+        - generic [ref=e542]:
+          - generic [ref=e543]: More on PageSpeed Insights
+          - link "What's new" [ref=e545] [cursor=pointer]:
+            - /url: https://developers.google.com/speed/docs/insights/release_notes
+          - link "Documentation" [ref=e547] [cursor=pointer]:
+            - /url: https://developers.google.com/speed/docs/insights/v5/about
+          - link "Learn about web performance" [ref=e549] [cursor=pointer]:
+            - /url: https://developers.google.com/speed
+          - link "Ask questions on Stack Overflow" [ref=e551] [cursor=pointer]:
+            - /url: https://stackoverflow.com/questions/tagged/pagespeed-insights
+          - link "Mailing list" [ref=e553] [cursor=pointer]:
+            - /url: https://groups.google.com/g/pagespeed-insights-discuss
+        - generic [ref=e554]:
+          - generic [ref=e555]: Related content
+          - link "Updates" [ref=e557] [cursor=pointer]:
+            - /url: https://developer.chrome.com/blog
+          - link "Web Fundamentals" [ref=e559] [cursor=pointer]:
+            - /url: https://developers.google.com/focus/web-development
+          - link "Case studies" [ref=e561] [cursor=pointer]:
+            - /url: https://web.dev/case-studies
+          - link "Podcasts" [ref=e563] [cursor=pointer]:
+            - /url: https://web.dev/shows
+        - generic [ref=e564]:
+          - generic [ref=e565]: Connect
+          - link "Twitter" [ref=e567] [cursor=pointer]:
+            - /url: https://twitter.com/ChromiumDev
+          - link "YouTube" [ref=e569] [cursor=pointer]:
+            - /url: https://www.youtube.com/user/ChromeDevelopers
+      - generic [ref=e570]:
+        - link "Google Developers Logo" [ref=e571] [cursor=pointer]:
+          - /url: https://developers.google.com/
+          - img "Google Developers Logo" [ref=e572]
+        - link "Chrome" [ref=e573] [cursor=pointer]:
+          - /url: https://developer.chrome.com/
+        - link "Firebase" [ref=e574] [cursor=pointer]:
+          - /url: https://firebase.google.com/
+        - link "All products" [ref=e575] [cursor=pointer]:
+          - /url: https://developers.google.com/products/
+      - generic [ref=e576]:
+        - link "Terms and Privacy Policy" [ref=e578] [cursor=pointer]:
+          - /url: https://policies.google.com/
+        - generic [ref=e579]:
+          - text: For details, see the
+          - link "Google Developers site policies" [ref=e580] [cursor=pointer]:
+            - /url: https://developers.google.com/terms/site-policies
+          - text: .
