@@ -22,7 +22,7 @@ const outfit = Outfit({
 const playfairDisplay = Playfair_Display({
   variable: "--font-cormorant",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["400", "600", "700"],
   style: ["normal", "italic"],
   display: "swap",
 });
