@@ -15,7 +15,7 @@ No test suite is configured. Validate changes with `npm run build`.
 
 ## Architecture
 
-**Stack:** Next.js 16 (App Router), TypeScript, Tailwind CSS v4, next-intl 4.x, Framer Motion, Radix UI/shadcn.
+**Stack:** Next.js 16 (App Router), TypeScript 5 (strict — zero TS errors enforced), Tailwind CSS v4, next-intl 4.x, Framer Motion, Radix UI/shadcn.
 
 ### Middleware
 
@@ -76,7 +76,8 @@ app/
 │   ├── top-neighborhoods/page.tsx
 │   ├── relocation-guide/page.tsx
 │   ├── school-finder/page.tsx
-│   ├── blog/[slug]/page.tsx
+│   ├── blog/page.tsx             # Blog listing
+│   ├── blog/[slug]/page.tsx      # Blog article detail
 │   ├── about/page.tsx
 │   ├── contact/page.tsx
 │   ├── privacy/page.tsx
@@ -85,6 +86,8 @@ app/
 ├── robots.ts
 └── opengraph-image.tsx           # OG image at 1200×630
 ```
+
+> **Important:** Internal route keys in `routing.ts` differ from actual URLs for several paths. For example `/top-neighborhoods` resolves to `/family-friendly-neighborhoods-portugal` (EN), and `/relocation-guide` resolves to `/family-relocation-guide-2026` (EN). Always derive URLs via `routing.pathnames`, never hardcode them.
 
 ### SEO/GEO Conventions
 
@@ -105,16 +108,24 @@ Speakable schema: `cssSelector: ["#key-takeaways", "#faq"]` on all pillar guides
 ```
 components/
 ├── layout/          # Header, Footer
-├── features/        # Domain components (Hero, Testimonials, quiz/, maps, etc.)
+├── features/        # Domain components (Hero, Testimonials, LeadMagnetSection, quiz/, maps, etc.)
 ├── seo/             # JSON-LD schema components (SchoolSchema, etc.)
-└── ui/              # shadcn/Radix primitives
+└── ui/              # shadcn/Radix primitives (ScrollToTop, RouteScrollTop, etc.)
 ```
+
+Top-level components outside those folders: `StickyTOC.tsx` (fixed sidebar TOC on guide pages), `MethodologyBadge.tsx` (data provenance badge), `Breadcrumbs.tsx`, `LanguageSwitcher.tsx`, `SchoolsList.tsx`, `NeighborhoodsList.tsx`, `SchoolDirectory.tsx`, `NeighborhoodDirectory.tsx`.
 
 `lib/utils.ts` exports `cn(...inputs)` (clsx + tailwind-merge) — use for all conditional className merging.
 
 ### Blog Translation Architecture
 
-Blog articles have 5 entries, each translated into all 6 locales. To keep `blog.ts` readable, translations are split across per-locale files (`blog-translations.ts`, `blog-translations-fr.ts`, etc.) and aggregated in `blog-translations-index.ts` into `blogTranslationsMap[slug][locale]`. When adding a new article, add its translation exports to the relevant per-locale files and register them in the index.
+Blog has 5 articles (slugs: `how-to-choose-international-school-portugal`, `cascais-vs-estoril-expat-families`, `true-cost-school-fees-portugal`, `what-age-enrol-international-school-portugal`, `healthcare-portugal-expat-families`), each translated into all 6 locales.
+
+Translations are split across per-locale/per-article files and aggregated in `blog-translations-index.ts` into `blogTranslationsMap[slug][locale]`. Naming convention:
+- Articles 1–2: `blog-translations.ts` (PT/DE), `blog-translations-{fr|nl|es}.ts`
+- Articles 3–5: `blog-translations-article{N}.ts` (PT/DE), `blog-translations-article{N}-fr-nl-es.ts` or individual `*-fr.ts` / `*-nl.ts` / `*-es.ts` files
+
+When adding a new article: add exports to the relevant locale files and register in `blog-translations-index.ts`.
 
 ### TypeScript Gotchas
 
@@ -125,8 +136,10 @@ Blog articles have 5 entries, each translated into all 6 locales. To keep `blog.
 
 ### Docs Reference
 
-- `docs/BUG-TRACKER.md` — historical bug log (all 11 bugs are `done`; useful for context on current code patterns)
-- `docs/IMPROVEMENTS.md` — post-launch improvement backlog (form lead fields, narrative text for 73 imported schools, client-side validation)
+- `docs/BUG-TRACKER.md` — historical bug log (all bugs `done`; useful for context on current code patterns)
+- `docs/IMPROVEMENTS.md` — post-launch improvement backlog (form lead fields, narrative text for imported schools, client-side validation)
+- `docs/ONBOARDING.md` — project overview, tech stack table, lead-capture flow; good first-read for new context
+- `docs/GSC_SEO_SPRINT.md` — active GSC/SEO sprint notes and keyword targets
 
 ### Environment Variables
 

@@ -1,61 +1,99 @@
-# Raising Kids in Portugal — Relocation Funnel
+# RaisingKidsInPortugal
 
-A content-driven lead generation site for expat families relocating to Portugal. Helps families research international schools and family-friendly neighborhoods, then captures consultation leads.
+A multilingual content and lead-generation website for international families relocating to Portugal with children. The site consolidates research across 77 international schools and 64 family-friendly neighborhoods into a structured, searchable editorial guide — then converts research-mode visitors into consultation leads for a relocation agency.
 
-**Live site:** [raisingkidsinportugal.com](https://raisingkidsinportugal.com)
+**Live:** [raisingkidsinportugal.com](https://raisingkidsinportugal.com)
 
 ---
 
-## The Problem
+## What It Does
 
-Families relocating to Portugal face a fragmented research process — school directories have no cost/curriculum comparison, neighborhood guides are generic, and there's no single source that answers "which school fits my family." The result is months of forum-diving with no qualified guidance.
+Three content pillars, each optimized for search in 6 languages:
 
-This site consolidates 77 schools and 64 neighborhoods into a structured, searchable resource with editorial curation, then converts research-mode visitors into consultation leads.
+| Pillar | Content |
+|---|---|
+| **International Schools** | 77 schools with filters (region, curriculum, price, language), detail pages, and a school-matching quiz |
+| **Family Neighborhoods** | 64 neighborhoods with real-estate data, lifestyle scores, expat community info, and transport |
+| **Relocation Guide** | Step-by-step guide covering visas, timelines, healthcare, and logistics |
+
+Every page is fully localized in **English, Portuguese, German, French, Dutch, and Spanish** — with locale-specific URL paths, hreflang tags, and JSON-LD structured data throughout.
 
 ---
 
 ## Tech Stack
 
-| Layer     | Choice                                    | Why                                                                               |
-| --------- | ----------------------------------------- | --------------------------------------------------------------------------------- |
-| Framework | Next.js 16 (App Router)                   | ISR per content type; Server Components avoid shipping unused data to the browser |
-| i18n      | next-intl 4.x                             | Typed locale-aware routing; locale-specific URL path segments (not just prefixes) |
-| Styling   | Tailwind CSS v4, shadcn/ui, Framer Motion | Utility-first with composable primitives; no runtime CSS-in-JS                    |
-| Forms     | Zod + Server Actions + Web3Forms          | Zero backend infrastructure; Zod runs on server before any external call          |
-| Language  | TypeScript (strict)                       | End-to-end type safety from raw JSON → data layer → page props                    |
+| Technology | Version | Purpose |
+|---|---|---|
+| Next.js App Router | 16 | Framework, Server Components, Server Actions, ISR |
+| React | 19 | UI |
+| TypeScript | 5 (strict) | End-to-end type safety — zero errors enforced |
+| Tailwind CSS | v4 | Styling |
+| next-intl | 4.x | i18n — 6 locales with locale-specific URL path segments |
+| Zod | 4.x | Lead form validation (server-side) |
+| shadcn/ui + Radix UI | — | Accessible UI primitives |
+| Framer Motion | 12 | Animations |
+| Web3Forms | — | Lead form email backend (no custom server required) |
+| Vercel | — | Hosting + ISR revalidation |
 
 ---
 
-## Architecture
+## Running Locally
 
-### Data Pipeline
+**Requirements:** Node.js 18+, npm
 
-Raw school and neighborhood data lives in `lib/data/raw/*.json` (scraped, 77 schools / 64 neighborhoods). The data layer (`lib/data/schools.ts`, `lib/data/neighborhoods.ts`) maps raw JSON to strongly-typed `School` and `Neighborhood` interfaces, computing derived fields like `ageRange`, `curriculum`, and auto-generated descriptions where editorial copy isn't available.
+```bash
+# 1. Install dependencies
+npm install
 
-4 curated schools have full editorial content (verdict, parent quotes, trust badges). The remaining 73 are imported with `buildAutoDescription()` generating factual summaries from structured fields.
+# 2. Create your local environment file (see Environment Variables below)
+# Create a new file called .env.local in the project root
 
-### Translation Pattern (Option C)
-
-All translatable data uses a required-EN, optional-other-locale pattern:
-
-```typescript
-translations: { en: T } & Partial<Record<LocaleKey, T>>
+# 3. Start the dev server
+npm run dev
 ```
 
-`getSchoolT(school, locale)` always falls back to `translations.en` — no null checks at render time. JSON-LD schemas exclusively use `translations.en` (canonical data for Google).
+Open [http://localhost:3000](http://localhost:3000). The app redirects `/` to `/en` automatically via next-intl middleware (`proxy.ts`).
 
-### Server / Client Component Split
+```bash
+npm run build   # Production build — also the validation gate (catches TS errors)
+npm run start   # Run production build locally
+npm run lint    # ESLint check
+```
 
-Directory listing pages (`/schools`, `/neighborhoods`) split into two components to avoid shipping 77+ full data objects to the browser:
+> No test suite is configured. Run `npm run build` to validate before pushing.
 
-- **`SchoolsList.tsx`** (Server Component) — renders the 4 editorial "Top Picks" cards with full data
-- **`SchoolDirectory.tsx`** (Client Component) — receives a minimal `SchoolDirectoryItem[]` shape (12 fields vs. 30+), handles client-side filtering (region, curriculum, price range, language) and pagination (12 per page)
+---
 
-This keeps the client bundle lean while preserving rich editorial rendering on the server.
+## Environment Variables
+
+Create a `.env.local` file in the project root:
+
+```env
+# Canonical base URL — used for SEO canonical tags, sitemap, and OG images
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
+
+# Web3Forms key — routes lead form submissions to the agency inbox
+# Get a free key at https://web3forms.com
+# If omitted locally, submitted lead data is logged to the console instead
+WEB3FORMS_ACCESS_KEY=your_key_here
+```
+
+| Variable | Local | Production (Vercel) |
+|---|---|---|
+| `NEXT_PUBLIC_BASE_URL` | `http://localhost:3000` | `https://raisingkidsinportugal.com` |
+| `WEB3FORMS_ACCESS_KEY` | Optional (logs to console) | Required |
+
+---
+
+## Architecture Overview
+
+### Data Layer
+
+All school and neighborhood data originates from `lib/data/raw/*.json`. The data layer maps raw JSON to typed `School` / `Neighborhood` interfaces, computing derived fields and auto-generating descriptions for the 73 imported schools. 4 curated schools have full editorial content (verdict, parent quotes, highlights).
 
 ### i18n Routing
 
-`i18n/routing.ts` is the single source of truth for all routes. Locale-specific path segments are defined per route — not just locale-prefixed:
+`i18n/routing.ts` is the single source of truth for all typed routes. Every route defines locale-specific path segments (not just locale prefixes), for example:
 
 ```
 /en/family-relocation-guide-2026
@@ -63,77 +101,49 @@ This keeps the client bundle lean while preserving rich editorial rendering on t
 /de/familien-umzugs-guide-2026
 ```
 
-TypeScript errors at build time if a new route is added to the filesystem without a corresponding entry in `routing.ts`. Navigation (`Link`, `useRouter`, `redirect`) is always imported from `@/i18n/navigation` for type safety.
+Always import `Link`, `useRouter`, and `redirect` from `@/i18n/navigation` — never from `next/link` or `next/navigation`.
+
+### Server / Client Split
+
+Listing pages split into a Server Component (renders editorial Top Picks) + a Client Component that receives a minimal serialized data shape and handles client-side filtering and pagination. This keeps the client bundle lean.
 
 ### Lead Form
 
-`lib/actions.ts` is a Server Action that runs three layers before any external call:
-
-1. **Honeypot** — hidden `trap` field silently rejects bots at step 0
-2. **Zod validation** — structural + format validation (`lib/schemas/lead-form.ts`)
-3. **Allowlist check** — school and neighborhood values validated against canonical data arrays (prevents direct POST bypass of the browser `<Select>`)
-
-Lead data is submitted to Web3Forms. If the API key is absent (local dev), data is logged to stderr for recovery — the user sees a success response either way.
+`lib/actions.ts` (Server Action) runs three layers before any external call: a honeypot check, Zod schema validation, and an allowlist check against canonical school/neighborhood slugs. Submissions go to Web3Forms.
 
 ### SEO / GEO
 
-Every page implements:
-
-- `generateMetadata` with canonical URL, `alternates` (all 6 locales + `x-default`), OG + Twitter images
-- ISR (`revalidate = 43200` for homepage/pillar pages, `86400` for detail/blog)
-- JSON-LD schema per page type: `Organization`, `WebSite`, `EducationalOrganization`, `Place`, `FAQPage`, `ItemList`, `BreadcrumbList`, `Article`
-- **Speakable schema** (`cssSelector: ["#key-takeaways", "#faq"]`) on all three pillar guides for AI Overview eligibility
-- `public/llms.txt` — citation policy for AI inference bots; training bots disallowed via `robots.txt`
-
-FAQPage JSON-LD is authored to exactly match rendered HTML question/answer text (Google rich snippet requirement).
+Every page has `generateMetadata` with canonical URL, full `alternates` for all 6 locales + `x-default`, OG/Twitter images, ISR revalidation, and JSON-LD structured data. Pillar guide pages include Speakable schema targeting `#key-takeaways` and `#faq` elements for AI Overview eligibility.
 
 ---
 
 ## Project Structure
 
 ```
-app/[locale]/           # All pages under locale segment
+app/[locale]/           # All pages live under a locale segment
 lib/
-  data/                 # Typed data layer + raw JSON
-    raw/                # schools-database.json, neighborhoods-database.json
-  content/              # Long-form prose content (all 6 locales inline)
+  data/                 # Typed data layer + raw JSON source files
+  content/              # Editorial copy (hero text, guide facts)
+  schemas/              # Zod validation schemas
   actions.ts            # Lead form Server Action
-  schemas/              # Zod schemas
-  types.ts              # Shared interfaces (School, Neighborhood, LocaleKey…)
+  types.ts              # All shared TypeScript interfaces
 components/
-  features/             # Domain components: Hero, QuizSection, SchoolMap, etc.
+  features/             # Domain components: Hero, quiz, maps, school cards, etc.
   layout/               # Header, Footer
-  ui/                   # shadcn primitives
-  seo/                  # JSON-LD components (SchoolSchema, etc.)
+  seo/                  # JSON-LD schema components
+  ui/                   # shadcn/Radix UI primitives
 i18n/
-  routing.ts            # Single source of truth for all typed routes
-messages/               # UI strings per locale (*.json)
-proxy.ts                # next-intl middleware (Next.js 16: renamed from middleware.ts)
+  routing.ts            # ← Add every new route here first
+  navigation.ts         # Typed navigation exports
+messages/               # UI strings per locale (en.json, pt.json, …)
+proxy.ts                # next-intl middleware (Next.js 16 renamed middleware.ts → proxy.ts)
 ```
 
 ---
 
-## Local Development
+## Documentation
 
-```bash
-npm install
-# create .env.local with: NEXT_PUBLIC_BASE_URL=http://localhost:3000
-npm run dev       # localhost:3000
-npm run build     # No test suite — build is the validation gate
-npm run lint
-```
-
-**Environment variables:**
-
-| Variable               | Purpose                                                              |
-| ---------------------- | -------------------------------------------------------------------- |
-| `NEXT_PUBLIC_BASE_URL` | Canonical domain (`https://raisingkidsinportugal.com` in production) |
-| `WEB3FORMS_ACCESS_KEY` | Lead form submissions — omit locally to log leads to console instead |
-
----
-
-## What I'd Do Differently
-
-- **Static data in a database.** The raw JSON pipeline works but makes additions manual. A Postgres table (Neon) with a simple admin form would allow non-technical editors to add schools without touching code.
-- **Playwright scraping as a build step.** School narrative text is missing for 73 imported schools. I'd add a headless scraping step to CI — run once, cache the output, generate copy programmatically.
-- **Rate limiting on the Server Action.** The honeypot is lightweight but not sufficient for sustained abuse. Upstash Redis (`@upstash/ratelimit`) would add IP-based throttling with no infrastructure overhead on Vercel.
+| File | Contents |
+|---|---|
+| `CLAUDE.md` | Architecture reference for AI coding assistants |
+|

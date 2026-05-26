@@ -39,3 +39,16 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# google_performance
+google_performance
+
+# playwright mcp session files (browser automation logs/snapshots)
+.playwright-mcp/
+
+# editor
+.vscode/
+.idea/
+
+# os
+Thumbs.db
